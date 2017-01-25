@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : memory.vf
+// /___/   /\     Timestamp : 01/22/2017 16:32:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/ipcore_dir" -sympath "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/work" -intstyle ise -family spartan3e -verilog "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/work/memory.vf" -w "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/memory.sch"
+//Design Name: memory
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module memory(addr, 
+              clk, 
+              din, 
+              reset, 
+              wea, 
+              ALUSrc, 
+              Branch, 
+              douta, 
+              MemRead, 
+              MemtoReg, 
+              MemWrite, 
+              RegDst, 
+              RegWrite);
+
+    input [9:0] addr;
+    input clk;
+    input [15:0] din;
+    input reset;
+    input [0:0] wea;
+   output ALUSrc;
+   output Branch;
+   output [15:0] douta;
+   output MemRead;
+   output MemtoReg;
+   output MemWrite;
+   output RegDst;
+   output RegWrite;
+   
+   wire [15:0] douta_DUMMY;
+   
+   assign douta[15:0] = douta_DUMMY[15:0];
+   MIPS_control_unit  XLXI_1 (.CLK(clk), 
+                             .Opcode(douta_DUMMY[15:10]), 
+                             .Reset(reset), 
+                             .ALUSrc(ALUSrc), 
+                             .Branch(Branch), 
+                             .MemRead(MemRead), 
+                             .MemtoReg(MemtoReg), 
+                             .MemWrite(MemWrite), 
+                             .RegDst(RegDst), 
+                             .RegWrite(RegWrite));
+   blockmemory16kx1  XLXI_2 (.addra(addr[9:0]), 
+                            .clka(clk), 
+                            .dina(din[15:0]), 
+                            .wea(wea[0]), 
+                            .douta(douta_DUMMY[15:0]));
+endmodule
