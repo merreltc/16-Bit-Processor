@@ -64,20 +64,11 @@ module blockmemory16kx1_tb;
       
 		// Add stimulus here
 		
-//		for(addra = 0; addra < 10; addra = addra + 1)
-//		begin
-//			wea[0] = 0;
-//			#1;
-//			dina = 16'hA0A0 + addra;
-//			wea[0] = 1;
-//			#10;
-//		end
-		
 		dina = 123;
 		wea = 1;
 		#10;
 		wea = 0;
-
+		
 		#5;
 		addra = 1;
 		dina = 456;

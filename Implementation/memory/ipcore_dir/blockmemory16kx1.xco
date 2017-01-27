@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Fri Jan 20 00:18:10 2017
+# Date: Thu Jan 26 14:37:55 2017
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=.\memory_small.coe
+CSET coe_file="C:\Users\alfayeka\Desktop\HW and shit\CSSE\CSSE232\memory\work\memory_small.coe"
 CSET collision_warnings=ALL
 CSET component_name=blockmemory16kx1
 CSET disable_collision_warnings=false
@@ -103,4 +103,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-03-20T18:34:43Z
 # END Extra information
 GENERATE
-# CRC: 80f69175
+# CRC: 17ce14f4

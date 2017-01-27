@@ -56,55 +56,26 @@ module memory_memory_sch_tb();
 		reset = 0;
 		
 		#100;
+
+		// Testing control values
+		
+		// R-Type
+		addr = 0;
+		#45;
 		// beq
-		din[15:10] = 6'h04;
-		wea = 1;
+		addr = 1;
+		#40;
+		// sw
+		addr = 2;
 		#40;
 		// lw
-		wea = 0;
-		addr = 2;
-		din[15:10] = 6'h23;
-		wea = 1;
-		#20;
-		// sw
-		wea = 0;
 		addr = 3;
-		din[15:10] = 6'h2B;
-		wea = 1;
-		#20;
-		
-		wea = 0;
-		din = 0;
-		// Testing control values
-		addr = 0;
-		#25;
-		addr = 1;
-		#20;
-		addr = 2;
-		#20;
-		addr = 3;
-		#20
-		addr = 0;
-		#25;
-		addr = 2;
-		#20;
-		addr = 1;
-		#20;
-		addr = 3;
-		#20;
-		addr = 2;
-		#20
-		addr = 0;
-		#25;
-		addr = 2;
-		#20;
-		addr = 1;
-		#20;
-		addr = 3;
-		#20
-		addr = 1;
 		#40
-		addr = 0;
+		// R-Type dummy
+		addr = 4;
+		#40
+		addr = 5;
+
 		
 	end
 
