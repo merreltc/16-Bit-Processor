@@ -1,4 +1,3 @@
-verilog isim_temp "../ipcore_dir/blockmemory16kx1.v"
 verilog isim_temp "../BlockMemoryControl.v"
 verilog isim_temp "memory.vf"
 verilog isim_temp "../memory_tb.v"

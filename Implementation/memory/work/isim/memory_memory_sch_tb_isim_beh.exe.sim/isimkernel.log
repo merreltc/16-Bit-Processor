@@ -2,12 +2,12 @@ Command line:
    memory_memory_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58045
+     -socket  64700
 
-Mon Jan 23 21:03:53 2017
+Thu Jan 26 09:51:16 2017
 
 
- Elaboration Time: 0.171601 sec
+ Elaboration Time: 0.109201 sec
 
  Current Memory Usage: 1326.85 Meg
 
@@ -20,9 +20,9 @@ Mon Jan 23 21:03:53 2017
  Total Traceable Variables  : 346
  Total Scalar Nets and Variables : 38390
 
- Total Simulation Time: 0.312002 sec
+ Total Simulation Time: 0.124801 sec
 
  Current Memory Usage: 854.958 Meg
 
-Mon Jan 23 21:06:52 2017
+Thu Jan 26 09:54:13 2017
 

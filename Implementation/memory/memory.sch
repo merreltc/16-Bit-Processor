@@ -49,7 +49,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="blockmemory16kx1">
-            <timestamp>2017-1-20T0:19:2</timestamp>
+            <timestamp>2017-1-26T14:27:2</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
@@ -69,7 +69,7 @@
             <blockpin signalname="MemWrite" name="MemWrite" />
             <blockpin signalname="Branch" name="Branch" />
         </block>
-        <block symbolname="blockmemory16kx1" name="XLXI_2">
+        <block symbolname="blockmemory16kx1" name="XLXI_4">
             <blockpin signalname="addr(9:0)" name="addra(9:0)" />
             <blockpin signalname="din(15:0)" name="dina(15:0)" />
             <blockpin signalname="wea(0:0)" name="wea(0:0)" />
@@ -78,8 +78,6 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="320" y="208" name="XLXI_2" orien="R0">
-        </instance>
         <instance x="1424" y="736" name="XLXI_1" orien="R0">
         </instance>
         <branch name="douta(15:10)">
@@ -173,5 +171,7 @@
         </branch>
         <iomarker fontsize="28" x="1248" y="512" name="reset" orien="R180" />
         <iomarker fontsize="28" x="1952" y="112" name="douta(15:0)" orien="R0" />
+        <instance x="320" y="208" name="XLXI_4" orien="R0">
+        </instance>
     </sheet>
 </drawing>

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : memory.vf
-// /___/   /\     Timestamp : 01/22/2017 16:32:23
+// /___/   /\     Timestamp : 01/26/2017 09:32:23
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -61,7 +61,7 @@ module memory(addr,
                              .MemWrite(MemWrite), 
                              .RegDst(RegDst), 
                              .RegWrite(RegWrite));
-   blockmemory16kx1  XLXI_2 (.addra(addr[9:0]), 
+   blockmemory16kx1  XLXI_4 (.addra(addr[9:0]), 
                             .clka(clk), 
                             .dina(din[15:0]), 
                             .wea(wea[0]), 
