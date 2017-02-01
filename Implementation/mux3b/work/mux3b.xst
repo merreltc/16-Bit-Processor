@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/mux1b/work/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/mux1b/work/xst"
+elaborate
+-ifn mux3b.prj
+-ifmt mixed
