@@ -22,7 +22,7 @@ module mux16b3(
     input [15:0] in0,
     input [15:0] in1,
     input [15:0] in2,
-    output reg [15:0] out,
+    output reg [15:0] r,
     input [1:0] set
     );
 	 
@@ -32,11 +32,11 @@ module mux16b3(
 			case(set)
 			
 				0:
-					assign out = in0;
+					assign r = in0;
 				1:
-					assign out = in1;
+					assign r = in1;
 				2:
-					assign out = in2;
+					assign r = in2;
 				default:
 					$display("ERROR! SET VALUE OUT OF RANGE!");
 				
