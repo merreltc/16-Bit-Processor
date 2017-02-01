@@ -1,0 +1,6 @@
+verilog work "../remote_sources/_/debounce/ipcore_dir/debounce_counter.v"
+verilog work "debounceRotary.vf"
+verilog work "debouncer.vf"
+verilog work "intReg16.vf"
+verilog work "buf16.vf"
+verilog work "intReg16_test.vf"

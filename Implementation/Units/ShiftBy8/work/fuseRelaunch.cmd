@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/ShiftBy8/work/ShiftBy8_test_isim_beh.exe" -prj "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/ShiftBy8/work/ShiftBy8_test_beh.prj" "work.ShiftBy8_test" "work.glbl" 

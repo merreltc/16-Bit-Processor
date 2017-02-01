@@ -1,0 +1,299 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'intReg16_test'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Jan 24 14:29:38 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           111 out of   9,312    1%
+  Number of 4 input LUTs:                69 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:            100 out of   4,656    2%
+    Number of Slices containing only related logic:     100 out of     100 100%
+    Number of Slices containing unrelated logic:          0 out of     100   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         144 out of   9,312    1%
+    Number used as logic:                69
+    Number used as a route-thru:         75
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 23 out of     232    9%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+  Number of RPM macros:            2
+Average Fanout of Non-Clock Nets:                1.77
+
+Peak Memory Usage:  327 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@ise.csse.rose-hulman.edu'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s500e' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CLK are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  35 block(s) removed
+  23 block(s) optimized away
+  31 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_1/XLXI_56" (SFF) removed.
+ The signal "dataIn<10>" is loadless and has been removed.
+  Loadless block "XLXI_34/XLXI_10" (BUF) removed.
+Loadless block "XLXI_1/XLXI_57" (SFF) removed.
+ The signal "dataIn<11>" is loadless and has been removed.
+  Loadless block "XLXI_34/XLXI_11" (BUF) removed.
+Loadless block "XLXI_1/XLXI_58" (SFF) removed.
+ The signal "dataIn<12>" is loadless and has been removed.
+  Loadless block "XLXI_34/XLXI_12" (BUF) removed.
+Loadless block "XLXI_1/XLXI_59" (SFF) removed.
+ The signal "dataIn<13>" is loadless and has been removed.
+  Loadless block "XLXI_34/XLXI_13" (BUF) removed.
+Loadless block "XLXI_1/XLXI_60" (SFF) removed.
+ The signal "dataIn<14>" is loadless and has been removed.
+  Loadless block "XLXI_34/XLXI_14" (BUF) removed.
+Loadless block "XLXI_1/XLXI_61" (SFF) removed.
+ The signal "dataIn<15>" is loadless and has been removed.
+  Loadless block "XLXI_34/XLXI_15" (BUF) removed.
+Loadless block "XLXI_14/XLXI_25" (FF) removed.
+ The signal "XLXI_14/XLXN_43" is loadless and has been removed.
+  Loadless block "XLXI_14/XLXI_49" (FF) removed.
+   The signal "XLXI_14/XLXN_26" is loadless and has been removed.
+    Loadless block "XLXI_14/XLXI_48" (AND) removed.
+     The signal "XLXI_14/XLXN_25" is loadless and has been removed.
+      Loadless block "XLXI_14/XLXI_47" (OR) removed.
+       The signal "XLXI_14/XLXN_29" is loadless and has been removed.
+        Loadless block "XLXI_14/XLXI_69" (BUF) removed.
+     The signal "XLXI_14/XLXN_24" is loadless and has been removed.
+      Loadless block "XLXI_14/XLXI_46" (OR) removed.
+       The signal "XLXI_14/XLXN_23" is loadless and has been removed.
+        Loadless block "XLXI_14/XLXI_45" (AND) removed.
+Loadless block "XLXI_14/XLXI_70" (FF) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXI_10/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_10/XLXI_65" (AND) removed.
+The signal "XLXI_10/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_10/XLXI_83" (OR) removed.
+  The signal "XLXI_10/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_10/XLXI_81" (FF) removed.
+The signal "XLXI_11/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_11/XLXI_65" (AND) removed.
+The signal "XLXI_11/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_11/XLXI_83" (OR) removed.
+  The signal "XLXI_11/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_11/XLXI_81" (FF) removed.
+The signal "XLXI_12/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_12/XLXI_65" (AND) removed.
+The signal "XLXI_12/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_12/XLXI_83" (OR) removed.
+  The signal "XLXI_12/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_12/XLXI_81" (FF) removed.
+The signal "XLXI_13/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_13/XLXI_65" (AND) removed.
+The signal "XLXI_13/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_13/XLXI_83" (OR) removed.
+  The signal "XLXI_13/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_13/XLXI_81" (FF) removed.
+The signal "XLXI_5/XLXN_251" is unused and has been removed.
+ Unused block "XLXI_5/XLXI_65" (AND) removed.
+The signal "XLXI_5/XLXN_266" is unused and has been removed.
+ Unused block "XLXI_5/XLXI_83" (OR) removed.
+  The signal "XLXI_5/button_lo_DUMMY" is unused and has been removed.
+   Unused block "XLXI_5/XLXI_81" (FF) removed.
+The signal "dataIn<2>" is unused and has been removed.
+The signal "dataIn<3>" is unused and has been removed.
+The signal "dataIn<6>" is unused and has been removed.
+The signal "dataIn<7>" is unused and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+AND2 		XLXI_1/XLXI_42
+AND2 		XLXI_1/XLXI_43
+FDRSE 		XLXI_1/XLXI_49
+   optimized to 0
+FDRSE 		XLXI_1/XLXI_50
+   optimized to 0
+FDRSE 		XLXI_1/XLXI_53
+   optimized to 0
+FDRSE 		XLXI_1/XLXI_54
+   optimized to 0
+GND 		XLXI_10/XLXI_85/XST_GND
+VCC 		XLXI_10/XLXI_85/XST_VCC
+GND 		XLXI_11/XLXI_85/XST_GND
+VCC 		XLXI_11/XLXI_85/XST_VCC
+GND 		XLXI_12/XLXI_85/XST_GND
+VCC 		XLXI_12/XLXI_85/XST_VCC
+GND 		XLXI_13/XLXI_85/XST_GND
+VCC 		XLXI_13/XLXI_85/XST_VCC
+GND 		XLXI_16
+BUF 		XLXI_34/XLXI_2
+BUF 		XLXI_34/XLXI_3
+BUF 		XLXI_34/XLXI_6
+BUF 		XLXI_34/XLXI_7
+BUF 		XLXI_34/XLXI_9
+INV 		XLXI_43
+GND 		XLXI_5/XLXI_85/XST_GND
+VCC 		XLXI_5/XLXI_85/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| a_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| b_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| e_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| intr_0                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| intr_1                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led0                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led1                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led2                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led3                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led4                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led5                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led6                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| led7                               | IOB              | OUTPUT    | LVTTL                |       | 4        | SLOW |              |          | 0 / 0    |
+| n_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| not_out                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| r_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| s_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| switch0                            | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch1                            | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch2                            | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| switch3                            | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLUP   | 0 / 0    |
+| w_button                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+XLXI_15_1                               
+XLXI_17_0                               
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

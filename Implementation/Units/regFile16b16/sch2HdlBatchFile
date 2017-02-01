@@ -1,0 +1,4 @@
+sch2hdl,-intstyle,ise,-family,spartan3adsp,-verilog,C:/Users/merreltc/Documents/CSSE232/regFile16b16/m16_1e.vf,-w,C:/Users/merreltc/Documents/CSSE232/regFile16b16/m16_1e.sch
+sch2hdl,-intstyle,ise,-family,spartan3adsp,-verilog,C:/Users/merreltc/Documents/CSSE232/regFile16b16/decode5b16.vf,-w,C:/Users/merreltc/Documents/CSSE232/regFile16b16/decode5b16.sch
+sch2hdl,-intstyle,ise,-family,spartan3adsp,-verilog,C:/Users/merreltc/Documents/CSSE232/regFile16b16/regFile16b16.vf,-w,C:/Users/merreltc/Documents/CSSE232/regFile16b16/regFile16b16.sch
+sch2hdl,-intstyle,ise,-family,spartan3adsp,-verilog,C:/Users/merreltc/Documents/CSSE232/regFile16b16/mux16b16.vf,-w,C:/Users/merreltc/Documents/CSSE232/regFile16b16/mux16b16.sch
