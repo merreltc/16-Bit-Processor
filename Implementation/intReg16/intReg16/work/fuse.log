@@ -1,0 +1,56 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test_isim_beh.exe -prj C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test_beh.prj work.intReg16_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/../remote_sources/_/debounce/ipcore_dir/debounce_counter.v" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/debounceRotary.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/debouncer.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/buf16.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.vf" Line 336: Port count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.vf" Line 342: Port count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.vf" Line 348: Port count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.vf" Line 354: Port count is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.vf" Line 360: Port count is not connected to this instance
+Completed static elaboration
+Compiling module GND
+Compiling module AND2
+Compiling module OR4
+Compiling module FDRSE
+Compiling module OR2
+Compiling module AND3
+Compiling module intReg16_MUSER_intReg16_test
+Compiling module AND2B1
+Compiling module FDC
+Compiling module XOR2
+Compiling module FDCE
+Compiling module VCC
+Compiling module FDRE
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module LUT2(INIT=4'b1000)
+Compiling module LUT3(INIT=8'b01000)
+Compiling module LUT4(INIT=16'b1000000000000000)
+Compiling module LUT1(INIT=2'b10)
+Compiling module INV
+Compiling module LUT2_L(INIT=4'b1000)
+Compiling module LUT4_L(INIT=16'b1000000000000000...
+Compiling module debounce_counter
+Compiling module debouncer
+Compiling module debounceRotary
+Compiling module FTC_MXILINX_intReg16_test
+Compiling module BUF
+Compiling module buf16_MUSER_intReg16_test
+Compiling module intReg16_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
+Built simulation executable C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test_isim_beh.exe
+Fuse Memory Usage: 30488 KB
+Fuse CPU Usage: 529 ms

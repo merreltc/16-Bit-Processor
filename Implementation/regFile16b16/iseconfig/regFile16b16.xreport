@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-01T10:30:48</DateModified>
+  <DateModified>2017-02-01T14:27:27</DateModified>
   <ModuleName>regFile16b16</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/merreltc/Documents/CSSE232/regFile16b16/iseconfig/regFile16b16.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/merreltc/Documents/CSSE232/regFile16b16</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/merreltc/Documents/CSSE232/Processor Project/regFile16b16/iseconfig/regFile16b16.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/merreltc/Documents/CSSE232/Processor Project/regFile16b16\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-01T10:30:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -22,7 +22,6 @@
         <signal name="R15" />
         <signal name="Write" />
         <signal name="ReadAddrA(3:0)" />
-        <signal name="I(15:0)" />
         <signal name="J(15:0)" />
         <signal name="K(15:0)" />
         <signal name="L(15:0)" />
@@ -47,6 +46,7 @@
         <signal name="R2" />
         <signal name="R1" />
         <signal name="R0" />
+        <signal name="ReadDataCR(15:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="DataIn(15:0)" />
         <port polarity="Input" name="WriteAddr(3:0)" />
@@ -55,6 +55,7 @@
         <port polarity="Input" name="ReadAddrA(3:0)" />
         <port polarity="Input" name="ReadAddrB(3:0)" />
         <port polarity="Output" name="ReadDataB(15:0)" />
+        <port polarity="Output" name="ReadDataCR(15:0)" />
         <blockdef name="gnd">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-96" x1="64" />
@@ -150,7 +151,7 @@
             <blockpin signalname="R8" name="CE" />
             <blockpin signalname="DataIn(15:0)" name="D(15:0)" />
             <blockpin signalname="low" name="R" />
-            <blockpin signalname="I(15:0)" name="Q(15:0)" />
+            <blockpin signalname="ReadDataCR(15:0)" name="Q(15:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_66">
             <blockpin signalname="CLK" name="C" />
@@ -266,7 +267,7 @@
             <blockpin signalname="F(15:0)" name="F(15:0)" />
             <blockpin signalname="G(15:0)" name="G(15:0)" />
             <blockpin signalname="H(15:0)" name="H(15:0)" />
-            <blockpin signalname="I(15:0)" name="I(15:0)" />
+            <blockpin signalname="ReadDataCR(15:0)" name="I(15:0)" />
             <blockpin signalname="J(15:0)" name="J(15:0)" />
             <blockpin signalname="K(15:0)" name="K(15:0)" />
             <blockpin signalname="L(15:0)" name="L(15:0)" />
@@ -286,7 +287,7 @@
             <blockpin signalname="F(15:0)" name="F(15:0)" />
             <blockpin signalname="G(15:0)" name="G(15:0)" />
             <blockpin signalname="H(15:0)" name="H(15:0)" />
-            <blockpin signalname="I(15:0)" name="I(15:0)" />
+            <blockpin signalname="ReadDataCR(15:0)" name="I(15:0)" />
             <blockpin signalname="J(15:0)" name="J(15:0)" />
             <blockpin signalname="K(15:0)" name="K(15:0)" />
             <blockpin signalname="L(15:0)" name="L(15:0)" />
@@ -297,25 +298,25 @@
             <blockpin signalname="Q(15:0)" name="Q(15:0)" />
             <blockpin signalname="ReadDataB(15:0)" name="O(15:0)" />
         </block>
-        <block symbolname="decode5b16" name="XLXI_90">
+        <block symbolname="decode5b16" name="XLXI_91">
             <blockpin signalname="WriteAddr(3:0)" name="A(3:0)" />
             <blockpin signalname="Write" name="enable" />
-            <blockpin name="O0" />
-            <blockpin name="O1" />
-            <blockpin name="O2" />
-            <blockpin name="O3" />
-            <blockpin name="O9" />
-            <blockpin name="O8" />
-            <blockpin name="O7" />
-            <blockpin name="O6" />
-            <blockpin name="O5" />
-            <blockpin name="O4" />
-            <blockpin name="O10" />
-            <blockpin name="O11" />
-            <blockpin name="O12" />
-            <blockpin name="O13" />
-            <blockpin name="O14" />
-            <blockpin name="O15" />
+            <blockpin signalname="R0" name="O0" />
+            <blockpin signalname="R1" name="O1" />
+            <blockpin signalname="R2" name="O2" />
+            <blockpin signalname="R3" name="O3" />
+            <blockpin signalname="R9" name="O9" />
+            <blockpin signalname="R8" name="O8" />
+            <blockpin signalname="R7" name="O7" />
+            <blockpin signalname="R6" name="O6" />
+            <blockpin signalname="R5" name="O5" />
+            <blockpin signalname="R4" name="O4" />
+            <blockpin signalname="R10" name="O10" />
+            <blockpin signalname="R11" name="O11" />
+            <blockpin signalname="R12" name="O12" />
+            <blockpin signalname="R13" name="O13" />
+            <blockpin signalname="R14" name="O14" />
+            <blockpin signalname="R15" name="O15" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -429,8 +430,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2448" y="944" type="branch" />
             <wire x2="2544" y1="944" y2="944" x1="2448" />
         </branch>
-        <branch name="I(15:0)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3008" y="720" type="branch" />
+        <branch name="ReadDataCR(15:0)">
             <wire x2="3008" y1="720" y2="720" x1="2928" />
         </branch>
         <branch name="CLK">
@@ -627,7 +627,7 @@
             <wire x2="4352" y1="1136" y2="1136" x1="4096" />
         </branch>
         <iomarker fontsize="28" x="4096" y="1136" name="ReadAddrA(3:0)" orien="R180" />
-        <branch name="I(15:0)">
+        <branch name="ReadDataCR(15:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4256" y="688" type="branch" />
             <wire x2="4352" y1="688" y2="688" x1="4256" />
         </branch>
@@ -692,7 +692,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4272" y="1984" type="branch" />
             <wire x2="4368" y1="1984" y2="1984" x1="4272" />
         </branch>
-        <branch name="I(15:0)">
+        <branch name="ReadDataCR(15:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4272" y="2048" type="branch" />
             <wire x2="4368" y1="2048" y2="2048" x1="4272" />
         </branch>
@@ -866,7 +866,8 @@
         </instance>
         <instance x="4368" y="2592" name="XLXI_89" orien="R0">
         </instance>
-        <instance x="560" y="1600" name="XLXI_90" orien="R0">
+        <instance x="576" y="1600" name="XLXI_91" orien="R0">
         </instance>
+        <iomarker fontsize="28" x="3008" y="720" name="ReadDataCR(15:0)" orien="R0" />
     </sheet>
 </drawing>
