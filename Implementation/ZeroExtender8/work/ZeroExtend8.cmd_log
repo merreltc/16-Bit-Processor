@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/ZeroExtender8/work/ZeroExtend8.xst" -ofn "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/ZeroExtender8/work/ZeroExtend8.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "ZeroExtend8.ngc" ZeroExtend8.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ZeroExtend8_map.ncd ZeroExtend8.ngd ZeroExtend8.pcf 
-par -w -intstyle ise -ol high -t 1 ZeroExtend8_map.ncd ZeroExtend8.ncd ZeroExtend8.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ZeroExtend8.twx ZeroExtend8.ncd -o ZeroExtend8.twr ZeroExtend8.pcf 
