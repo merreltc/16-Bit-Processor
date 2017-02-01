@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-01-31T22:25:35</DateModified>
+  <DateModified>2017-01-31T23:10:41</DateModified>
   <ModuleName>mux3b</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/mux1b/iseconfig/mux3b.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/mux1b/work\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/mux16b4/iseconfig/mux3b.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/mux16b4/work\</ImplementationReportsDirectory>
   <DateInitialized>2017-01-30T21:17:59</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
