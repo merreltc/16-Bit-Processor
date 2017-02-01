@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/SignExtend8/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/SignExtend8/xst"
+elaborate
+-ifn SignExtend8.prj
+-ifmt mixed

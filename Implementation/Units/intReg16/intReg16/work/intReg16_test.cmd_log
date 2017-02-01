@@ -1,0 +1,48 @@
+xst -intstyle ise -ifn "C:/Users/merreltc/Downloads/intReg16/work/intReg16_test.xst" -ofn "C:/Users/merreltc/Downloads/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc C:/Users/merreltc/Downloads/intReg16/intReg16.ucf -p xc3s500e-fg320-4 intReg16_test.ngc intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 
+xst -intstyle ise -ifn "C:/Users/merreltc/Downloads/intReg16/work/intReg16_test.xst" -ofn "C:/Users/merreltc/Downloads/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc C:/Users/merreltc/Downloads/intReg16/intReg16.ucf -p xc3s500e-fg320-4 intReg16_test.ngc intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 
+xst -intstyle ise -ifn "C:/Users/merreltc/Downloads/intReg16/work/intReg16_test.xst" -ofn "C:/Users/merreltc/Downloads/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc C:/Users/merreltc/Downloads/intReg16/intReg16.ucf -p xc3s500e-fg320-4 intReg16_test.ngc intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc C:/Users/merreltc/Downloads/intReg16/intReg16.ucf -p xc3s500e-fg320-4 intReg16_test.ngc intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+xst -intstyle ise -ifn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.xst" -ofn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/intReg16.ucf" -p xc3s500e-fg320-4 "intReg16_test.ngc" intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim intReg16_test.ngc intReg16_test_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.xst" -ofn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/intReg16.ucf" -p xc3s500e-fg320-4 "intReg16_test.ngc" intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 
+xst -intstyle ise -ifn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.xst" -ofn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/intReg16.ucf" -p xc3s500e-fg320-4 "intReg16_test.ngc" intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 
+xst -intstyle ise -ifn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.xst" -ofn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/intReg16.ucf" -p xc3s500e-fg320-4 "intReg16_test.ngc" intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 
+xst -intstyle ise -ifn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.xst" -ofn "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/work/intReg16_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../remote_sources/_/debounce/ipcore_dir -nt timestamp -uc "C:/Users/smithlb/Documents/CSSE232/New folder/intReg16/intReg16.ucf" -p xc3s500e-fg320-4 "intReg16_test.ngc" intReg16_test.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o intReg16_test_map.ncd intReg16_test.ngd intReg16_test.pcf 
+par -w -intstyle ise -ol high -t 1 intReg16_test_map.ncd intReg16_test.ncd intReg16_test.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml intReg16_test.twx intReg16_test.ncd -o intReg16_test.twr intReg16_test.pcf 
+bitgen -intstyle ise -f intReg16_test.ut intReg16_test.ncd 

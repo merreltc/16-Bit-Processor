@@ -1,0 +1,8 @@
+vhdtdtfi -lib work {C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/BlockMemoryControl.v} -lang verilog -prj memory -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl {C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/MIPS_control_unit.sym} 
+xst -intstyle ise -ifn "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/work/MIPS_control_unit.xst" -ofn "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/work/MIPS_control_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 "MIPS_control_unit.ngc" MIPS_control_unit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MIPS_control_unit_map.ncd MIPS_control_unit.ngd MIPS_control_unit.pcf 
+par -w -intstyle ise -ol high -t 1 MIPS_control_unit_map.ncd MIPS_control_unit.ncd MIPS_control_unit.pcf 
+vhdtdtfi -lib work {C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/BlockMemoryControl.v} -lang verilog -prj memory -o MIPS_control_unit.spl -module MIPS_control_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MIPS_control_unit.spl {C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/MIPS_control_unit.sym} 
