@@ -1,0 +1,180 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : intReg16.vf
+// /___/   /\     Timestamp : 01/24/2017 09:08:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/merreltc/Downloads/intReg16/remote_sources/_/debounce/ipcore_dir -intstyle ise -family spartan3e -verilog C:/Users/merreltc/Downloads/intReg16/work/intReg16.vf -w C:/Users/merreltc/Downloads/intReg16/intReg16.sch
+//Design Name: intReg16
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module intReg16(CLK, 
+                dataIn, 
+                intLvl0, 
+                intLvl1, 
+                int0, 
+                int1, 
+                int2, 
+                int3, 
+                RESET, 
+                Write, 
+                dataOut, 
+                int);
+
+    input CLK;
+    input [15:0] dataIn;
+    input intLvl0;
+    input intLvl1;
+    input int0;
+    input int1;
+    input int2;
+    input int3;
+    input RESET;
+    input Write;
+   output [15:0] dataOut;
+   output int;
+   
+   wire G;
+   wire XLXN_170;
+   wire XLXN_179;
+   wire XLXN_181;
+   wire XLXN_182;
+   wire XLXN_184;
+   wire XLXN_204;
+   wire [15:0] dataOut_DUMMY;
+   
+   assign dataOut[15:0] = dataOut_DUMMY[15:0];
+   GND  XLXI_38 (.G(G));
+   AND2  XLXI_40 (.I0(dataOut_DUMMY[4]), 
+                 .I1(dataOut_DUMMY[0]), 
+                 .O(XLXN_170));
+   AND2  XLXI_41 (.I0(dataOut_DUMMY[5]), 
+                 .I1(dataOut_DUMMY[1]), 
+                 .O(XLXN_181));
+   AND2  XLXI_42 (.I0(dataOut_DUMMY[6]), 
+                 .I1(dataOut_DUMMY[2]), 
+                 .O(XLXN_182));
+   AND2  XLXI_43 (.I0(dataOut_DUMMY[7]), 
+                 .I1(dataOut_DUMMY[3]), 
+                 .O(XLXN_179));
+   OR4  XLXI_44 (.I0(XLXN_179), 
+                .I1(XLXN_182), 
+                .I2(XLXN_181), 
+                .I3(XLXN_170), 
+                .O(XLXN_184));
+   FDRSE #( .INIT(1'b0) ) XLXI_46 (.C(CLK), 
+                  .CE(G), 
+                  .D(dataIn[9]), 
+                  .R(XLXN_204), 
+                  .S(intLvl1), 
+                  .Q(dataOut_DUMMY[9]));
+   FDRSE #( .INIT(1'b0) ) XLXI_47 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[0]), 
+                  .R(RESET), 
+                  .S(int0), 
+                  .Q(dataOut_DUMMY[0]));
+   FDRSE #( .INIT(1'b0) ) XLXI_48 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[1]), 
+                  .R(RESET), 
+                  .S(int1), 
+                  .Q(dataOut_DUMMY[1]));
+   FDRSE #( .INIT(1'b0) ) XLXI_49 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[2]), 
+                  .R(RESET), 
+                  .S(int2), 
+                  .Q(dataOut_DUMMY[2]));
+   FDRSE #( .INIT(1'b0) ) XLXI_50 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[3]), 
+                  .R(RESET), 
+                  .S(int3), 
+                  .Q(dataOut_DUMMY[3]));
+   FDRSE #( .INIT(1'b0) ) XLXI_51 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[4]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[4]));
+   FDRSE #( .INIT(1'b0) ) XLXI_52 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[5]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[5]));
+   FDRSE #( .INIT(1'b0) ) XLXI_53 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[6]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[6]));
+   FDRSE #( .INIT(1'b0) ) XLXI_54 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[7]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[7]));
+   FDRSE #( .INIT(1'b0) ) XLXI_55 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[8]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[8]));
+   FDRSE #( .INIT(1'b0) ) XLXI_56 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[10]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[10]));
+   FDRSE #( .INIT(1'b0) ) XLXI_57 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[11]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[11]));
+   FDRSE #( .INIT(1'b0) ) XLXI_58 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[12]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[12]));
+   FDRSE #( .INIT(1'b0) ) XLXI_59 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[13]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[13]));
+   FDRSE #( .INIT(1'b0) ) XLXI_60 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[14]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[14]));
+   FDRSE #( .INIT(1'b0) ) XLXI_61 (.C(CLK), 
+                  .CE(Write), 
+                  .D(dataIn[15]), 
+                  .R(RESET), 
+                  .S(G), 
+                  .Q(dataOut_DUMMY[15]));
+   OR2  XLXI_62 (.I0(RESET), 
+                .I1(intLvl0), 
+                .O(XLXN_204));
+   AND3  XLXI_63 (.I0(XLXN_184), 
+                 .I1(dataOut_DUMMY[8]), 
+                 .I2(dataOut_DUMMY[9]), 
+                 .O(int));
+endmodule

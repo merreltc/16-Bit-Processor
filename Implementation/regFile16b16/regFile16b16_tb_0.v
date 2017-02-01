@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module regFile16b8_tb_0();
+module regFile16b16_tb_0();
 
    // Inputs
    reg        CLK;
@@ -15,6 +15,7 @@ module regFile16b8_tb_0();
    // Output
    wire [15:0] ReadDataA;
    wire [15:0] ReadDataB;
+	wire [15:0] ReadDataCR;
 
    // Bidirs
 
@@ -27,7 +28,8 @@ module regFile16b8_tb_0();
                     .ReadAddrA(ReadAddrA), 
                     .ReadDataA(ReadDataA), 
                     .ReadDataB(ReadDataB), 
-                    .ReadAddrB(ReadAddrB)
+                    .ReadAddrB(ReadAddrB),
+						  .ReadDataCR(ReadDataCR)
                     );
 
    parameter   PERIOD = 20;
@@ -55,7 +57,7 @@ module regFile16b8_tb_0();
 
       #199;
 
-      DataIn = 16'hFFFF;
+      DataIn = 16'h0000;
       Write = 1;
       WriteAddr = 0;
       ReadAddrA = 0;
