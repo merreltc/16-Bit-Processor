@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\smithlb\Documents\CSSE232\New folder\intReg16\work\intReg16_test.ncd
-OUTFILE=C:\Users\smithlb\Documents\CSSE232\New folder\intReg16\work\intReg16_test.bit
-FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\smithlb\Documents\CSSE232\New folder\intReg16\work
-LICENSE=ISE
-USER_INFO=174114502_1777496879_210571720_868

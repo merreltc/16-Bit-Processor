@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/SignExtend8/SignExtend8Test_isim_beh.exe" -prj "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/SignExtend8/SignExtend8Test_beh.prj" "work.SignExtend8Test" "work.glbl" 

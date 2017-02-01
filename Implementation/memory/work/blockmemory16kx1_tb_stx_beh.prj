@@ -1,3 +1,0 @@
-verilog isim_temp "../ipcore_dir/blockmemory16kx1.v"
-verilog isim_temp "../blockmemory16kx1_tb.v"
-verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

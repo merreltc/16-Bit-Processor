@@ -1,5 +1,0 @@
-verilog work "../ipcore_dir/blockmemory16kx1.v"
-verilog work "../BlockMemoryControl.v"
-verilog work "memory.vf"
-verilog work "../memory_tb.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
