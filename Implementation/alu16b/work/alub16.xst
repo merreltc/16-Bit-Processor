@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/alu16b/work/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/alu16b/work/xst"
+elaborate
+-ifn alub16.prj
+-ifmt mixed
