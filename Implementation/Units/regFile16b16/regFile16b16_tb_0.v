@@ -8,6 +8,7 @@ module regFile16b16_tb_0();
    reg        CLK;
    reg [15:0] DataIn;
    reg        Write;
+	reg        CRWrite;
    reg [3:0]  WriteAddr;
    reg [3:0]  ReadAddrA;
    reg [3:0]  ReadAddrB;
@@ -24,6 +25,7 @@ module regFile16b16_tb_0();
                     .CLK(CLK), 
                     .DataIn(DataIn), 
                     .Write(Write), 
+						  .CRWrite(CRWrite), 
                     .WriteAddr(WriteAddr), 
                     .ReadAddrA(ReadAddrA), 
                     .ReadDataA(ReadDataA), 
@@ -51,6 +53,7 @@ module regFile16b16_tb_0();
    initial begin
       DataIn = 16'h0000;
       Write = 0;
+		CRWrite = 0;
       WriteAddr = 0;
       ReadAddrA = 0;
       ReadAddrB = 0;
@@ -131,6 +134,16 @@ module regFile16b16_tb_0();
 		
 		DataIn = 16'h0008;
       Write = 1;
+      WriteAddr = 8;
+      ReadAddrA = 8;
+      #PERIOD;
+      Write = 0;
+      ReadAddrB = 9;
+      #PERIOD;
+		
+		DataIn = 16'h0008;
+      Write = 1;
+		CRWrite = 1;
       WriteAddr = 8;
       ReadAddrA = 8;
       #PERIOD;

@@ -20,7 +20,6 @@
         <signal name="ReadDataA(15:0)" />
         <signal name="Q(15:0)" />
         <signal name="R15" />
-        <signal name="Write" />
         <signal name="ReadAddrA(3:0)" />
         <signal name="J(15:0)" />
         <signal name="K(15:0)" />
@@ -47,15 +46,18 @@
         <signal name="R1" />
         <signal name="R0" />
         <signal name="ReadDataCR(15:0)" />
+        <signal name="CRWrite" />
+        <signal name="Write" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="DataIn(15:0)" />
         <port polarity="Input" name="WriteAddr(3:0)" />
         <port polarity="Output" name="ReadDataA(15:0)" />
-        <port polarity="Input" name="Write" />
         <port polarity="Input" name="ReadAddrA(3:0)" />
         <port polarity="Input" name="ReadAddrB(3:0)" />
         <port polarity="Output" name="ReadDataB(15:0)" />
         <port polarity="Output" name="ReadDataCR(15:0)" />
+        <port polarity="Input" name="CRWrite" />
+        <port polarity="Input" name="Write" />
         <blockdef name="gnd">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-96" x1="64" />
@@ -121,10 +123,11 @@
             <line x2="384" y1="-1056" y2="-1056" x1="320" />
         </blockdef>
         <blockdef name="decode5b16">
-            <timestamp>2017-2-1T15:19:37</timestamp>
+            <timestamp>2017-2-5T0:22:36</timestamp>
             <rect width="256" x="64" y="-1024" height="1024" />
             <rect width="64" x="0" y="-1004" height="24" />
             <line x2="0" y1="-992" y2="-992" x1="64" />
+            <line x2="0" y1="-512" y2="-512" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-992" y2="-992" x1="320" />
             <line x2="384" y1="-928" y2="-928" x1="320" />
@@ -298,9 +301,10 @@
             <blockpin signalname="Q(15:0)" name="Q(15:0)" />
             <blockpin signalname="ReadDataB(15:0)" name="O(15:0)" />
         </block>
-        <block symbolname="decode5b16" name="XLXI_91">
+        <block symbolname="decode5b16" name="XLXI_92">
             <blockpin signalname="WriteAddr(3:0)" name="A(3:0)" />
             <blockpin signalname="Write" name="enable" />
+            <blockpin signalname="CRWrite" name="crEnable" />
             <blockpin signalname="R0" name="O0" />
             <blockpin signalname="R1" name="O1" />
             <blockpin signalname="R2" name="O2" />
@@ -618,11 +622,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="1568" type="branch" />
             <wire x2="1040" y1="1568" y2="1568" x1="960" />
         </branch>
-        <branch name="Write">
-            <wire x2="560" y1="1568" y2="1568" x1="464" />
-            <wire x2="576" y1="1568" y2="1568" x1="560" />
-        </branch>
-        <iomarker fontsize="28" x="464" y="1568" name="Write" orien="R180" />
+        <iomarker fontsize="28" x="464" y="1568" name="CRWrite" orien="R180" />
         <branch name="ReadAddrA(3:0)">
             <wire x2="4352" y1="1136" y2="1136" x1="4096" />
         </branch>
@@ -866,8 +866,16 @@
         </instance>
         <instance x="4368" y="2592" name="XLXI_89" orien="R0">
         </instance>
-        <instance x="576" y="1600" name="XLXI_91" orien="R0">
-        </instance>
         <iomarker fontsize="28" x="3008" y="720" name="ReadDataCR(15:0)" orien="R0" />
+        <branch name="CRWrite">
+            <wire x2="560" y1="1568" y2="1568" x1="464" />
+            <wire x2="576" y1="1568" y2="1568" x1="560" />
+        </branch>
+        <branch name="Write">
+            <wire x2="576" y1="1088" y2="1088" x1="496" />
+        </branch>
+        <iomarker fontsize="28" x="496" y="1088" name="Write" orien="R180" />
+        <instance x="576" y="1600" name="XLXI_92" orien="R0">
+        </instance>
     </sheet>
 </drawing>

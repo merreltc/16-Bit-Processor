@@ -8,5 +8,8 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/regFile16b16/regFile16b16_tb_0.v&quot; into library work</arg>
+</msg>
+
 </messages>
 

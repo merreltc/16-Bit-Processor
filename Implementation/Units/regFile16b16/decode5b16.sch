@@ -32,6 +32,8 @@
         <signal name="O13" />
         <signal name="O14" />
         <signal name="O15" />
+        <signal name="crEnable" />
+        <signal name="XLXN_2" />
         <port polarity="Input" name="A(3:0)" />
         <port polarity="Input" name="enable" />
         <port polarity="Output" name="O0" />
@@ -50,6 +52,7 @@
         <port polarity="Output" name="O13" />
         <port polarity="Output" name="O14" />
         <port polarity="Output" name="O15" />
+        <port polarity="Input" name="crEnable" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -71,6 +74,16 @@
             <line x2="64" y1="-192" y2="-192" x1="0" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
             <line x2="64" y1="-64" y2="-64" x1="0" />
+        </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
         <block symbolname="inv" name="XLXI_1">
             <blockpin signalname="A(0)" name="I" />
@@ -153,7 +166,7 @@
             <blockpin signalname="O7" name="O" />
         </block>
         <block symbolname="and5" name="XLXI_78">
-            <blockpin signalname="enable" name="I0" />
+            <blockpin signalname="XLXN_2" name="I0" />
             <blockpin signalname="A(3)" name="I1" />
             <blockpin signalname="nA2" name="I2" />
             <blockpin signalname="nA1" name="I3" />
@@ -215,6 +228,11 @@
             <blockpin signalname="A(1)" name="I3" />
             <blockpin signalname="A(0)" name="I4" />
             <blockpin signalname="O15" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_87">
+            <blockpin signalname="crEnable" name="I0" />
+            <blockpin signalname="enable" name="I1" />
+            <blockpin signalname="XLXN_2" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -366,11 +384,6 @@
         <branch name="A(3)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="2112" type="branch" />
             <wire x2="1760" y1="2112" y2="2112" x1="1728" />
-        </branch>
-        <branch name="enable">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="2240" type="branch" />
-            <wire x2="1760" y1="2240" y2="2240" x1="1728" />
-            <wire x2="1760" y1="2176" y2="2240" x1="1760" />
         </branch>
         <branch name="A(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1056" y="1392" type="branch" />
@@ -706,6 +719,22 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1056" y="1216" type="branch" />
             <wire x2="1088" y1="1216" y2="1216" x1="1056" />
             <wire x2="1088" y1="1152" y2="1216" x1="1088" />
+        </branch>
+        <branch name="crEnable">
+            <wire x2="640" y1="496" y2="496" x1="416" />
+        </branch>
+        <iomarker fontsize="28" x="416" y="496" name="crEnable" orien="R180" />
+        <branch name="XLXN_2">
+            <wire x2="1760" y1="2176" y2="2176" x1="1728" />
+        </branch>
+        <instance x="1472" y="2272" name="XLXI_87" orien="R0" />
+        <branch name="enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="2144" type="branch" />
+            <wire x2="1472" y1="2144" y2="2144" x1="1440" />
+        </branch>
+        <branch name="crEnable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="2208" type="branch" />
+            <wire x2="1472" y1="2208" y2="2208" x1="1440" />
         </branch>
     </sheet>
 </drawing>
