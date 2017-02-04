@@ -9,6 +9,8 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/mux16b16 C:|Users|merreltc|Documents|CSSE232|regFile16b16|mux16b16.sch</ClosedNode>
          <ClosedNode>/mux16b16 C:|Users|merreltc|Downloads|Processor Parts|regFile16b16|mux16b16.sch</ClosedNode>
+         <ClosedNode>/regFile16b16 C:|Users|merreltc|Documents|CSSE232|1A-alfayeka-davissm-merreltc-smithlb|Implementation|Units|regFile16b16|regFile16b16.sch/XLXI_88 - mux16b16</ClosedNode>
+         <ClosedNode>/regFile16b16 C:|Users|merreltc|Documents|CSSE232|1A-alfayeka-davissm-merreltc-smithlb|Implementation|Units|regFile16b16|regFile16b16.sch/XLXI_89 - mux16b16</ClosedNode>
          <ClosedNode>/regFile16b16 C:|Users|merreltc|Documents|CSSE232|regFile16b16|regFile16b16.sch/XLXI_86 - mux16b16</ClosedNode>
          <ClosedNode>/regFile16b16 C:|Users|merreltc|Documents|CSSE232|regFile16b16|regFile16b16.sch/XLXI_87 - mux16b16</ClosedNode>
          <ClosedNode>/regFile16b16 C:|Users|merreltc|Documents|CSSE232|regFile16b16|regFile16b16.sch/XLXI_88 - mux16b16</ClosedNode>
@@ -17,13 +19,13 @@
          <ClosedNode>/regFile16b16 C:|Users|merreltc|Downloads|Processor Parts|regFile16b16|regFile16b16.sch/XLXI_87 - mux16b16</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>regFile16b16 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/regFile16b16/regFile16b16.sch)</SelectedItem>
+         <SelectedItem>XLXI_91 - decode5b16 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/regFile16b16/decode5b16.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000165000000020000000000000000000000000200000064ffffffff000000810000000300000002000001650000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>regFile16b16 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/regFile16b16/regFile16b16.sch)</CurrentItem>
+      <CurrentItem>XLXI_91 - decode5b16 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/regFile16b16/decode5b16.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -76,13 +78,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Design Rules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Design Rules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -93,13 +95,13 @@
          <ClosedNode>/regFile16b8_tb_0 C:|Users|merreltc|Downloads|Processor Parts|regFile16b16|regFile16b16_tb_0.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>regFile16b16_tb_0 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/regFile16b16/regFile16b16_tb_0.v)</SelectedItem>
+         <SelectedItem>regFile16b16_tb_0 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/regFile16b16/regFile16b16_tb_0.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000179000000020000000000000000000000000200000064ffffffff000000810000000300000002000001790000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>regFile16b16_tb_0 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/regFile16b16/regFile16b16_tb_0.v)</CurrentItem>
+      <CurrentItem>regFile16b16_tb_0 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/regFile16b16/regFile16b16_tb_0.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -112,7 +114,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -121,13 +123,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001390000011b01000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
@@ -137,12 +139,12 @@
          <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
