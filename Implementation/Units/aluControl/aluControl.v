@@ -54,16 +54,16 @@ always@(*) begin
 				end
 			if(func==3) // or
 				begin
-					assign op = 4;
+					assign op = 1;
 				end
 			if(func==4) // nor
 				begin
 					assign op = 5;
 				end
 			if(func==5) begin // nand
-					assign op = 1;
+					assign op = 6;
 				end
-			if(func==6) // xor - currently set to or
+			if(func==6) // xor
 				begin
 					assign op = 4;
 				end
