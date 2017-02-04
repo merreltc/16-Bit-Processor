@@ -47,47 +47,57 @@ module aluControl_tb;
       func = 0;
       ALUop = 0;
 		#199;
-
+		
+		// Add
 		ALUop = 0;
 		func = 1;
       #PERIOD;
-
+		// Sub
 		ALUop = 1;
 		func = 0;
       #PERIOD;
  
+		// Or
 		ALUop = 3;
 		func = 5; 
       #PERIOD;
 
+		// Add
 		ALUop = 2;
 		func = 0;      
       #PERIOD;
 
+		// Sub
 		ALUop = 2;
 		func = 1;
       #PERIOD;
 
+		// And
 		ALUop = 2;
 		func = 2;      
       #PERIOD;
 
+		// Or
 		ALUop = 2;
 		func = 3;      
       #PERIOD;
 
+		// Nor
 		ALUop = 2;
 		func = 4;      
       #PERIOD;
 
+		// Nand
 		ALUop = 2;
 		func = 5;		
       #PERIOD;
 
+		// Xor
 		ALUop = 2;
 		func = 6;
       #PERIOD;
 
+		// Set less than
 		ALUop = 2;
 		func = 7;		
       #PERIOD;
