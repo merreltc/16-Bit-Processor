@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym reg16 {C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/reg16/reg16.sch} {C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/reg16.sym} 

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../IRanRegFile.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../reg16.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../regFile16b16.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="IRandRegFile.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="decode5b16.vf"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="m16_1e.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux16b16.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="reg16.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="regFile16b16.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1486325931" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1486325931">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326658" xil_pn:in_ck="7531367078492965231" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1486326658">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../IRandRegFile_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326004" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5484936581175561209" xil_pn:start_ts="1486326004">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326013" xil_pn:in_ck="2271991620756746204" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6001366819276085829" xil_pn:start_ts="1486326004">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="IRandRegFile.vf"/>
+      <outfile xil_pn:name="decode5b16.vf"/>
+      <outfile xil_pn:name="m16_1e.vf"/>
+      <outfile xil_pn:name="mux16b16.vf"/>
+      <outfile xil_pn:name="reg16.vf"/>
+      <outfile xil_pn:name="regFile16b16.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326013" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4652608976611000213" xil_pn:start_ts="1486326013">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326013" xil_pn:in_ck="-3553548140024314357" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1486326013">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../IRandRegFile_test.v"/>
+      <outfile xil_pn:name="IRandRegFile.vf"/>
+      <outfile xil_pn:name="decode5b16.vf"/>
+      <outfile xil_pn:name="m16_1e.vf"/>
+      <outfile xil_pn:name="mux16b16.vf"/>
+      <outfile xil_pn:name="reg16.vf"/>
+      <outfile xil_pn:name="regFile16b16.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326016" xil_pn:in_ck="-3553548140024314357" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6930796239556291194" xil_pn:start_ts="1486326013">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1486326016" xil_pn:in_ck="3017684189041890346" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9196285072436712323" xil_pn:start_ts="1486326016">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="IRandRegFile_IRandRegFile_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

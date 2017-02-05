@@ -1,0 +1,28 @@
+Command line:
+   IRandRegFile_IRandRegFile_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53865
+
+Sun Feb 05 15:42:27 2017
+
+
+ Elaboration Time: 0.187201 sec
+
+ Current Memory Usage: 1513.59 Meg
+
+ Total Signals          : 8397
+ Total Nets             : 1982
+ Total Signal Drivers   : 2198
+ Total Blocks           : 1698
+ Total Primitive Blocks : 1354
+ Total Processes        : 3225
+ Total Traceable Variables  : 762
+ Total Scalar Nets and Variables : 2870
+
+ Total Simulation Time: 0.218401 sec
+
+ Current Memory Usage: 1670.84 Meg
+
+Sun Feb 05 15:42:59 2017
+

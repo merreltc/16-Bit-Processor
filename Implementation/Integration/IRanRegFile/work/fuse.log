@@ -1,0 +1,46 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/IRandRegFile_IRandRegFile_sch_tb_isim_beh.exe" -prj "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/IRandRegFile_IRandRegFile_sch_tb_beh.prj" "work.IRandRegFile_IRandRegFile_sch_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/m16_1e.vf" into library work
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/mux16b16.vf" into library work
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/decode5b16.vf" into library work
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/regFile16b16.vf" into library work
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/reg16.vf" into library work
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/IRandRegFile.vf" into library work
+Analyzing Verilog file "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/../IRandRegFile_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_reg16
+Compiling module GND
+Compiling module reg16
+Compiling module FDRE
+Compiling module FD16RE_MXILINX_regFile16b16
+Compiling module VCC
+Compiling module AND2B1
+Compiling module OR2
+Compiling module AND2
+Compiling module M2_1_MXILINX_regFile16b16
+Compiling module MUXF5_L
+Compiling module MUXF6
+Compiling module AND3
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_regFile16b16
+Compiling module m16_1e_MUSER_regFile16b16
+Compiling module mux16b16_MUSER_regFile16b16
+Compiling module INV
+Compiling module AND5
+Compiling module decode5b16_MUSER_regFile16b16
+Compiling module regFile16b16
+Compiling module IRandRegFile
+Compiling module IRandRegFile_IRandRegFile_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 25 Verilog Units
+Built simulation executable C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/IRandRegFile_IRandRegFile_sch_tb_isim_beh.exe
+Fuse Memory Usage: 30460 KB
+Fuse CPU Usage: 561 ms
