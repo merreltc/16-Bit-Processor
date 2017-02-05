@@ -1,0 +1,213 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : m16_1e.vf
+// /___/   /\     Timestamp : 02/05/2017 15:20:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/m16_1e.vf" -w "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/regFile16b16/m16_1e.sch"
+//Design Name: m16_1e
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_m16_1e(D0, 
+                           D1, 
+                           S0, 
+                           O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_m16_1e(D0, 
+                            D1, 
+                            E, 
+                            S0, 
+                            O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module m16_1e(D0, 
+              D1, 
+              D2, 
+              D3, 
+              D4, 
+              D5, 
+              D6, 
+              D7, 
+              D8, 
+              D9, 
+              D10, 
+              D11, 
+              D12, 
+              D13, 
+              D14, 
+              D15, 
+              E, 
+              S0, 
+              S1, 
+              S2, 
+              S3, 
+              O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input D4;
+    input D5;
+    input D6;
+    input D7;
+    input D8;
+    input D9;
+    input D10;
+    input D11;
+    input D12;
+    input D13;
+    input D14;
+    input D15;
+    input E;
+    input S0;
+    input S1;
+    input S2;
+    input S3;
+   output O;
+   
+   wire XLXN_145;
+   wire XLXN_146;
+   wire XLXN_147;
+   wire XLXN_148;
+   wire XLXN_164;
+   wire XLXN_165;
+   wire XLXN_167;
+   wire XLXN_168;
+   wire XLXN_169;
+   wire XLXN_170;
+   wire XLXN_171;
+   wire XLXN_174;
+   wire XLXN_175;
+   
+   (* HU_SET = "XLXI_56_26" *) 
+   M2_1E_MXILINX_m16_1e  XLXI_56 (.D0(XLXN_165), 
+                                 .D1(XLXN_164), 
+                                 .E(E), 
+                                 .S0(S3), 
+                                 .O(O));
+   (* HU_SET = "XLXI_101_27" *) 
+   M2_1_MXILINX_m16_1e  XLXI_101 (.D0(D0), 
+                                 .D1(D1), 
+                                 .S0(S0), 
+                                 .O(XLXN_167));
+   (* HU_SET = "XLXI_105_28" *) 
+   M2_1_MXILINX_m16_1e  XLXI_105 (.D0(D2), 
+                                 .D1(D3), 
+                                 .S0(S0), 
+                                 .O(XLXN_168));
+   (* HU_SET = "XLXI_106_29" *) 
+   M2_1_MXILINX_m16_1e  XLXI_106 (.D0(D4), 
+                                 .D1(D5), 
+                                 .S0(S0), 
+                                 .O(XLXN_169));
+   (* HU_SET = "XLXI_108_30" *) 
+   M2_1_MXILINX_m16_1e  XLXI_108 (.D0(D6), 
+                                 .D1(D7), 
+                                 .S0(S0), 
+                                 .O(XLXN_170));
+   (* HU_SET = "XLXI_109_31" *) 
+   M2_1_MXILINX_m16_1e  XLXI_109 (.D0(D8), 
+                                 .D1(D9), 
+                                 .S0(S0), 
+                                 .O(XLXN_171));
+   (* HU_SET = "XLXI_110_32" *) 
+   M2_1_MXILINX_m16_1e  XLXI_110 (.D0(D10), 
+                                 .D1(D11), 
+                                 .S0(S0), 
+                                 .O(XLXN_174));
+   (* HU_SET = "XLXI_111_33" *) 
+   M2_1_MXILINX_m16_1e  XLXI_111 (.D0(D12), 
+                                 .D1(D13), 
+                                 .S0(S0), 
+                                 .O(XLXN_175));
+   (* HU_SET = "XLXI_112_34" *) 
+   M2_1_MXILINX_m16_1e  XLXI_112 (.D0(D14), 
+                                 .D1(D15), 
+                                 .S0(S0), 
+                                 .O());
+   (* HU_SET = "XLXI_113_35" *) 
+   M2_1_MXILINX_m16_1e  XLXI_113 (.D0(XLXN_167), 
+                                 .D1(XLXN_168), 
+                                 .S0(S1), 
+                                 .O(XLXN_146));
+   (* HU_SET = "XLXI_114_36" *) 
+   M2_1_MXILINX_m16_1e  XLXI_114 (.D0(XLXN_169), 
+                                 .D1(XLXN_170), 
+                                 .S0(S1), 
+                                 .O(XLXN_145));
+   (* HU_SET = "XLXI_115_37" *) 
+   M2_1_MXILINX_m16_1e  XLXI_115 (.D0(XLXN_171), 
+                                 .D1(XLXN_174), 
+                                 .S0(S1), 
+                                 .O(XLXN_147));
+   (* HU_SET = "XLXI_116_38" *) 
+   M2_1_MXILINX_m16_1e  XLXI_116 (.D0(XLXN_175), 
+                                 .D1(), 
+                                 .S0(S1), 
+                                 .O(XLXN_148));
+   (* HU_SET = "XLXI_117_39" *) 
+   M2_1_MXILINX_m16_1e  XLXI_117 (.D0(XLXN_146), 
+                                 .D1(XLXN_145), 
+                                 .S0(S2), 
+                                 .O(XLXN_165));
+   (* HU_SET = "XLXI_118_40" *) 
+   M2_1_MXILINX_m16_1e  XLXI_118 (.D0(XLXN_147), 
+                                 .D1(XLXN_148), 
+                                 .S0(S2), 
+                                 .O(XLXN_164));
+endmodule

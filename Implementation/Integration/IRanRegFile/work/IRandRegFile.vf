@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : IRandRegFile.vf
+// /___/   /\     Timestamp : 02/05/2017 15:20:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work/IRandRegFile.vf" -w "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/IRandRegFile.sch"
+//Design Name: IRandRegFile
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module IRandRegFile(clk, 
+                    CRwrite, 
+                    inpt, 
+                    instr, 
+                    writeIR, 
+                    writeRegFile, 
+                    WriteToReg, 
+                    DataA, 
+                    DataB, 
+                    DataCR);
+
+    input clk;
+    input CRwrite;
+    input [15:0] inpt;
+    input [15:0] instr;
+    input writeIR;
+    input writeRegFile;
+    input [3:0] WriteToReg;
+   output [15:0] DataA;
+   output [15:0] DataB;
+   output [15:0] DataCR;
+   
+   wire [15:0] OutIR;
+   
+   reg16  XLXI_2 (.CLK(clk), 
+                 .I(instr[15:0]), 
+                 .Write(writeIR), 
+                 .O(OutIR[15:0]));
+   regFile16b16  XLXI_3 (.CLK(clk), 
+                        .CRWrite(CRwrite), 
+                        .DataIn(inpt[15:0]), 
+                        .ReadAddrA(OutIR[11:8]), 
+                        .ReadAddrB(OutIR[7:4]), 
+                        .Write(writeRegFile), 
+                        .WriteAddr(WriteToReg[3:0]), 
+                        .ReadDataA(DataA[15:0]), 
+                        .ReadDataB(DataB[15:0]), 
+                        .ReadDataCR(DataCR[15:0]));
+endmodule
