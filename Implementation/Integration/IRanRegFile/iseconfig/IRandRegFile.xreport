@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-05T14:53:25</DateModified>
+  <DateModified>2017-02-05T15:55:19</DateModified>
   <ModuleName>IRandRegFile</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/iseconfig/IRandRegFile.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/IRanRegFile/work\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-05T14:31:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
