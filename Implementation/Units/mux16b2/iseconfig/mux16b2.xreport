@@ -1,11 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< .mine
+  <DateModified>2017-02-05T15:15:59</DateModified>
+=======
   <DateModified>2017-02-05T14:48:40</DateModified>
+>>>>>>> .r79
   <ModuleName>mux16b2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+<<<<<<< .mine
+  <SavedFilePath>C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/iseconfig/mux16b2.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2\</ImplementationReportsDirectory>
+=======
   <SavedFilePath>C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/iseconfig/mux16b2.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2\</ImplementationReportsDirectory>
+>>>>>>> .r79
   <DateInitialized>2017-01-31T23:20:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

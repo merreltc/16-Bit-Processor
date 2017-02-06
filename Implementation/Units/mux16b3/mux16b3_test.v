@@ -28,17 +28,22 @@ module mux16b3_test;
 	reg [15:0] in0;
 	reg [15:0] in1;
 	reg [15:0] in2;
+	reg [15:0] in3;
+	reg [15:0] in4;
+	reg [15:0] in5;
+	reg [15:0] in6;
+	reg [15:0] in7;
 	reg [1:0] set;
 
 	// Outputs
-	wire [15:0] out;
+	wire [15:0] r;
 
 	// Instantiate the Unit Under Test (UUT)
 	mux16b3 uut (
 		.in0(in0), 
 		.in1(in1), 
 		.in2(in2), 
-		.out(out), 
+		.r(r), 
 		.set(set)
 	);
 
@@ -56,20 +61,29 @@ module mux16b3_test;
 		in0 = 1;
 		in1 = 3;
 		in2 = 7;
+		in3 = 4;
+		in4 = 9;
+		in5 = 23;
+		in6 = 10;
+		in7 = 54;
 		// Testing different set signals
 		
-		// set = 0
-		#20
-		set = 1;
-		#20
-		set = 2;
-		#20
-		// Should do nothing
-		set = 3;
-		#20
-		// End test
-		set = 0;
+		// Testing all Mux channels
+		set = 0;//Should show 1
 		#20;
+		set = 1;//Should show 3
+		#20;
+		set = 2;//Should show 7
+		#20;
+		set = 3;//Should show 4
+		#20;
+		set = 4;//Should show 9
+		#20;
+		set = 5;//Should show 23
+		#20;
+		set = 6;//Should show 10
+		#20;
+		set = 7;//Should show 54
 
 	end
       

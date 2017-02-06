@@ -22,8 +22,13 @@ module mux16b3(
     input [15:0] in0,
     input [15:0] in1,
     input [15:0] in2,
-    output reg [15:0] r,
-    input [1:0] set
+	 input [15:0] in3,
+	 input [15:0] in4,
+	 input [15:0] in5,
+	 input [15:0] in6,
+	 input [15:0] in7,
+	 output reg [15:0] r,
+    input [2:0] set
     );
 	 
 	always @ (*)
@@ -37,8 +42,16 @@ module mux16b3(
 					assign r = in1;
 				2:
 					assign r = in2;
-				default:
-					$display("ERROR! SET VALUE OUT OF RANGE!");
+				3:
+					assign r = in3;
+				4:
+					assign r = in4;
+				5:
+					assign r = in5;
+				6:
+					assign r = in6;
+				7:
+					assign r = in7;
 				
 			endcase
 			

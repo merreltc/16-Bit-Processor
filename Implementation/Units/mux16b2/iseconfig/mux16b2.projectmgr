@@ -9,13 +9,21 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< .mine
+         <SelectedItem>mux16b2 (C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v)</SelectedItem>
+=======
          <SelectedItem>mux16b2 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v)</SelectedItem>
+>>>>>>> .r79
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e6000000020000000000000000000000000200000064ffffffff000000810000000300000002000000e60000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+<<<<<<< .mine
+      <CurrentItem>mux16b2 (C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v)</CurrentItem>
+=======
       <CurrentItem>mux16b2 (C:/Users/merreltc/Documents/CSSE232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v)</CurrentItem>
+>>>>>>> .r79
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -66,7 +74,11 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+<<<<<<< .mine
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+=======
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+>>>>>>> .r79
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -76,13 +88,21 @@
          <ClosedNode>/mux16b2_test C:|Users|alfayeka|Desktop|HW and shit|CSSE|CSSE232|Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|mux16b2|mux16b2_test.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< .mine
+         <SelectedItem>mux16b2_test (C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2_test.v)</SelectedItem>
+=======
          <SelectedItem>Unassigned User Library Modules</SelectedItem>
+>>>>>>> .r79
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000112000000020000000000000000000000000200000064ffffffff000000810000000300000002000001120000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+<<<<<<< .mine
+      <CurrentItem>mux16b2_test (C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2_test.v)</CurrentItem>
+=======
       <CurrentItem>Unassigned User Library Modules</CurrentItem>
+>>>>>>> .r79
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -94,7 +114,11 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+<<<<<<< .mine
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+=======
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+>>>>>>> .r79
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -107,7 +131,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>

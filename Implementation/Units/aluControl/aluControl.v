@@ -75,7 +75,7 @@ always@(*) begin
 		
 	if(ALUop == 3) // or
 		begin
-			assign op = 4;
+			assign op = 1;
 		end
 
 
