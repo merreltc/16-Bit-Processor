@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Step2.vf
+// /___/   /\     Timestamp : 02/07/2017 12:28:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep2/Step2.vf" -w "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep2/Step2.sch"
+//Design Name: Step2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Step2(ADDR_0, 
+             ADDR_1, 
+             MEM_ADDR, 
+             MUX_IN, 
+             RST, 
+             WEA, 
+             MEM_OUT);
+
+    input [15:0] ADDR_0;
+    input [15:0] ADDR_1;
+    input [9:0] MEM_ADDR;
+    input MUX_IN;
+    input RST;
+    input [0:0] WEA;
+   output [15:0] MEM_OUT;
+   
+   wire G;
+   wire V;
+   wire [15:0] XLXN_24;
+   wire XLXN_28;
+   
+   memory  XLXI_1 (.addr(MEM_ADDR[9:0]), 
+                  .clk(XLXN_28), 
+                  .din(XLXN_24[15:0]), 
+                  .reset(RST), 
+                  .wea(WEA[0]), 
+                  .ALUSrc(G), 
+                  .Branch(G), 
+                  .douta(MEM_OUT[15:0]), 
+                  .MemRead(G), 
+                  .MemtoReg(G), 
+                  .MemWrite(V), 
+                  .RegDst(G), 
+                  .RegWrite(G));
+   mux16b2  XLXI_2 (.I0(ADDR_0[15:0]), 
+                   .I1(ADDR_1[15:0]), 
+                   .S(MUX_IN), 
+                   .R(XLXN_24[15:0]));
+   VCC  XLXI_3 (.P(V));
+   GND  XLXI_4 (.G(G));
+   Clock  XLXI_7 ();
+endmodule

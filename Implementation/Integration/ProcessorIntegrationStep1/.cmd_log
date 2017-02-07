@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/clock_always.v} -lang verilog -prj ProcessorIntegrationStep1 -o .spl -module {} -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/clock_always.v} -lang verilog -prj ProcessorIntegrationStep1 -o .spl -module {} -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

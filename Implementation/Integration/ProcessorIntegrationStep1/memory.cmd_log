@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym memory {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/memory.sch} {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/memory.sym} 

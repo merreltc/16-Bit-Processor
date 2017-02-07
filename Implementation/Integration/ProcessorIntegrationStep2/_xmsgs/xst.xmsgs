@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="28" delta="old" ><arg fmt="%s" index="1">&quot;../ProcessorIntegrationStep1/Clock.v&quot; line 22 </arg>&apos;<arg fmt="%s" index="2">clk</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="old" ><arg fmt="%s" index="1">&quot;../ProcessorIntegrationStep1/Clock.v&quot; line 22 </arg>&apos;<arg fmt="%s" index="2">clk</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">../ProcessorIntegrationStep1/Clock.v</arg>&quot; line <arg fmt="%d" index="2">22</arg> <arg fmt="%s" index="3">unexpected token: &apos;end&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v</arg>&quot; line <arg fmt="%d" index="2">21</arg> <arg fmt="%s" index="3">unexpected token: &apos;module&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v</arg>&quot; line <arg fmt="%d" index="2">22</arg> <arg fmt="%s" index="3">unexpected token: &apos;input&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v</arg>&quot; line <arg fmt="%d" index="2">28</arg> <arg fmt="%s" index="3">expecting &apos;end&apos;, found &apos;always&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v</arg>&quot; line <arg fmt="%d" index="2">28</arg> <arg fmt="%s" index="3">expecting &apos;endmodule&apos;, found &apos;@&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v</arg>&quot; line <arg fmt="%d" index="2">28</arg> <arg fmt="%s" index="3">unexpected token: &apos;)&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">29</arg> <arg fmt="%s" index="3">unexpected token: &apos;MEM_OUT&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">45</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">46</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">47</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">48</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">49</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">50</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">51</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">52</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">53</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">54</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">55</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">56</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">58</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">59</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">60</arg> <arg fmt="%s" index="3">unexpected token: &apos;.&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">65</arg> <arg fmt="%s" index="3">expecting &apos;*)&apos;, found &apos;EOF&apos;</arg>
+</msg>
+
+<msg type="error" file="HDLCompilers" num="26" delta="old" >&quot;<arg fmt="%s" index="1">Step2.vf</arg>&quot; line <arg fmt="%d" index="2">65</arg> <arg fmt="%s" index="3">unexpected token: &apos;EOF&apos;</arg>
+</msg>
+
+</messages>
+

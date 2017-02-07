@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/Clock.v} -lang verilog -prj ProcessorIntegrationStep1 -o Clock.spl -module Clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Clock.spl {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/Clock.sym} 
