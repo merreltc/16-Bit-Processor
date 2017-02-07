@@ -91,8 +91,8 @@ module control_unit_tb;
 		CLK = 1;
 		Reset = 1;
 		Opcode = -1;
-		// Wait 100 ns for global reset to finish
-		#100;
+		// Wait 199 ns for global reset to finish
+		#199;
 		
 		// C-Type
 		Opcode = 0;

@@ -1,3 +1,0 @@
-verilog work "../mux16b5.v"
-verilog work "../mux16b5_test.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
