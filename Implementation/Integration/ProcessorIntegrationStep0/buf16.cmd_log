@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym buf16 {C:/Users/smithlb/Documents/CSSE232/New folder/buf16.sch} {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/buf16.sym} 

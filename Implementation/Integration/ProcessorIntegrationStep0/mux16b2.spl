@@ -1,0 +1,10 @@
+[Inputs]
+S
+=I0[15:0]=
+=I1[15:0]=
+[Outputs]
+=R[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel mux16b2
+
