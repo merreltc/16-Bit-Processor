@@ -1,0 +1,52 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU_isim_beh.exe -prj C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU_beh.prj work.PC_plus_ALU work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/add1b.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/alu1b.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/reg16.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/alu16b.vf" into library work
+Analyzing Verilog file "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU.vf" Line 608: Port inv is not connected to this instance
+Completed static elaboration
+Compiling module AND2
+Compiling module OR2
+Compiling module OR3
+Compiling module AND3
+Compiling module OR4
+Compiling module INV
+Compiling module add1b_MUSER_PC_plus_ALU
+Compiling module AND3B1
+Compiling module M2_1E_MXILINX_PC_plus_ALU
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_PC_plus_ALU
+Compiling module VCC
+Compiling module AND2B1
+Compiling module M2_1_MXILINX_PC_plus_ALU
+Compiling module alu1b_MUSER_PC_plus_ALU
+Compiling module GND
+Compiling module XOR2
+Compiling module MUXCY_L
+Compiling module FMAP
+Compiling module NOR4
+Compiling module MUXCY
+Compiling module NOR16_MXILINX_PC_plus_ALU
+Compiling module INV16_MXILINX_PC_plus_ALU
+Compiling module mux16b2
+Compiling module alu16b_MUSER_PC_plus_ALU
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_reg16
+Compiling module reg16
+Compiling module BUF
+Compiling module PC_plus_ALU
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
+Built simulation executable C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU_isim_beh.exe
+Fuse Memory Usage: 29928 KB
+Fuse CPU Usage: 483 ms

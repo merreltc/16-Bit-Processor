@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU_isim_beh.exe" -prj "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/PC_plus_ALU_beh.prj" "work.PC_plus_ALU" "work.glbl" 

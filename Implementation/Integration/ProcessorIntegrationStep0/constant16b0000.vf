@@ -1,0 +1,34 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : constant16b0000.vf
+// /___/   /\     Timestamp : 02/05/2017 14:49:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/constant16b0000.vf" -w "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep0/constant16b0000.sch"
+//Design Name: constant16b0000
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module constant16b0000(O);
+
+   output [15:0] O;
+   
+   wire G;
+   wire V;
+   
+   buf16  XLXI_1 (.I({G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G}), 
+                 .O(O[15:0]));
+   VCC  XLXI_2 (.P(V));
+   GND  XLXI_3 (.G(G));
+endmodule
