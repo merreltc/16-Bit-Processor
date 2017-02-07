@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym alu16b C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/alu16b/alu16b.sch C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/alu16b.sym 
