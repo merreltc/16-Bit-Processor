@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : reg16.vf
-// /___/   /\     Timestamp : 02/06/2017 12:48:48
+// /___/   /\     Timestamp : 02/07/2017 13:21:40
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/reg16.vf -w C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/reg16/reg16.sch
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/Integration_ALU/reg16.vf -w C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/reg16/reg16.sch
 //Design Name: reg16
 //Device: spartan3e
 //Purpose:

@@ -45,57 +45,43 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1486404007" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1486404007">
+    <transform xil_pn:end_ts="1486491718" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1486491718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1486404569" xil_pn:in_ck="-7446259978084189051" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1486404569">
+    <transform xil_pn:end_ts="1486491718" xil_pn:in_ck="-8225986552069218465" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1486491718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../alu16b/alub16.v"/>
-      <outfile xil_pn:name="../aluControl/aluControl.v"/>
+      <outfile xil_pn:name="../../Units/alu16b/alu16b.v"/>
+      <outfile xil_pn:name="../../Units/aluControl/aluControl.v"/>
       <outfile xil_pn:name="Full_ALU_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1486404007" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8343237114258943799" xil_pn:start_ts="1486404007">
+    <transform xil_pn:end_ts="1486491718" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8343237114258943799" xil_pn:start_ts="1486491718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1486404572" xil_pn:in_ck="8412251340727275232" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="81189605133614731" xil_pn:start_ts="1486404569">
+    <transform xil_pn:end_ts="1486491721" xil_pn:in_ck="6061535645169886317" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="81189605133614731" xil_pn:start_ts="1486491718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Full_ALU.vf"/>
       <outfile xil_pn:name="reg16.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1486404010" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-9155288873853421933" xil_pn:start_ts="1486404010">
+    <transform xil_pn:end_ts="1486491721" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-9155288873853421933" xil_pn:start_ts="1486491721">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1486404572" xil_pn:in_ck="-3408488115444357038" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1486404572">
+    <transform xil_pn:end_ts="1486491721" xil_pn:in_ck="17788007565445356" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1486491721">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../alu16b/alub16.v"/>
-      <outfile xil_pn:name="../aluControl/aluControl.v"/>
+      <outfile xil_pn:name="../../Units/alu16b/alu16b.v"/>
+      <outfile xil_pn:name="../../Units/aluControl/aluControl.v"/>
       <outfile xil_pn:name="Full_ALU.vf"/>
       <outfile xil_pn:name="Full_ALU_tb.v"/>
       <outfile xil_pn:name="reg16.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1486404575" xil_pn:in_ck="-3408488115444357038" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="716495741569338650" xil_pn:start_ts="1486404572">
+    <transform xil_pn:end_ts="1486491724" xil_pn:in_ck="17788007565445356" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="716495741569338650" xil_pn:start_ts="1486491721">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Full_ALU_Full_ALU_sch_tb_beh.prj"/>
       <outfile xil_pn:name="Full_ALU_Full_ALU_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -103,12 +89,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1486404576" xil_pn:in_ck="1682739506303836872" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2637476935390573085" xil_pn:start_ts="1486404575">
+    <transform xil_pn:end_ts="1486491725" xil_pn:in_ck="1682739506303836872" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2637476935390573085" xil_pn:start_ts="1486491724">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Full_ALU_Full_ALU_sch_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

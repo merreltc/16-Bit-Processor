@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/../aluControl/aluControl.v" Line 27: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+<msg type="warning" file="HDLCompiler" num="1142" delta="unknown" >"C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration/Integration_ALU/../../Units/aluControl/aluControl.v" Line 27: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
 </msg>
 
 </messages>

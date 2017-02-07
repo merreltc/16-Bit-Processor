@@ -1,4 +1,4 @@
-// Verilog test fixture created from schematic C:\Users\davissm\Desktop\csse232\1A-alfayeka-davissm-merreltc-smithlb\Implementation\Units\Integration_ALU\Full_ALU.sch - Sun Feb 05 16:23:50 2017
+// Verilog test fixture created from schematic C:\Users\davissm\Desktop\csse232\1A-alfayeka-davissm-merreltc-smithlb\Implementation\Integration\Integration_ALU\Full_ALU.sch - Tue Feb 07 13:16:43 2017
 
 `timescale 1ns / 1ps
 
@@ -20,8 +20,6 @@ module Full_ALU_Full_ALU_sch_tb();
    wire overflow;
    wire isZero;
 
-// Bidirs
-
 // Instantiate the UUT
    Full_ALU UUT (
 		.clk(clk), 
@@ -37,14 +35,6 @@ module Full_ALU_Full_ALU_sch_tb();
 		.overflow(overflow), 
 		.isZero(isZero)
    );
-// Initialize Inputs
-	//initial begin
-	//clk = 0;
-	//	forever begin
-	//	#5 clk = !clk;
-	//	end
-	//end
-	
 	// use this if your design contains sequential logic
    parameter   PERIOD = 20;
    parameter   real DUTY_CYCLE = 0.5;
@@ -61,15 +51,8 @@ module Full_ALU_Full_ALU_sch_tb();
           end
      end
    
-   initial begin
-      // Initialize Inputs
 
-      // Wait 100ns for simulator to finish initializing 
-      #100;
-
-      // Enter test values
-   end
-	
+ // Initialize Inputs
    initial begin
 		clk = 1;
 		A = 0;
@@ -255,5 +238,18 @@ module Full_ALU_Full_ALU_sch_tb();
 	$display("Test 15: Pass");
 	#PERIOD;
 	
+	// Test 16: slt fail test
+	A = 16'h8000;
+	B = 16'h7FFF;
+	ALUop = 2;
+	Func = 7;
+	#PERIOD;
+	if(isNegative != 1)
+	$display("Test 16: Fail(It should with our current design, so this is a pass.)");
+	else
+	$display("Test 16: Pass(This means our slt is robust and handles edge cases, sweet!)");
+	#PERIOD;
+	
 end
 endmodule
+

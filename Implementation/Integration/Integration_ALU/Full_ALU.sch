@@ -23,6 +23,21 @@
         <signal name="isZero" />
         <signal name="XLXN_51(15:0)" />
         <signal name="XLXN_52" />
+        <signal name="XLXN_54(15:0)" />
+        <signal name="XLXN_55(15:0)" />
+        <signal name="XLXN_56(3:0)" />
+        <signal name="XLXN_57(15:0)" />
+        <signal name="XLXN_58(15:0)" />
+        <signal name="XLXN_59" />
+        <signal name="XLXN_60" />
+        <signal name="XLXN_61" />
+        <signal name="XLXN_62(15:0)" />
+        <signal name="XLXN_63(3:0)" />
+        <signal name="XLXN_64(15:0)" />
+        <signal name="XLXN_65(15:0)" />
+        <signal name="XLXN_66" />
+        <signal name="XLXN_67" />
+        <signal name="XLXN_68" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="A(15:0)" />
         <port polarity="Input" name="B(15:0)" />
@@ -45,21 +60,6 @@
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
         </blockdef>
-        <blockdef name="alub16">
-            <timestamp>2017-2-5T19:31:53</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
-            <rect width="64" x="0" y="-236" height="24" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <rect width="64" x="0" y="-140" height="24" />
-            <line x2="0" y1="-128" y2="-128" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
         <blockdef name="aluControl">
             <timestamp>2017-2-5T21:23:15</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
@@ -79,6 +79,21 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
+        <blockdef name="alu16b">
+            <timestamp>2017-2-7T17:56:28</timestamp>
+            <line x2="384" y1="160" y2="160" x1="320" />
+            <line x2="384" y1="224" y2="224" x1="320" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="256" x="64" y="-192" height="448" />
+        </blockdef>
         <block symbolname="reg16" name="XLXI_3">
             <blockpin signalname="A(15:0)" name="I(15:0)" />
             <blockpin signalname="A_write" name="Write" />
@@ -97,15 +112,6 @@
             <blockpin signalname="XLXN_52" name="CLK" />
             <blockpin signalname="Result(15:0)" name="O(15:0)" />
         </block>
-        <block symbolname="alub16" name="XLXI_6">
-            <blockpin signalname="Ain(15:0)" name="A(15:0)" />
-            <blockpin signalname="Bin(15:0)" name="B(15:0)" />
-            <blockpin signalname="Control_op(3:0)" name="op(3:0)" />
-            <blockpin signalname="isZero" name="isZero" />
-            <blockpin signalname="isNegative" name="isNegative" />
-            <blockpin signalname="overflow" name="ovfl" />
-            <blockpin signalname="XLXN_51(15:0)" name="R(15:0)" />
-        </block>
         <block symbolname="aluControl" name="XLXI_11">
             <blockpin signalname="ALUop(1:0)" name="ALUop(1:0)" />
             <blockpin signalname="Func(3:0)" name="func(3:0)" />
@@ -115,26 +121,30 @@
             <blockpin signalname="clk" name="I" />
             <blockpin signalname="XLXN_52" name="O" />
         </block>
+        <block symbolname="alu16b" name="XLXI_13">
+            <blockpin signalname="Ain(15:0)" name="A(15:0)" />
+            <blockpin signalname="Bin(15:0)" name="B(15:0)" />
+            <blockpin signalname="Control_op(3:0)" name="op(3:0)" />
+            <blockpin signalname="isZero" name="isZero" />
+            <blockpin signalname="isNegative" name="isNegative" />
+            <blockpin signalname="overflow" name="ovfl" />
+            <blockpin signalname="XLXN_51(15:0)" name="R(15:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="Control_op(3:0)">
             <wire x2="1456" y1="1664" y2="1664" x1="1440" />
-            <wire x2="1712" y1="912" y2="912" x1="1456" />
-            <wire x2="1456" y1="912" y2="1664" x1="1456" />
+            <wire x2="1536" y1="656" y2="656" x1="1456" />
+            <wire x2="1456" y1="656" y2="1664" x1="1456" />
         </branch>
         <instance x="768" y="1088" name="XLXI_4" orien="R0">
         </instance>
         <instance x="768" y="752" name="XLXI_3" orien="R0">
         </instance>
-        <branch name="Ain(15:0)">
-            <wire x2="1408" y1="592" y2="592" x1="1152" />
-            <wire x2="1408" y1="592" y2="720" x1="1408" />
-            <wire x2="1712" y1="720" y2="720" x1="1408" />
-        </branch>
         <branch name="Bin(15:0)">
-            <wire x2="1408" y1="928" y2="928" x1="1152" />
-            <wire x2="1712" y1="816" y2="816" x1="1408" />
-            <wire x2="1408" y1="816" y2="928" x1="1408" />
+            <wire x2="1168" y1="928" y2="928" x1="1152" />
+            <wire x2="1536" y1="784" y2="784" x1="1168" />
+            <wire x2="1168" y1="784" y2="928" x1="1168" />
         </branch>
         <iomarker fontsize="28" x="320" y="208" name="clk" orien="R180" />
         <branch name="clk">
@@ -204,8 +214,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1024" y="1664" type="branch" />
             <wire x2="1056" y1="1664" y2="1664" x1="1024" />
         </branch>
-        <instance x="1712" y="944" name="XLXI_6" orien="R0">
-        </instance>
         <instance x="2640" y="848" name="XLXI_5" orien="R0">
         </instance>
         <branch name="ALUout_write">
@@ -224,17 +232,17 @@
         </branch>
         <iomarker fontsize="28" x="3296" y="416" name="isZero" orien="R0" />
         <iomarker fontsize="28" x="3312" y="496" name="isNegative" orien="R0" />
-        <branch name="isNegative">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="784" type="branch" />
-            <wire x2="2144" y1="784" y2="784" x1="2096" />
-        </branch>
         <branch name="overflow">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="848" type="branch" />
-            <wire x2="2144" y1="848" y2="848" x1="2096" />
+            <wire x2="2016" y1="720" y2="720" x1="1920" />
+            <wire x2="2016" y1="720" y2="848" x1="2016" />
+            <wire x2="2144" y1="848" y2="848" x1="2016" />
         </branch>
         <branch name="isZero">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="720" type="branch" />
-            <wire x2="2160" y1="720" y2="720" x1="2096" />
+            <wire x2="2032" y1="976" y2="976" x1="1920" />
+            <wire x2="2032" y1="720" y2="976" x1="2032" />
+            <wire x2="2160" y1="720" y2="720" x1="2032" />
         </branch>
         <branch name="overflow">
             <wire x2="3312" y1="592" y2="592" x1="3072" />
@@ -243,9 +251,9 @@
         <instance x="1056" y="1760" name="XLXI_11" orien="R0">
         </instance>
         <branch name="XLXN_51(15:0)">
-            <wire x2="2368" y1="912" y2="912" x1="2096" />
-            <wire x2="2368" y1="688" y2="912" x1="2368" />
-            <wire x2="2640" y1="688" y2="688" x1="2368" />
+            <wire x2="2624" y1="656" y2="656" x1="1920" />
+            <wire x2="2624" y1="656" y2="688" x1="2624" />
+            <wire x2="2640" y1="688" y2="688" x1="2624" />
         </branch>
         <instance x="2304" y="1040" name="XLXI_12" orien="R0" />
         <branch name="XLXN_52">
@@ -256,6 +264,19 @@
         <branch name="clk">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1008" type="branch" />
             <wire x2="2304" y1="1008" y2="1008" x1="2256" />
+        </branch>
+        <branch name="Ain(15:0)">
+            <wire x2="1168" y1="592" y2="592" x1="1152" />
+            <wire x2="1168" y1="592" y2="720" x1="1168" />
+            <wire x2="1536" y1="720" y2="720" x1="1168" />
+        </branch>
+        <instance x="1536" y="816" name="XLXI_13" orien="R0">
+        </instance>
+        <branch name="isNegative">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="784" type="branch" />
+            <wire x2="2000" y1="1040" y2="1040" x1="1920" />
+            <wire x2="2000" y1="784" y2="1040" x1="2000" />
+            <wire x2="2144" y1="784" y2="784" x1="2000" />
         </branch>
     </sheet>
 </drawing>
