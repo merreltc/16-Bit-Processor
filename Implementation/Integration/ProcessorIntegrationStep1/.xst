@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/xst"
+elaborate
+-ifn .prj
+-ifmt mixed

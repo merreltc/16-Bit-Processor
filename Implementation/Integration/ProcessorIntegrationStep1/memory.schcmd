@@ -1,0 +1,24 @@
+select figure at 457 761 8 -branches -sn=1
+select figure at 457 761 8 -branches -all -sn=1
+select figure at 1631 1344 8 -branches -sn=1
+select figure at -615 1299 8 -branches -sn=1
+select figure at 579 616 8 -branches -sn=1
+select figure at 607 615 8 -branches -sn=1
+select figure at 612 613 8 -branches -sn=1
+select figure at 618 613 8 -branches -sn=1
+select figure at 621 613 8 -branches -sn=1
+select figure at 626 612 8 -branches -sn=1
+select figure at 628 612 8 -branches -all -sn=1
+select figure at 277 1142 8 -branches -sn=1
+select figure at 359 1103 8 -branches -sn=1
+move instance at 320 208 to 0 0 R0 -keepConn -sn=1
+select figure at 369 1098 8 -branches -sn=1
+select figure at 371 1098 8 -branches -all -sn=1
+undo
+undo
+select figure at 1344 1057 8 -branches -sn=1
+undo
+select figure at 1344 1057 8 -branches -sn=1
+undo
+undo
+move instance at 320 208 to 0 0 R0 -keepConn -sn=1

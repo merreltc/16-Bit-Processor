@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/reg16.xst" -ofn "C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/reg16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "reg16.ngc" reg16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o reg16_map.ncd reg16.ngd reg16.pcf 
+par -w -intstyle ise -ol high -t 1 reg16_map.ncd reg16.ncd reg16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reg16.twx reg16.ncd -o reg16.twr reg16.pcf 
+sch2sym -intstyle ise -family spartan3e -refsym reg16 {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/reg16.sch} {C:/Users/smithlb/Documents/CSSE232/New folder/ProcessorIntegrationStep1/reg16.sym} 

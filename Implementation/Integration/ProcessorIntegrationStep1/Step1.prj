@@ -1,0 +1,7 @@
+verilog work "BlockMemoryControl.v"
+verilog work "blockmemory16kx1.v"
+verilog work "reg16.vf"
+verilog work "memory.vf"
+verilog work "Clock.v"
+verilog work "../../1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/mux16b2/mux16b2.v"
+verilog work "Step1.vf"
