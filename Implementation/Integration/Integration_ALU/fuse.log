@@ -1,0 +1,30 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU_Full_ALU_sch_tb_isim_beh.exe" -prj "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU_Full_ALU_sch_tb_beh.prj" "work.Full_ALU_Full_ALU_sch_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/reg16.vf" into library work
+Analyzing Verilog file "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/../aluControl/aluControl.v" into library work
+WARNING:HDLCompiler:1142 - "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/../aluControl/aluControl.v" Line 27: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/../alu16b/alub16.v" into library work
+Analyzing Verilog file "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU.vf" into library work
+Analyzing Verilog file "C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module FDCE
+Compiling module FD16CE_MXILINX_reg16
+Compiling module GND
+Compiling module reg16
+Compiling module alub16
+Compiling module aluControl
+Compiling module INV
+Compiling module Full_ALU
+Compiling module Full_ALU_Full_ALU_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU_Full_ALU_sch_tb_isim_beh.exe
+Fuse Memory Usage: 31572 KB
+Fuse CPU Usage: 701 ms

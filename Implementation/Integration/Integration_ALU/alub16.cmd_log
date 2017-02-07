@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/alu16b/alub16.v -lang verilog -prj Integration_ALU -o alub16.spl -module alub16 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w alub16.spl C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/alub16.sym 

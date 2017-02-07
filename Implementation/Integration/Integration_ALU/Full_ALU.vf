@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Full_ALU.vf
+// /___/   /\     Timestamp : 02/06/2017 13:09:31
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU.vf -w C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Units/Integration_ALU/Full_ALU.sch
+//Design Name: Full_ALU
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Full_ALU(A, 
+                ALUop, 
+                ALUout_write, 
+                A_write, 
+                B, 
+                B_write, 
+                clk, 
+                Func, 
+                isNegative, 
+                isZero, 
+                overflow, 
+                Result);
+
+    input [15:0] A;
+    input [1:0] ALUop;
+    input ALUout_write;
+    input A_write;
+    input [15:0] B;
+    input B_write;
+    input clk;
+    input [3:0] Func;
+   output isNegative;
+   output isZero;
+   output overflow;
+   output [15:0] Result;
+   
+   wire [15:0] Ain;
+   wire [15:0] Bin;
+   wire [3:0] Control_op;
+   wire [15:0] XLXN_51;
+   wire XLXN_52;
+   
+   reg16  XLXI_3 (.CLK(clk), 
+                 .I(A[15:0]), 
+                 .Write(A_write), 
+                 .O(Ain[15:0]));
+   reg16  XLXI_4 (.CLK(clk), 
+                 .I(B[15:0]), 
+                 .Write(B_write), 
+                 .O(Bin[15:0]));
+   reg16  XLXI_5 (.CLK(XLXN_52), 
+                 .I(XLXN_51[15:0]), 
+                 .Write(ALUout_write), 
+                 .O(Result[15:0]));
+   alub16  XLXI_6 (.A(Ain[15:0]), 
+                  .B(Bin[15:0]), 
+                  .op(Control_op[3:0]), 
+                  .isNegative(isNegative), 
+                  .isZero(isZero), 
+                  .ovfl(overflow), 
+                  .R(XLXN_51[15:0]));
+   aluControl  XLXI_11 (.ALUop(ALUop[1:0]), 
+                       .func(Func[3:0]), 
+                       .op(Control_op[3:0]));
+   INV  XLXI_12 (.I(clk), 
+                .O(XLXN_52));
+endmodule
