@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/work/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/alfayeka/Desktop/HW and shit/CSSE/CSSE232/memory/work/xst"
-elaborate
--ifn MIPS_control_unit.prj
--ifmt mixed
