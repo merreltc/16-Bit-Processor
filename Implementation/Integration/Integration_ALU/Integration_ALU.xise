@@ -38,23 +38,23 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
     </file>
-    <file xil_pn:name="../reg16/reg16.sch" xil_pn:type="FILE_SCHEMATIC">
+    <file xil_pn:name="../../Units/reg16/reg16.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
     </file>
-    <file xil_pn:name="../alu16b/alub16.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
-    </file>
-    <file xil_pn:name="../aluControl/aluControl.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="../../Units/aluControl/aluControl.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="33"/>
+    </file>
+    <file xil_pn:name="../../Units/alu16b/alu16b.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="33"/>
     </file>
     <file xil_pn:name="Full_ALU_tb.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="34"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="34"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="34"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="36"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="36"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="36"/>
     </file>
   </files>
 
