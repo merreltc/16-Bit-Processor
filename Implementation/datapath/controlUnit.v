@@ -48,7 +48,7 @@ module control_unit (ALUOp,
    input        CLK;
    input        Reset;
 
-	reg [1:0] PCSrc;
+	reg [2:0] PCSrc;
 	reg		 PCWrite;
 	reg		 isBranch;
 	reg		 IorD;
