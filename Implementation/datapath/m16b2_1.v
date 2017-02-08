@@ -21,8 +21,8 @@
 module m16b2_1(
     input [15:0] I0,
     input [15:0] I1,
-    input [1:0] S,
-    output reg [3:0] O
+    input [0:0] S,
+    output reg [15:0] O
     );
 	
 	always @ (*)

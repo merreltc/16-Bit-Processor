@@ -23,7 +23,7 @@ module ShiftL1_v1(
 	output [12:0] out
     );
 
-	assign out [12:1] = in [12:0];
+	assign out [12:1] = in [11:0];
 	assign out [0:0] = 0;
 	
 

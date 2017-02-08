@@ -86,8 +86,12 @@
     <transform xil_pn:end_ts="1485442031" xil_pn:in_ck="-9188577296377330050" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1485442031">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../BlockMemoryControl.v"/>
-      <outfile xil_pn:name="../blockmem_tb.v"/>
+      <outfile xil_pn:name="../blockmemory16kx1_tb.v"/>
       <outfile xil_pn:name="../memory_tb.v"/>
     </transform>
     <transform xil_pn:end_ts="1485441706" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2176506557091582605" xil_pn:start_ts="1485441706">
@@ -97,11 +101,13 @@
     <transform xil_pn:end_ts="1485441708" xil_pn:in_ck="5205692440197221" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8206463920745628085" xil_pn:start_ts="1485441706">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="memory.vf"/>
     </transform>
     <transform xil_pn:end_ts="1485441571" xil_pn:in_ck="7650336507256037478" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="134532866430563992" xil_pn:start_ts="1485441571">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="../ipcore_dir/blockmemory16kx1.ngc"/>
       <outfile xil_pn:name="../ipcore_dir/blockmemory16kx1.v"/>
     </transform>
@@ -109,11 +115,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../BlockMemoryControl.v"/>
-      <outfile xil_pn:name="../blockmem_tb.v"/>
+      <outfile xil_pn:name="../blockmemory16kx1_tb.v"/>
       <outfile xil_pn:name="../memory_tb.v"/>
       <outfile xil_pn:name="memory.vf"/>
     </transform>
@@ -136,13 +143,13 @@
     <transform xil_pn:end_ts="1485441711" xil_pn:in_ck="-2557379335997447751" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8376548200544759247" xil_pn:start_ts="1485441711">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="memory_memory_sch_tb_isim_beh.wdb"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1485114959" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1485114959">
       <status xil_pn:value="SuccessfullyRun"/>
