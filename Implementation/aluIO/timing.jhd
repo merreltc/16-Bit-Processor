@@ -1,3 +1,0 @@
-MODULE timing
-	SUBMODULE lcdCounter
-		INSTANCE XLXI_25

@@ -1,3 +1,0 @@
-MODULE debouncer
-	SUBMODULE debounce_counter
-		INSTANCE XLXI_85
