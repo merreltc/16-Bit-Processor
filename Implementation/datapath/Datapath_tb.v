@@ -33,9 +33,24 @@ module datapath_datapath_sch_tb();
 		.intr(intr), 
 		.intDataOut(intDataOut)
    );
-// Initialize Inputs
-   `ifdef auto_init
-       initial begin
+	
+	parameter   PERIOD = 20;
+   parameter   real DUTY_CYCLE = 0.5;
+   parameter   OFFSET = 10;
+   
+   initial    // Clock process for CLK
+     begin
+        #OFFSET;
+        forever
+          begin
+             CLK = 1'b0;
+             #(PERIOD-(PERIOD*DUTY_CYCLE)) CLK = 1'b1;
+             #(PERIOD*DUTY_CYCLE);
+          end
+     end
+   
+   // Initialize Inputs
+   initial begin
 		CLK = 0;
 		Reset = 0;
 		intWrite = 0;
@@ -44,5 +59,104 @@ module datapath_datapath_sch_tb();
 		intDataIn = 0;
 		intLvl1 = 0;
 		intLvl0 = 0;
-   `endif
+		#199;
+		
+		// Preload variables into registers
+		#PERIOD;
+		
+		// Add
+		#PERIOD;
+		
+		// Sub
+		#PERIOD;
+		
+		// AND
+		#PERIOD;
+		
+		// OR
+		#PERIOD;
+		
+		// NOR
+		#PERIOD;
+		
+		// NAND
+		#PERIOD;
+		
+		// XOR
+		#PERIOD;
+		
+		// SLT
+		#PERIOD;
+		
+		// BIEQ
+		#PERIOD;
+		
+		// BNEQ
+		#PERIOD;
+
+		// J
+		#PERIOD;
+		
+		// JAL
+		#PERIOD;
+		
+		// JR
+		#PERIOD;
+		
+		// LUI
+		#PERIOD;
+		
+		// LLI
+		#PERIOD;
+		
+		// LTR
+		#PERIOD;
+		
+		// CTR
+		#PERIOD;
+		
+		// LW
+		#PERIOD;
+		
+		// SW
+		#PERIOD;
+		
+		// Set Branch Comparison
+		#PERIOD;
+		
+		// Set Jump Register
+		#PERIOD;
+		
+		// ORi
+		#PERIOD;
+		
+		// LA
+		#PERIOD;
+		
+		// RTR
+		#PERIOD;
+		
+		// ADDI
+		#PERIOD;
+		
+		// Arithmetic
+		// 1. Load values into registers
+		// 2. Call instruction
+		#PERIOD;
+		
+		// Loops (branches)
+		#PERIOD;
+		
+		// Small program
+		#PERIOD;
+		
+		// relPrime - short
+		#PERIOD;
+		
+		// relPrime - moderate
+		#PERIOD;
+		
+		// relPrime - long
+		#PERIOD;
+	end
 endmodule
