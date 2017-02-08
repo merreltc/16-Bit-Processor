@@ -44,7 +44,7 @@ module control_unit (ALUOp,
    output [3:0] current_state;
    output [3:0] next_state;
 
-   input [3:0]  Opcode;
+   input [5:0]  Opcode;
    input        CLK;
    input        Reset;
 
