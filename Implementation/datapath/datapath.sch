@@ -366,20 +366,6 @@
             <rect width="64" x="320" y="-108" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
-        <blockdef name="MeMoRy">
-            <timestamp>2017-2-8T1:19:50</timestamp>
-            <rect width="368" x="64" y="-384" height="384" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <rect width="64" x="0" y="-108" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="432" y="-364" height="24" />
-            <line x2="496" y1="-352" y2="-352" x1="432" />
-        </blockdef>
         <blockdef name="m16b2_1">
             <timestamp>2017-2-8T1:24:44</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
@@ -391,6 +377,20 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
+        </blockdef>
+        <blockdef name="MeMoRy">
+            <timestamp>2017-2-8T13:44:8</timestamp>
+            <rect width="368" x="64" y="-384" height="384" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="432" y="-364" height="24" />
+            <line x2="496" y1="-352" y2="-352" x1="432" />
         </blockdef>
         <block symbolname="reg16" name="XLXI_4">
             <blockpin signalname="XLXN_132(15:0)" name="I(15:0)" />
@@ -599,15 +599,6 @@
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="MDR(15:0)" name="O(15:0)" />
         </block>
-        <block symbolname="MeMoRy" name="XLXI_104">
-            <blockpin signalname="CLK" name="clk" />
-            <blockpin signalname="Reset" name="rst" />
-            <blockpin signalname="MemRead" name="read_rq" />
-            <blockpin signalname="MemWrite" name="write_rq" />
-            <blockpin signalname="XLXN_464(15:0)" name="rw_address(15:0)" />
-            <blockpin signalname="A(15:0)" name="write_data(15:0)" />
-            <blockpin signalname="memoryData(15:0)" name="read_data(15:0)" />
-        </block>
         <block symbolname="m16b2_1" name="XLXI_108">
             <blockpin signalname="C(15:0)" name="I0(15:0)" />
             <blockpin signalname="PC(15:0)" name="I1(15:0)" />
@@ -625,6 +616,15 @@
             <blockpin signalname="PC(15:0)" name="I1(15:0)" />
             <blockpin signalname="ALUSrcA" name="S(1:0)" />
             <blockpin signalname="SrcA(15:0)" name="O(3:0)" />
+        </block>
+        <block symbolname="MeMoRy" name="XLXI_112">
+            <blockpin signalname="CLK" name="clk" />
+            <blockpin signalname="Reset" name="rst" />
+            <blockpin signalname="MemRead" name="read_rq" />
+            <blockpin signalname="MemWrite" name="write_rq" />
+            <blockpin signalname="XLXN_464(15:0)" name="rw_address(15:0)" />
+            <blockpin signalname="A(15:0)" name="write_data(15:0)" />
+            <blockpin signalname="memoryData(15:0)" name="read_data(15:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -1273,8 +1273,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="592" type="branch" />
             <wire x2="720" y1="592" y2="592" x1="672" />
         </branch>
-        <instance x="720" y="944" name="XLXI_104" orien="R0">
-        </instance>
         <branch name="Reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="704" y="656" type="branch" />
             <wire x2="720" y1="656" y2="656" x1="704" />
@@ -1327,5 +1325,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="112" type="branch" />
             <wire x2="2656" y1="112" y2="112" x1="2544" />
         </branch>
+        <instance x="720" y="944" name="XLXI_112" orien="R0">
+        </instance>
     </sheet>
 </drawing>
