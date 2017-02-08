@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3adsp -refsym memory {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/memory.sch} {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/memory.sym} 
