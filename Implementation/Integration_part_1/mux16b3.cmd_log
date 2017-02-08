@@ -1,2 +1,0 @@
-vhdtdtfi -lib work C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/mux16b3/mux16b3.v -lang verilog -prj Integration_part_1 -o mux16b3.spl -module mux16b3 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e mux16b3.spl C:/Users/davissm/Desktop/csse232/1A-alfayeka-davissm-merreltc-smithlb/Implementation/Integration_part_1/mux16b3.sym 
