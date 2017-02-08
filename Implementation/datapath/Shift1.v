@@ -19,12 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ShiftL1(
-	input [11:0] in,
-	output [12:0] out
+	input [11:0] inn,
+	output [12:0] ouut
     );
 
-	assign out [12:1] = in [11:0];
-	assign out [0:0] = 0;
+	assign ouut [12:1] = inn [11:0];
+	assign ouut [0:0] = 0;
 	
 
 endmodule
