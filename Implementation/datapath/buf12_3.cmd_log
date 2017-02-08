@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3adsp -refsym buf12_3 {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/buf12_3.sch} {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/buf12_3.sym} 

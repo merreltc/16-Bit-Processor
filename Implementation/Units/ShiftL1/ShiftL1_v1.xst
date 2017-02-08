@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/davissm/Desktop/csse232/ShiftL1/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/davissm/Desktop/csse232/ShiftL1/xst"
-elaborate
--ifn ShiftL1_v1.prj
--ifmt mixed

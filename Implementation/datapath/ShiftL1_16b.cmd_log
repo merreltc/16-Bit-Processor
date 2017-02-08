@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/Shift1_16b.v} -lang verilog -prj datapath -o ShiftL1_16b.spl -module ShiftL1_16b -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp ShiftL1_16b.spl {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/ShiftL1_16b.sym} 

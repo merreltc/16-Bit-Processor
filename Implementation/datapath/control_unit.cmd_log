@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/controlUnit.v} -lang verilog -prj datapath -o control_unit.spl -module control_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp control_unit.spl {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/control_unit.sym} 
