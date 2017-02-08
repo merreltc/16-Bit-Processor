@@ -1,2 +1,0 @@
-vhdtdtfi -lib work {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/alu16b.v} -lang verilog -prj datapath -o alu16b.spl -module alu16b -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3adsp alu16b.spl {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/alu16b.sym} 
