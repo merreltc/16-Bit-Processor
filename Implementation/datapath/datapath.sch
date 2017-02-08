@@ -72,7 +72,7 @@
         <signal name="intDataIn(15:0)" />
         <signal name="intLvl1" />
         <signal name="intLvl0" />
-        <signal name="int" />
+        <signal name="intr" />
         <signal name="intDataOut(15:0)" />
         <signal name="G" />
         <signal name="XLXN_427(15:0)" />
@@ -82,9 +82,6 @@
         <signal name="SrcA(15:0)" />
         <signal name="extendShift(15:0)" />
         <signal name="IR(7:0)" />
-        <signal name="XLXN_465(11:0)" />
-        <signal name="XLXN_466(7:0)" />
-        <signal name="XLXN_467(15:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
         <port polarity="Input" name="intWrite" />
@@ -93,7 +90,7 @@
         <port polarity="Input" name="intDataIn(15:0)" />
         <port polarity="Input" name="intLvl1" />
         <port polarity="Input" name="intLvl0" />
-        <port polarity="Output" name="int" />
+        <port polarity="Output" name="intr" />
         <port polarity="Output" name="intDataOut(15:0)" />
         <blockdef name="reg16">
             <timestamp>2017-2-7T3:31:39</timestamp>
@@ -493,7 +490,7 @@
             <blockpin signalname="Reset" name="RESET" />
             <blockpin signalname="intLvl0" name="intLvl0" />
             <blockpin signalname="intDataOut(15:0)" name="dataOut(15:0)" />
-            <blockpin signalname="int" name="int" />
+            <blockpin signalname="intr" name="int" />
         </block>
         <block symbolname="reg16" name="XLXI_7">
             <blockpin signalname="XLXN_96(15:0)" name="I(15:0)" />
@@ -1183,7 +1180,7 @@
         <branch name="intLvl0">
             <wire x2="3040" y1="2560" y2="2560" x1="2992" />
         </branch>
-        <branch name="int">
+        <branch name="intr">
             <wire x2="3488" y1="2560" y2="2560" x1="3456" />
         </branch>
         <branch name="intDataOut(15:0)">
@@ -1221,7 +1218,7 @@
         <instance x="2016" y="448" name="XLXI_100" orien="R0">
         </instance>
         <iomarker fontsize="28" x="3488" y="1984" name="intDataOut(15:0)" orien="R0" />
-        <iomarker fontsize="28" x="3488" y="2560" name="int" orien="R0" />
+        <iomarker fontsize="28" x="3488" y="2560" name="intr" orien="R0" />
         <branch name="C(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="128" y="976" type="branch" />
             <wire x2="144" y1="976" y2="976" x1="128" />

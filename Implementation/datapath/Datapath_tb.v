@@ -15,7 +15,7 @@ module datapath_datapath_sch_tb();
    reg intLvl0;
 
 // Output
-   wire int;
+   wire intr;
    wire [15:0] intDataOut;
 
 // Bidirs
@@ -30,7 +30,7 @@ module datapath_datapath_sch_tb();
 		.intDataIn(intDataIn), 
 		.intLvl1(intLvl1), 
 		.intLvl0(intLvl0), 
-		.int(int), 
+		.intr(intr), 
 		.intDataOut(intDataOut)
    );
 // Initialize Inputs
