@@ -1,1 +1,2 @@
-sch2sym -intstyle ise -family spartan3adsp -refsym memory {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/memory.sch} {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/memory.sym} 
+vhdtdtfi -lib work {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/MeMoRy.v} -lang verilog -prj datapath -o MeMoRy.spl -module MeMoRy -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3adsp MeMoRy.spl {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/MeMoRy.sym} 
