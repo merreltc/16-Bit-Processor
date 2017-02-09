@@ -41,7 +41,7 @@ module datapath_datapath_sch_tb();
 initial begin
 	CLK = 0;
 forever begin
-	#5 CLK = !CLK;
+	#20 CLK = !CLK;
 	end
 end	
  initial begin
@@ -52,6 +52,12 @@ end
 		intDataIn = 0;
 		intLvl1 = 0;
 		intLvl0 = 0;
-		#100;
+		#179;
+		
+		Reset = 1;
+		#20;
+		
+		Reset = 0;
+		#20;
 end
 endmodule

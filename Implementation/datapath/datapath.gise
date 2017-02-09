@@ -30,149 +30,24 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="alu16b.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="aluControl.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="buf12_3.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="buf12_3.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="buf16.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="buf16.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="buf4.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="buf4.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="constant16b0000.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="constant16b0000.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="constant16b0001.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="constant16b0001.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="constant4b1000.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="constant4b1000.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="constant4b1001.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="constant4b1001.vf"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="control_unit.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="control_unit.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="datapath.vf"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="datapath_datapath_sch_tb_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="datapath_datapath_sch_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="datapath_datapath_sch_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="datapath_datapath_sch_tb_stx_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="decode5b16.vf"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="datapath.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="intReg16.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="intReg16.vf"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="m16_1e.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m16b2_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m3_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m5_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m7_1.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux16b16.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="pcReg16.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="reg16.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="reg16.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="regFile16b16.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="regFile16b16.vf"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1486589692" xil_pn:in_ck="4429269147509131957" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1486589692">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Datapath_tb.v"/>
-      <outfile xil_pn:name="Shift1.v"/>
-      <outfile xil_pn:name="Shift1_16b.v"/>
-      <outfile xil_pn:name="ShiftBy8.v"/>
-      <outfile xil_pn:name="SignExtend8.v"/>
-      <outfile xil_pn:name="ZeroExtend8.v"/>
-      <outfile xil_pn:name="alu16b.v"/>
-      <outfile xil_pn:name="aluControl.v"/>
-      <outfile xil_pn:name="controlUnit.v"/>
-      <outfile xil_pn:name="m16b2_1.v"/>
-      <outfile xil_pn:name="m3_1.v"/>
-      <outfile xil_pn:name="m5_1.v"/>
-      <outfile xil_pn:name="m7_1.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1486589089" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2181446243822701071" xil_pn:start_ts="1486589089">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1486589698" xil_pn:in_ck="-1433206662943771048" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2235910576352210660" xil_pn:start_ts="1486589695">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="buf12_3.vf"/>
-      <outfile xil_pn:name="buf16.vf"/>
-      <outfile xil_pn:name="buf4.vf"/>
-      <outfile xil_pn:name="constant16b0000.vf"/>
-      <outfile xil_pn:name="constant16b0001.vf"/>
-      <outfile xil_pn:name="constant4b1000.vf"/>
-      <outfile xil_pn:name="constant4b1001.vf"/>
-      <outfile xil_pn:name="datapath.vf"/>
-      <outfile xil_pn:name="decode5b16.vf"/>
-      <outfile xil_pn:name="intReg16.vf"/>
-      <outfile xil_pn:name="m16_1e.vf"/>
-      <outfile xil_pn:name="mux16b16.vf"/>
-      <outfile xil_pn:name="reg16.vf"/>
-      <outfile xil_pn:name="regFile16b16.vf"/>
-    </transform>
-    <transform xil_pn:end_ts="1486589096" xil_pn:in_ck="1340560748531360543" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3930024415369461525" xil_pn:start_ts="1486589095">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/processor_memory.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/processor_memory.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1486589699" xil_pn:in_ck="1313868122329126620" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1486589698">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Datapath_tb.v"/>
-      <outfile xil_pn:name="Shift1.v"/>
-      <outfile xil_pn:name="Shift1_16b.v"/>
-      <outfile xil_pn:name="ShiftBy8.v"/>
-      <outfile xil_pn:name="SignExtend8.v"/>
-      <outfile xil_pn:name="ZeroExtend8.v"/>
-      <outfile xil_pn:name="alu16b.v"/>
-      <outfile xil_pn:name="aluControl.v"/>
-      <outfile xil_pn:name="buf12_3.vf"/>
-      <outfile xil_pn:name="buf16.vf"/>
-      <outfile xil_pn:name="buf4.vf"/>
-      <outfile xil_pn:name="constant16b0000.vf"/>
-      <outfile xil_pn:name="constant16b0001.vf"/>
-      <outfile xil_pn:name="constant4b1000.vf"/>
-      <outfile xil_pn:name="constant4b1001.vf"/>
-      <outfile xil_pn:name="controlUnit.v"/>
-      <outfile xil_pn:name="datapath.vf"/>
-      <outfile xil_pn:name="decode5b16.vf"/>
-      <outfile xil_pn:name="intReg16.vf"/>
-      <outfile xil_pn:name="ipcore_dir/processor_memory.v"/>
-      <outfile xil_pn:name="m16_1e.vf"/>
-      <outfile xil_pn:name="m16b2_1.v"/>
-      <outfile xil_pn:name="m3_1.v"/>
-      <outfile xil_pn:name="m5_1.v"/>
-      <outfile xil_pn:name="m7_1.v"/>
-      <outfile xil_pn:name="mux16b16.vf"/>
-      <outfile xil_pn:name="reg16.vf"/>
-      <outfile xil_pn:name="regFile16b16.vf"/>
-    </transform>
-    <transform xil_pn:end_ts="1486589703" xil_pn:in_ck="1313868122329126620" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7252148767271754007" xil_pn:start_ts="1486589699">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="datapath_datapath_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="datapath_datapath_sch_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1486589703" xil_pn:in_ck="2275853656963607630" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2235872135484500052" xil_pn:start_ts="1486589703">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="datapath_datapath_sch_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-    </transform>
-    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-  </transforms>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
 
 </generated_project>
