@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/datapath_datapath_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="datapath_datapath_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_149/current_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_149/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/Reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_149/Opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Opcode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_149/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/aluOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aluOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">aluOut[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_149/PCWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PCWrite</obj_property>
+      <obj_property name="ObjectShortName">PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_154/O" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">O[15:0]</obj_property>
+      <obj_property name="ObjectShortName">O[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/newPC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">newPC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">newPC[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_149/PCSrc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCSrc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PCSrc[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_28/I0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I0[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_28/I1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I1[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_28/I2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I2[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_28/I3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I3[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_28/I4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I4[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_datapath_sch_tb/UUT/XLXI_28/S" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">S[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
