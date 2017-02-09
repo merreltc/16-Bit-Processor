@@ -21,7 +21,7 @@
 module m16b2_1(
     input [15:0] I0,
     input [15:0] I1,
-    input [0:0] S,
+    input S,
     output reg [15:0] O
     );
 	
