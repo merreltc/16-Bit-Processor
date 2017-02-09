@@ -24,7 +24,7 @@ module control_unit (ALUOp,
                           Reset
                           );
 
-	output [1:0] PCSrc;
+	output [2:0] PCSrc;
 	output		 PCWrite;
 	output		 isBranch;
 	output		 IorD;
