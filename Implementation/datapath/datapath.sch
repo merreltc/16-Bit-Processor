@@ -354,7 +354,7 @@
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
         </blockdef>
         <blockdef name="control_unit">
-            <timestamp>2017-2-8T21:31:3</timestamp>
+            <timestamp>2017-2-9T17:30:54</timestamp>
             <line x2="464" y1="32" y2="32" x1="400" />
             <line x2="464" y1="96" y2="96" x1="400" />
             <line x2="464" y1="160" y2="160" x1="400" />
@@ -388,8 +388,9 @@
             <rect width="336" x="64" y="-1024" height="1216" />
         </blockdef>
         <blockdef name="pcReg16">
-            <timestamp>2017-2-9T1:10:40</timestamp>
-            <rect width="256" x="64" y="-320" height="320" />
+            <timestamp>2017-2-9T17:34:21</timestamp>
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <rect width="64" x="0" y="-172" height="24" />
@@ -397,8 +398,7 @@
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-300" height="24" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <rect width="256" x="64" y="-320" height="384" />
         </blockdef>
         <block symbolname="constant4b1001" name="XLXI_52">
             <blockpin signalname="nine(3:0)" name="O(3:0)" />
@@ -633,7 +633,7 @@
             <blockpin signalname="zero(15:0)" name="initPC(15:0)" />
             <blockpin signalname="newPC(15:0)" name="newPC(15:0)" />
             <blockpin signalname="XLXN_675" name="Write" />
-            <blockpin signalname="PC(15:0)" name="O(15:0)" />
+            <blockpin signalname="PC(15:0)" name="PC(15:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -1319,11 +1319,6 @@
             <wire x2="832" y1="784" y2="784" x1="816" />
             <wire x2="816" y1="784" y2="1072" x1="816" />
         </branch>
-        <branch name="PC(15:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="688" type="branch" />
-            <wire x2="656" y1="688" y2="688" x1="624" />
-            <wire x2="672" y1="688" y2="688" x1="656" />
-        </branch>
         <branch name="XLXN_675">
             <wire x2="32" y1="576" y2="1040" x1="32" />
             <wire x2="176" y1="1040" y2="1040" x1="32" />
@@ -1355,6 +1350,11 @@
         <branch name="one(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3216" y="384" type="branch" />
             <wire x2="3248" y1="384" y2="384" x1="3216" />
+        </branch>
+        <branch name="PC(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1008" type="branch" />
+            <wire x2="656" y1="1008" y2="1008" x1="624" />
+            <wire x2="672" y1="1008" y2="1008" x1="656" />
         </branch>
     </sheet>
 </drawing>
