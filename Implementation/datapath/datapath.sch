@@ -64,7 +64,6 @@
         <signal name="newPC(15:0)" />
         <signal name="IR(3:0)" />
         <signal name="memoryData(15:0)" />
-        <signal name="IR(15:0)" />
         <signal name="XLXN_96(15:0)" />
         <signal name="IR(11:0)" />
         <signal name="intWrite" />
@@ -76,13 +75,13 @@
         <signal name="intr" />
         <signal name="intDataOut(15:0)" />
         <signal name="CauseIn(15:0)" />
-        <signal name="Cause(15:0)" />
         <signal name="XLXN_653(15:0)" />
         <signal name="XLXN_675" />
         <signal name="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V" />
-        <signal name="XLXN_687(15:0)" />
         <signal name="PC(15:12)" />
         <signal name="XLXN_692(15:0)" />
+        <signal name="IR(15:0)" />
+        <signal name="Cause(15:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
         <port polarity="Output" name="aluOut(15:0)" />
@@ -124,8 +123,8 @@
             <line x2="416" y1="-32" y2="-32" x1="352" />
         </blockdef>
         <blockdef name="regFile16b16">
-            <timestamp>2017-2-7T3:31:43</timestamp>
-            <rect width="384" x="64" y="-448" height="448" />
+            <timestamp>2017-2-10T0:32:43</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
             <rect width="64" x="0" y="-364" height="24" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -143,6 +142,7 @@
             <line x2="512" y1="-224" y2="-224" x1="448" />
             <rect width="64" x="448" y="-44" height="24" />
             <line x2="512" y1="-32" y2="-32" x1="448" />
+            <rect width="384" x="64" y="-448" height="512" />
         </blockdef>
         <blockdef name="alu16b">
             <timestamp>2017-2-7T16:28:59</timestamp>
@@ -482,6 +482,7 @@
             <blockpin signalname="IR(7:4)" name="ReadAddrB(3:0)" />
             <blockpin signalname="CRWrite" name="CRWrite" />
             <blockpin signalname="RegWrite" name="Write" />
+            <blockpin signalname="Reset" name="Reset" />
             <blockpin signalname="XLXN_132(15:0)" name="ReadDataA(15:0)" />
             <blockpin signalname="XLXN_133(15:0)" name="ReadDataB(15:0)" />
             <blockpin signalname="XLXN_136(15:0)" name="ReadDataCR(15:0)" />
@@ -534,18 +535,6 @@
             <blockpin signalname="ALUOp(1:0)" name="ALUop(1:0)" />
             <blockpin signalname="IR(3:0)" name="func(3:0)" />
             <blockpin signalname="op(3:0)" name="op(3:0)" />
-        </block>
-        <block symbolname="reg16" name="XLXI_2">
-            <blockpin signalname="memoryData(15:0)" name="I(15:0)" />
-            <blockpin signalname="IRWrite" name="Write" />
-            <blockpin signalname="CLK" name="CLK" />
-            <blockpin signalname="IR(15:0)" name="O(15:0)" />
-        </block>
-        <block symbolname="reg16" name="XLXI_3">
-            <blockpin signalname="memoryData(15:0)" name="I(15:0)" />
-            <blockpin signalname="V" name="Write" />
-            <blockpin signalname="CLK" name="CLK" />
-            <blockpin signalname="MDR(15:0)" name="O(15:0)" />
         </block>
         <block symbolname="m5_1" name="XLXI_27">
             <blockpin signalname="B(15:0)" name="I0(15:0)" />
@@ -621,7 +610,7 @@
             <blockpin signalname="C(15:0)" name="I0(15:0)" />
             <blockpin signalname="PC(15:0)" name="I1(15:0)" />
             <blockpin signalname="XLXN_653(15:0)" name="O(15:0)" />
-            <blockpin name="S" />
+            <blockpin signalname="IorD" name="S" />
         </block>
         <block symbolname="pcReg16" name="XLXI_154">
             <blockpin signalname="CLK" name="CLK" />
@@ -636,11 +625,23 @@
             <blockpin signalname="shiftOne(12:0)" name="I1(12:0)" />
             <blockpin signalname="XLXN_692(15:0)" name="O(15:0)" />
         </block>
+        <block symbolname="reg16" name="XLXI_3">
+            <blockpin signalname="memoryData(15:0)" name="I(15:0)" />
+            <blockpin signalname="V" name="Write" />
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="MDR(15:0)" name="O(15:0)" />
+        </block>
+        <block symbolname="reg16" name="XLXI_2">
+            <blockpin signalname="memoryData(15:0)" name="I(15:0)" />
+            <blockpin signalname="IRWrite" name="Write" />
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="IR(15:0)" name="O(15:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
         <branch name="EPCWrite">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="3408" type="branch" />
-            <wire x2="672" y1="3408" y2="3408" x1="608" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="656" y="3408" type="branch" />
+            <wire x2="656" y1="3408" y2="3408" x1="608" />
         </branch>
         <branch name="CauseWrite">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="656" y="3344" type="branch" />
@@ -1056,45 +1057,9 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3168" y="1344" type="branch" />
             <wire x2="3168" y1="1344" y2="1344" x1="3136" />
         </branch>
-        <branch name="memoryData(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1088" type="branch" />
-            <wire x2="1712" y1="1088" y2="1088" x1="1680" />
-        </branch>
-        <instance x="1712" y="1248" name="XLXI_2" orien="R0">
-        </instance>
-        <branch name="IR(15:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2128" y="1088" type="branch" />
-            <wire x2="2128" y1="1088" y2="1088" x1="2096" />
-        </branch>
-        <branch name="IRWrite">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1152" type="branch" />
-            <wire x2="1712" y1="1152" y2="1152" x1="1696" />
-        </branch>
-        <branch name="CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1216" type="branch" />
-            <wire x2="1712" y1="1216" y2="1216" x1="1696" />
-        </branch>
-        <instance x="1712" y="1472" name="XLXI_3" orien="R0">
-        </instance>
-        <branch name="memoryData(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="1312" type="branch" />
-            <wire x2="1712" y1="1312" y2="1312" x1="1664" />
-        </branch>
-        <branch name="V">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="1376" type="branch" />
-            <wire x2="1712" y1="1376" y2="1376" x1="1664" />
-        </branch>
-        <branch name="MDR(15:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1312" type="branch" />
-            <wire x2="2144" y1="1312" y2="1312" x1="2096" />
-        </branch>
         <branch name="SrcA(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2848" y="112" type="branch" />
             <wire x2="2848" y1="112" y2="112" x1="2736" />
-        </branch>
-        <branch name="CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1440" type="branch" />
-            <wire x2="1712" y1="1440" y2="1440" x1="1680" />
         </branch>
         <branch name="A(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="768" y="816" type="branch" />
@@ -1245,10 +1210,6 @@
         </branch>
         <instance x="2752" y="3232" name="XLXI_34" orien="R0">
         </instance>
-        <branch name="Cause(15:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3216" y="3072" type="branch" />
-            <wire x2="3216" y1="3072" y2="3072" x1="3136" />
-        </branch>
         <branch name="CauseIn(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3168" y="2784" type="branch" />
             <wire x2="3168" y1="2784" y2="2784" x1="3136" />
@@ -1286,10 +1247,6 @@
         <branch name="PC(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="48" y="1488" type="branch" />
             <wire x2="64" y1="1488" y2="1488" x1="48" />
-        </branch>
-        <branch name="IorD">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="16" y="1552" type="branch" />
-            <wire x2="64" y1="1552" y2="1552" x1="16" />
         </branch>
         <branch name="XLXN_653(15:0)">
             <wire x2="448" y1="1072" y2="1424" x1="448" />
@@ -1357,6 +1314,54 @@
             <wire x2="3136" y1="368" y2="368" x1="3040" />
             <wire x2="3136" y1="320" y2="368" x1="3136" />
             <wire x2="3248" y1="320" y2="320" x1="3136" />
+        </branch>
+        <branch name="IorD">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="16" y="1616" type="branch" />
+            <wire x2="64" y1="1616" y2="1616" x1="16" />
+        </branch>
+        <branch name="memoryData(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1216" type="branch" />
+            <wire x2="1712" y1="1216" y2="1216" x1="1680" />
+        </branch>
+        <branch name="IR(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2128" y="1216" type="branch" />
+            <wire x2="2128" y1="1216" y2="1216" x1="2096" />
+        </branch>
+        <branch name="IRWrite">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1280" type="branch" />
+            <wire x2="1712" y1="1280" y2="1280" x1="1696" />
+        </branch>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1344" type="branch" />
+            <wire x2="1712" y1="1344" y2="1344" x1="1696" />
+        </branch>
+        <instance x="1712" y="1600" name="XLXI_3" orien="R0">
+        </instance>
+        <branch name="memoryData(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="1440" type="branch" />
+            <wire x2="1712" y1="1440" y2="1440" x1="1664" />
+        </branch>
+        <branch name="V">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="1504" type="branch" />
+            <wire x2="1712" y1="1504" y2="1504" x1="1664" />
+        </branch>
+        <branch name="MDR(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1440" type="branch" />
+            <wire x2="2144" y1="1440" y2="1440" x1="2096" />
+        </branch>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1568" type="branch" />
+            <wire x2="1712" y1="1568" y2="1568" x1="1680" />
+        </branch>
+        <instance x="1712" y="1376" name="XLXI_2" orien="R0">
+        </instance>
+        <branch name="Reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1008" type="branch" />
+            <wire x2="1728" y1="1008" y2="1008" x1="1696" />
+        </branch>
+        <branch name="Cause(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3216" y="3072" type="branch" />
+            <wire x2="3216" y1="3072" y2="3072" x1="3136" />
         </branch>
     </sheet>
 </drawing>
