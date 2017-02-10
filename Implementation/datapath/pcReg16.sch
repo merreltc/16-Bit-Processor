@@ -46,16 +46,15 @@
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="m16b2_1">
-            <timestamp>2017-2-8T17:51:10</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
+            <timestamp>2017-2-9T18:12:23</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="256" x="64" y="-192" height="256" />
         </blockdef>
         <blockdef name="m2_1">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -83,8 +82,8 @@
         <block symbolname="m16b2_1" name="XLXI_4">
             <blockpin signalname="newPC(15:0)" name="I0(15:0)" />
             <blockpin signalname="initPC(15:0)" name="I1(15:0)" />
-            <blockpin signalname="Reset" name="S(0:0)" />
             <blockpin signalname="tempPC(15:0)" name="O(15:0)" />
+            <blockpin signalname="Reset" name="S" />
         </block>
         <block symbolname="m2_1" name="XLXI_6">
             <blockpin signalname="Write" name="D0" />
@@ -118,10 +117,6 @@
         <iomarker fontsize="28" x="1568" y="352" name="PC(15:0)" orien="R0" />
         <instance x="320" y="608" name="XLXI_4" orien="R0">
         </instance>
-        <branch name="Reset">
-            <wire x2="304" y1="576" y2="576" x1="208" />
-            <wire x2="320" y1="576" y2="576" x1="304" />
-        </branch>
         <branch name="initPC(15:0)">
             <wire x2="320" y1="512" y2="512" x1="256" />
         </branch>
@@ -132,7 +127,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="768" y="448" type="branch" />
             <wire x2="768" y1="448" y2="448" x1="704" />
         </branch>
-        <iomarker fontsize="28" x="208" y="576" name="Reset" orien="R180" />
         <iomarker fontsize="28" x="272" y="448" name="newPC(15:0)" orien="R180" />
         <iomarker fontsize="28" x="256" y="512" name="initPC(15:0)" orien="R180" />
         <branch name="Reset">
@@ -154,5 +148,10 @@
             <wire x2="672" y1="800" y2="800" x1="640" />
         </branch>
         <iomarker fontsize="28" x="288" y="768" name="Write" orien="R180" />
+        <branch name="Reset">
+            <wire x2="304" y1="640" y2="640" x1="208" />
+            <wire x2="320" y1="640" y2="640" x1="304" />
+        </branch>
+        <iomarker fontsize="28" x="208" y="640" name="Reset" orien="R180" />
     </sheet>
 </drawing>
