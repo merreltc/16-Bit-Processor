@@ -123,7 +123,7 @@
             <line x2="416" y1="-32" y2="-32" x1="352" />
         </blockdef>
         <blockdef name="regFile16b16">
-            <timestamp>2017-2-10T0:32:43</timestamp>
+            <timestamp>2017-2-10T1:26:40</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
             <rect width="64" x="0" y="-364" height="24" />
@@ -355,7 +355,7 @@
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
         </blockdef>
         <blockdef name="control_unit">
-            <timestamp>2017-2-9T17:30:54</timestamp>
+            <timestamp>2017-2-10T0:57:3</timestamp>
             <line x2="464" y1="32" y2="32" x1="400" />
             <line x2="464" y1="96" y2="96" x1="400" />
             <line x2="464" y1="160" y2="160" x1="400" />
