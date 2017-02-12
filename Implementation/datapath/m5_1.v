@@ -44,7 +44,7 @@ module m5_1(
 				4:
 					assign O = I4;
 				default:
-					$display("ERROR! SET VALUE OUT OF RANGE!");
+					$display("ERROR! m5_1 SET VALUE OUT OF RANGE!");
 				
 			endcase
 			

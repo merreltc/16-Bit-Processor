@@ -38,7 +38,7 @@ module m3_1(
 				2:
 					assign O = I2;
 				default:
-					$display("ERROR! SET VALUE OUT OF RANGE!");
+					$display("ERROR! m3_1 SET VALUE OUT OF RANGE!");
 				
 			endcase
 			

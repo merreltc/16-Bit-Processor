@@ -41,8 +41,8 @@ module control_unit (ALUOp,
 	output 		 IntCause;
 	output       CauseWrite;
 	output       EPCWrite;
-   output [3:0] current_state;
-   output [3:0] next_state;
+   output [4:0] current_state;
+   output [4:0] next_state;
 
    input [3:0]  Opcode;
    input        CLK;
@@ -67,8 +67,8 @@ module control_unit (ALUOp,
 	reg       EPCWrite;
 
    //state flip-flops
-   reg [3:0]    current_state;
-   reg [3:0]    next_state;
+   reg [4:0]    current_state;
+   reg [4:0]    next_state;
 
    //state definitions
    parameter    Fetch = 0;
@@ -89,6 +89,7 @@ module control_unit (ALUOp,
 	parameter    LTR = 15;
 	parameter	 SYSCALL = 16;
 	parameter	 EXCEPTION = 17;
+	parameter	 STALL = 18;
 
    //register calculation
    always @ (posedge CLK, posedge Reset)
@@ -132,7 +133,7 @@ module control_unit (ALUOp,
           Decode:
             begin
                ALUSrcA = 1;
-               ALUSrcB = 2;
+               ALUSrcB = 3;
                ALUOp = 0;
             end
         
@@ -247,6 +248,9 @@ module control_unit (ALUOp,
 					EPCWrite = 1;
 					CauseWrite = 1;
 				end
+			
+			STALL:
+				begin end
         
           default:
             begin $display ("not implemented"); end
@@ -365,13 +369,13 @@ module control_unit (ALUOp,
           
           Branch:
             begin
-               next_state = Fetch;
+               next_state = STALL;
                $display("In Branch, the next_state is %d", next_state);
             end
           
           Jump:
             begin
-               next_state = Fetch;
+               next_state = STALL;
                $display("In Jump, the next_state is %d", next_state);
             end
 				
@@ -413,13 +417,13 @@ module control_unit (ALUOp,
 			 
 			 JAL2:
 				begin
-					next_state = Fetch;
+					next_state = STALL;
                $display("In JAL2, the next_state is %d", next_state);
 				end
 
 			 JumpReg:
 				begin
-					next_state = Fetch;
+					next_state = STALL;
                $display("In JumpReg, the next_state is %d", next_state);
 				end
 			 
@@ -442,6 +446,11 @@ module control_unit (ALUOp,
 				end
 				
 			EXCEPTION:
+				begin
+					next_state = Fetch;
+				end
+				
+			STALL:
 				begin
 					next_state = Fetch;
 				end

@@ -50,7 +50,7 @@ module m7_1(
 				6:
 					assign O = I6;
 				default:
-					$display("ERROR! SET VALUE OUT OF RANGE!");
+					$display("ERROR! m7_1 SET VALUE OUT OF RANGE!");
 				
 			endcase
 			
