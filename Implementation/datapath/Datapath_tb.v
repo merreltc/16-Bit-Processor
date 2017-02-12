@@ -15,8 +15,6 @@ module datapath_datapath_sch_tb();
    reg intLvl0;
 
 // Output
-   wire [15:0] aluOut;
-   wire [15:0] newPC;
    wire intr;
    wire [15:0] intDataOut;
 
@@ -26,8 +24,6 @@ module datapath_datapath_sch_tb();
    datapath UUT (
 		.CLK(CLK), 
 		.Reset(Reset), 
-		.aluOut(aluOut), 
-		.newPC(newPC), 
 		.intWrite(intWrite), 
 		.int0(int0), 
 		.int1(int1), 
