@@ -51,8 +51,22 @@ always @ (*)
 			assign R = ~(A | B);
 		6: // Nand
 			assign R = ~(A & B);
-		7: // Invert
-			assign R = ~A;
+		7: // SLT
+		begin
+			assign R = A - B;
+			ovfl=(A[15] & ~B[15] & ~R[15]) || (~A[15] & B[15] & R[15]);
+			
+			if(R[15] == 1)
+			begin
+				assign R = 1;
+			end
+			
+			else
+			begin
+				assign R = 0;
+			end
+		
+		end
 		default:
 			$display("WONG OP CODE!");
 		endcase

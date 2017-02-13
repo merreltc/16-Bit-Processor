@@ -69,7 +69,7 @@ always@(*) begin
 				end
 			if(func==7) // slt
 				begin
-					assign op = 3;
+					assign op = 7;
 				end	
 		end
 		
