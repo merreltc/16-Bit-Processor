@@ -111,6 +111,7 @@ module control_unit (ALUOp,
         //Reset all signals that cannot be don't cares
         PCWrite = 0;
         isBranch = 0;
+		  isBIEQ = 0;
         MemRead = 0;
         MemWrite = 0; 
         IRWrite = 0;

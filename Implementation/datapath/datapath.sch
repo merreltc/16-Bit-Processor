@@ -327,7 +327,7 @@
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
         </blockdef>
         <blockdef name="control_unit">
-            <timestamp>2017-2-14T3:10:54</timestamp>
+            <timestamp>2017-2-14T3:23:8</timestamp>
             <line x2="464" y1="224" y2="224" x1="400" />
             <line x2="464" y1="32" y2="32" x1="400" />
             <line x2="464" y1="96" y2="96" x1="400" />
@@ -426,6 +426,7 @@
             <blockpin signalname="IRWrite" name="IRWrite" />
             <blockpin signalname="PCWrite" name="PCWrite" />
             <blockpin signalname="isBranch" name="isBranch" />
+            <blockpin signalname="isBIEQ" name="isBIEQ" />
             <blockpin signalname="IntCause" name="IntCause" />
             <blockpin signalname="CauseWrite" name="CauseWrite" />
             <blockpin signalname="EPCWrite" name="EPCWrite" />
@@ -436,7 +437,6 @@
             <blockpin signalname="PCSrc(2:0)" name="PCSrc(2:0)" />
             <blockpin signalname="current_state(4:0)" name="current_state(4:0)" />
             <blockpin signalname="next_state(4:0)" name="next_state(4:0)" />
-            <blockpin signalname="isBIEQ" name="isBIEQ" />
         </block>
         <block symbolname="reg16" name="XLXI_8">
             <blockpin signalname="aluOut(15:0)" name="I(15:0)" />
