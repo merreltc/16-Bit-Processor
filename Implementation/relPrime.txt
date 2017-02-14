@@ -1,12 +1,13 @@
+    ltr $jr 0       # preset $jr as 0
     ltr $a0 4       # $a0 = 4, n = 4
 relPrimeSetup:    ltr    $t0 -4
     add    $st $t0    # current value of $st - 4
     ctr    $st        # grow stack by 4
-    sw    $ra        # store $ra on stack
+    sw     $ra        # store $ra on stack
     add    $st $t0    # current value of $st - 4
     ctr    $st        # grow stack by 4
-    sw    $s0        # store $s0 on stack
-    ltr    $t1 2        # m = 2
+    sw     $s0        # store $s0 on stack
+    ltr    $t1 2      # m = 2
     rtr    $a1 $t1    # m in $a1
 
 
