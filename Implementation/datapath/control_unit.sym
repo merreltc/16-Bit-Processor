@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="control_unit">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-2-14T3:10:54</timestamp>
+    <timestamp>2017-2-14T3:23:8</timestamp>
     <attr value="control_unit" name="VeriModel" />
     <pin polarity="Input" x="0" y="-992" name="CLK" />
     <pin polarity="Input" x="0" y="-512" name="Reset" />
@@ -15,6 +15,7 @@
     <pin polarity="Output" x="464" y="-608" name="IRWrite" />
     <pin polarity="Output" x="464" y="-544" name="PCWrite" />
     <pin polarity="Output" x="464" y="-480" name="isBranch" />
+    <pin polarity="Output" x="464" y="224" name="isBIEQ" />
     <pin polarity="Output" x="464" y="32" name="IntCause" />
     <pin polarity="Output" x="464" y="96" name="CauseWrite" />
     <pin polarity="Output" x="464" y="160" name="EPCWrite" />
@@ -25,7 +26,6 @@
     <pin polarity="Output" x="464" y="-160" name="PCSrc(2:0)" />
     <pin polarity="Output" x="464" y="-96" name="current_state(4:0)" />
     <pin polarity="Output" x="464" y="-32" name="next_state(4:0)" />
-    <pin polarity="Output" x="464" y="224" name="isBIEQ" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="232" y="-1032" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-992" type="pin CLK" />
@@ -40,6 +40,7 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-608" type="pin IRWrite" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-544" type="pin PCWrite" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-480" type="pin isBranch" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="224" type="pin isBIEQ" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="32" type="pin IntCause" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="96" type="pin CauseWrite" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="160" type="pin EPCWrite" />
@@ -50,7 +51,6 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-160" type="pin PCSrc(2:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-96" type="pin current_state(4:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-32" type="pin next_state(4:0)" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="224" type="pin isBIEQ" />
         <line x2="464" y1="224" y2="224" x1="400" />
         <line x2="464" y1="32" y2="32" x1="400" />
         <line x2="464" y1="96" y2="96" x1="400" />
