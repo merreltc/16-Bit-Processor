@@ -80,6 +80,7 @@
         <signal name="IR(15:0)" />
         <signal name="Cause(15:0)" />
         <signal name="IR(7:0)" />
+        <signal name="isBIEQ" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
         <port polarity="Input" name="intWrite" />
@@ -141,8 +142,8 @@
             <rect width="384" x="64" y="-448" height="512" />
         </blockdef>
         <blockdef name="alu16b">
-            <timestamp>2017-2-13T17:48:10</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
+            <timestamp>2017-2-14T3:10:49</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-236" height="24" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <rect width="64" x="0" y="-140" height="24" />
@@ -154,6 +155,7 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-256" height="320" />
         </blockdef>
         <blockdef name="aluControl">
             <timestamp>2017-2-7T3:30:53</timestamp>
@@ -315,7 +317,7 @@
             <rect width="256" x="64" y="-192" height="256" />
         </blockdef>
         <blockdef name="processor_memory">
-            <timestamp>2017-2-14T0:10:29</timestamp>
+            <timestamp>2017-2-14T2:51:50</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
@@ -325,7 +327,8 @@
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
         </blockdef>
         <blockdef name="control_unit">
-            <timestamp>2017-2-12T22:0:18</timestamp>
+            <timestamp>2017-2-14T3:10:54</timestamp>
+            <line x2="464" y1="224" y2="224" x1="400" />
             <line x2="464" y1="32" y2="32" x1="400" />
             <line x2="464" y1="96" y2="96" x1="400" />
             <line x2="464" y1="160" y2="160" x1="400" />
@@ -356,7 +359,7 @@
             <line x2="464" y1="-96" y2="-96" x1="400" />
             <rect width="64" x="400" y="-44" height="24" />
             <line x2="464" y1="-32" y2="-32" x1="400" />
-            <rect width="336" x="64" y="-1024" height="1216" />
+            <rect width="336" x="64" y="-1024" height="1280" />
         </blockdef>
         <blockdef name="pcReg16">
             <timestamp>2017-2-9T17:34:21</timestamp>
@@ -433,6 +436,7 @@
             <blockpin signalname="PCSrc(2:0)" name="PCSrc(2:0)" />
             <blockpin signalname="current_state(4:0)" name="current_state(4:0)" />
             <blockpin signalname="next_state(4:0)" name="next_state(4:0)" />
+            <blockpin signalname="isBIEQ" name="isBIEQ" />
         </block>
         <block symbolname="reg16" name="XLXI_8">
             <blockpin signalname="aluOut(15:0)" name="I(15:0)" />
@@ -489,6 +493,7 @@
             <blockpin signalname="isNegative" name="isNegative" />
             <blockpin signalname="ovflw" name="ovfl" />
             <blockpin signalname="XLXN_96(15:0)" name="R(15:0)" />
+            <blockpin signalname="isBIEQ" name="isBIEQ" />
         </block>
         <block symbolname="reg16" name="XLXI_7">
             <blockpin signalname="XLXN_96(15:0)" name="I(15:0)" />
@@ -1301,6 +1306,14 @@
         <branch name="shiftEight(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2112" y="3088" type="branch" />
             <wire x2="2112" y1="3088" y2="3088" x1="2064" />
+        </branch>
+        <branch name="isBIEQ">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="688" y="3472" type="branch" />
+            <wire x2="688" y1="3472" y2="3472" x1="608" />
+        </branch>
+        <branch name="isBIEQ">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2704" y="960" type="branch" />
+            <wire x2="2752" y1="960" y2="960" x1="2704" />
         </branch>
     </sheet>
 </drawing>

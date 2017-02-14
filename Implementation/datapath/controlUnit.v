@@ -13,6 +13,7 @@ module control_unit (ALUOp,
                           IRWrite, 
                           PCWrite,
                           isBranch,
+								  isBIEQ,
                           PCSrc,
 								  IntCause,
 								  CauseWrite,
@@ -27,6 +28,7 @@ module control_unit (ALUOp,
 	output [2:0] PCSrc;
 	output		 PCWrite;
 	output		 isBranch;
+	output		 isBIEQ;
 	output		 IorD;
 	output		 MemRead;
 	output		 MemWrite;
@@ -51,6 +53,7 @@ module control_unit (ALUOp,
 	reg [2:0] PCSrc;
 	reg		 PCWrite;
 	reg		 isBranch;
+	reg		 isBIEQ;
 	reg		 IorD;
 	reg		 MemRead;
 	reg		 MemWrite;
@@ -80,7 +83,8 @@ module control_unit (ALUOp,
 	parameter    LLI = 6;
    parameter    C_Execution = 7;
    parameter    C_Write = 8;
-   parameter    Branch = 9;
+   parameter    BranchEQ = 9;
+	parameter	 BranchNEQ = 19;
    parameter    Jump = 10;
 	parameter    JAL1 = 11;
 	parameter    JAL2 = 12;
@@ -115,7 +119,7 @@ module control_unit (ALUOp,
 		  IntCause = 0;
 		  CauseWrite = 0;
 		  EPCWrite = 0;
-
+		  
         case (current_state)
           
           Fetch:
@@ -152,14 +156,25 @@ module control_unit (ALUOp,
                WriteSrc = 0;
             end
         
-          Branch:
+          BranchEQ:
             begin
                ALUSrcA = 0;
                ALUSrcB = 4;
                ALUOp = 1;
                isBranch = 1;
                PCSrc = 1;
+					isBIEQ = 1;
             end
+			
+			BranchNEQ:
+				begin
+				   ALUSrcA = 0;
+               ALUSrcB = 4;
+               ALUOp = 1;
+               isBranch = 1;
+               PCSrc = 1;
+					isBIEQ = 0;
+				end
         
           Jump:
             begin
@@ -250,7 +265,9 @@ module control_unit (ALUOp,
 				end
 			
 			STALL:
-				begin end
+				begin
+					IorD = 1;
+				end
         
           default:
             begin $display ("not implemented"); end
@@ -283,12 +300,12 @@ module control_unit (ALUOp,
                    end
                  1:
                    begin
-                      next_state = Branch;
+                      next_state = BranchEQ;
                       $display("The next state is Branch (if equal)");
                    end
                  2:
                    begin
-                      next_state = Branch;
+                      next_state = BranchNEQ;
                       $display("The next state is Branch (if not equal)");
                    end
                  3:
@@ -367,10 +384,16 @@ module control_unit (ALUOp,
                $display("In C_Write, the next_state is %d", next_state);
             end
           
-          Branch:
+          BranchEQ:
             begin
                next_state = STALL;
-               $display("In Branch, the next_state is %d", next_state);
+               $display("In BranchEQ, the next_state is %d", next_state);
+            end
+				
+          BranchNEQ:
+            begin
+               next_state = STALL;
+               $display("In BranchNEQ, the next_state is %d", next_state);
             end
           
           Jump:
@@ -387,13 +410,13 @@ module control_unit (ALUOp,
 			 
 			 LW2:
 			 	begin
-					next_state = Fetch;
+					next_state = STALL;
                $display("In LW2, the next_state is %d", next_state);
 				end
 				
 			 SW:
 			 	begin
-					next_state = Fetch;
+					next_state = STALL;
                $display("In SW, the next_state is %d", next_state);
 				end
 			 
