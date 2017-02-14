@@ -1,0 +1,63 @@
+    ltr $a0 4       # $a0 = 4, n = 4
+relPrimeSetup:    ltr    $t0 -4
+    add    $st $t0    # current value of $st - 4
+    ctr    $st        # grow stack by 4
+    sw    $ra        # store $ra on stack
+    add    $st $t0    # current value of $st - 4
+    ctr    $st        # grow stack by 4
+    sw    $s0        # store $s0 on stack
+    ltr    $t1 2        # m = 2
+    rtr    $a1 $t1    # m in $a1
+
+
+    rtr    $s0 $a1    # m in $s0
+
+
+relPrimeLoop: jal    gcd
+    sbc    1        # store 1 in $cr for branch
+
+
+    bieq    $v cleanup     # if gcd(n, m) == 1 jump to cleanup
+    ltr    $t0 1
+    add    $s0 $t0    # m + 1
+    ctr    $s0        # m = m + 1
+    rtr    $a1 $s0    # $a1 = m
+
+
+    j    relPrimeLoop
+gcd:    sbc    0        # store 0 in $cr for branch
+
+
+    bneq    $a0 subOne    # if a != 0, go to subOne 
+    rtr    $v $a1    # $v = m
+
+
+    jr    $ra        # return to caller
+subOne: slt    $a1 $a0    # b < a
+    ltr    $t0 1        
+    bieq    $t0 subTwo    # if (a > b) go to subTwo
+    sub    $a1 $a0    # b - a
+    ctr    $a1         # b = b - a
+    rtr    $v $a0     # return a
+
+
+    jr    $ra 
+subTwo:    sub    $a0 $a1    # a - b
+    ctr    $a0        # a = a- b
+    rtr    $v  $a0    # return a
+
+
+    jr    $ra
+cleanup: rtr    $v $a1     # return m
+
+
+    ltr    $t0 0
+    add    $st $t0     # moves stack pointer address to $cr
+    lw    $s0        # restore #s0
+    ltr    $t0 4
+    add    $st $t0    # current value of $st + 4
+    ctr    $st        # reduce stack
+    lw    $ra        # restore $ra
+    add    $st $t0    # current value of $st + 4
+    ctr    $st        # reduce stack
+    jr    $ra
