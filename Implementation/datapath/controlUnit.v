@@ -38,7 +38,7 @@ module control_unit (ALUOp,
 	output		 CRWrite;
 	output		 RegWrite;
 	output		 ALUSrcA;
-	output [2:0] ALUSrcB;
+	output [1:0] ALUSrcB;
 	output [1:0] ALUOp;
 	output 		 IntCause;
 	output       CauseWrite;
@@ -63,7 +63,7 @@ module control_unit (ALUOp,
 	reg		 CRWrite;
 	reg		 RegWrite;
 	reg		 ALUSrcA;
-	reg [2:0] ALUSrcB;
+	reg [1:0] ALUSrcB;
 	reg [1:0] ALUOp;
 	reg 		 IntCause;
 	reg       CauseWrite;
@@ -138,7 +138,7 @@ module control_unit (ALUOp,
           Decode:
             begin
                ALUSrcA = 1;
-               ALUSrcB = 3;
+               ALUSrcB = 2;
                ALUOp = 0;
             end
         
@@ -160,7 +160,7 @@ module control_unit (ALUOp,
           BranchEQ:
             begin
                ALUSrcA = 0;
-               ALUSrcB = 4;
+               ALUSrcB = 3;
                ALUOp = 1;
                isBranch = 1;
                PCSrc = 1;
@@ -170,7 +170,7 @@ module control_unit (ALUOp,
 			BranchNEQ:
 				begin
 				   ALUSrcA = 0;
-               ALUSrcB = 4;
+               ALUSrcB = 3;
                ALUOp = 1;
                isBranch = 1;
                PCSrc = 1;

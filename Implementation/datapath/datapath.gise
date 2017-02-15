@@ -38,6 +38,7 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="intReg16.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m16b2_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m3_1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m4_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m5_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="m7_1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="pcReg16.sym" xil_pn:origination="imported"/>
