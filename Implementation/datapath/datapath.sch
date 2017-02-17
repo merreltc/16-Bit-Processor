@@ -81,6 +81,8 @@
         <signal name="IR(7:0)" />
         <signal name="isBIEQ" />
         <signal name="ALUSrcB(1:0)" />
+        <signal name="int2" />
+        <signal name="int3" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
         <port polarity="Input" name="intWrite" />
@@ -91,6 +93,8 @@
         <port polarity="Input" name="intLvl0" />
         <port polarity="Output" name="intr" />
         <port polarity="Output" name="intDataOut(15:0)" />
+        <port polarity="Input" name="int2" />
+        <port polarity="Input" name="int3" />
         <blockdef name="reg16">
             <timestamp>2017-2-7T3:31:39</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
@@ -549,8 +553,8 @@
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="int0" name="int0" />
             <blockpin signalname="int1" name="int1" />
-            <blockpin signalname="G" name="int2" />
-            <blockpin signalname="G" name="int3" />
+            <blockpin signalname="int2" name="int2" />
+            <blockpin signalname="int3" name="int3" />
             <blockpin signalname="intDataIn(15:0)" name="dataIn(15:0)" />
             <blockpin signalname="intLvl1" name="intLvl1" />
             <blockpin signalname="Reset" name="RESET" />
@@ -1087,12 +1091,10 @@
         <branch name="int1">
             <wire x2="3744" y1="2800" y2="2800" x1="3696" />
         </branch>
-        <branch name="G">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="2864" type="branch" />
+        <branch name="int2">
             <wire x2="3744" y1="2864" y2="2864" x1="3696" />
         </branch>
-        <branch name="G">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="2928" type="branch" />
+        <branch name="int3">
             <wire x2="3744" y1="2928" y2="2928" x1="3696" />
         </branch>
         <branch name="intDataIn(15:0)">
@@ -1330,5 +1332,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1568" y="368" type="branch" />
             <wire x2="1600" y1="368" y2="368" x1="1568" />
         </branch>
+        <iomarker fontsize="28" x="3696" y="2864" name="int2" orien="R180" />
+        <iomarker fontsize="28" x="3696" y="2928" name="int3" orien="R180" />
     </sheet>
 </drawing>
