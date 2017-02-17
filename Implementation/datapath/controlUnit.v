@@ -84,7 +84,6 @@ module control_unit (ALUOp,
    parameter    C_Execution = 7;
    parameter    C_Write = 8;
    parameter    BranchEQ = 9;
-	parameter	 BranchNEQ = 19;
    parameter    Jump = 10;
 	parameter    JAL1 = 11;
 	parameter    JAL2 = 12;
@@ -94,6 +93,8 @@ module control_unit (ALUOp,
 	parameter	 SYSCALL = 16;
 	parameter	 EXCEPTION = 17;
 	parameter	 STALL = 18;
+	parameter	 BranchNEQ = 19;
+	parameter	 LWSTALL = 20;
 
    //register calculation
    always @ (posedge CLK, posedge Reset)
@@ -191,6 +192,7 @@ module control_unit (ALUOp,
 			 
 			 LW2:
 			 	begin
+					//IorD = 1;
 					WriteDest = 0;
 					RegWrite = 1;
 					WriteSrc = 2;
@@ -268,6 +270,11 @@ module control_unit (ALUOp,
 			STALL:
 				begin
 					IorD = 1;
+				end
+			
+			LWSTALL:
+				begin
+				
 				end
         
           default:
@@ -403,9 +410,9 @@ module control_unit (ALUOp,
                $display("In Jump, the next_state is %d", next_state);
             end
 				
-				LW1:
+			LW1:
 				begin
-					next_state = LW2;
+					next_state = LWSTALL;
                $display("In LW1, the next_state is %d", next_state);
 				end
 			 
@@ -472,11 +479,19 @@ module control_unit (ALUOp,
 			EXCEPTION:
 				begin
 					next_state = Fetch;
+					$display("In EXCEPTION, the next_state is %d", next_state);
 				end
 				
 			STALL:
 				begin
 					next_state = Fetch;
+					$display("In STALL, the next_state is %d", next_state);
+				end
+				
+			LWSTALL:
+				begin
+					next_state = LW2;
+					$display("In LWSTALL, the next_state is %d", next_state);
 				end
           
           default:

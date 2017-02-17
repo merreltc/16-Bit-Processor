@@ -57,8 +57,8 @@ cleanup: rtr	$v, $s0	      # $v = m
 	addi	$st, 0	      # $cr = $st
 
 	lw	$s0 	      # restore $s0
-	addi	$st, 4	      # $st + 4
+	addi	$st, 4	      # $cr = $st + 4
 
-	ctr	$st 	      # $st = $st = 4
+	ctr	$st 	      # $st = $st + 4
 	lw	$ra	      # restore $ra
 	jr	$ra
