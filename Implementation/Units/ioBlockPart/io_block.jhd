@@ -1,0 +1,3 @@
+MODULE io_block
+	SUBMODULE lcd_driver
+		INSTANCE XLXI_13
