@@ -1,4 +1,4 @@
-MODULE intReg16_test
+MODULE IOLevel
 	SUBMODULE debouncer
 		INSTANCE XLXI_10
 	SUBMODULE debouncer
@@ -15,3 +15,5 @@ MODULE intReg16_test
 		INSTANCE XLXI_34
 	SUBMODULE datapath
 		INSTANCE XLXI_70
+	SUBMODULE lcd_driver
+		INSTANCE XLXI_71

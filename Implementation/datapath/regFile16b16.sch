@@ -10,7 +10,6 @@
         <signal name="CLK" />
         <signal name="DataIn(15:0)" />
         <signal name="WriteAddr(3:0)" />
-        <signal name="H(15:0)" />
         <signal name="B(15:0)" />
         <signal name="D(15:0)" />
         <signal name="E(15:0)" />
@@ -22,7 +21,6 @@
         <signal name="R15" />
         <signal name="ReadAddrA(3:0)" />
         <signal name="J(15:0)" />
-        <signal name="K(15:0)" />
         <signal name="L(15:0)" />
         <signal name="M(15:0)" />
         <signal name="N(15:0)" />
@@ -53,6 +51,8 @@
         <signal name="tempST(15:0)" />
         <signal name="stWrite" />
         <signal name="V" />
+        <signal name="regV(15:0)" />
+        <signal name="regA0(15:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="DataIn(15:0)" />
         <port polarity="Input" name="WriteAddr(3:0)" />
@@ -64,6 +64,8 @@
         <port polarity="Input" name="CRWrite" />
         <port polarity="Input" name="Write" />
         <port polarity="Input" name="Reset" />
+        <port polarity="Output" name="regV(15:0)" />
+        <port polarity="Output" name="regA0(15:0)" />
         <blockdef name="gnd">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-96" x1="64" />
@@ -204,7 +206,7 @@
             <blockpin signalname="R10" name="CE" />
             <blockpin signalname="DataIn(15:0)" name="D(15:0)" />
             <blockpin signalname="low" name="R" />
-            <blockpin signalname="K(15:0)" name="Q(15:0)" />
+            <blockpin signalname="regA0(15:0)" name="Q(15:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_68">
             <blockpin signalname="CLK" name="C" />
@@ -225,7 +227,7 @@
             <blockpin signalname="R7" name="CE" />
             <blockpin signalname="DataIn(15:0)" name="D(15:0)" />
             <blockpin signalname="low" name="R" />
-            <blockpin signalname="H(15:0)" name="Q(15:0)" />
+            <blockpin signalname="regV(15:0)" name="Q(15:0)" />
         </block>
         <block symbolname="fd16re" name="XLXI_72">
             <blockpin signalname="CLK" name="C" />
@@ -291,10 +293,10 @@
             <blockpin signalname="E(15:0)" name="E(15:0)" />
             <blockpin signalname="F(15:0)" name="F(15:0)" />
             <blockpin signalname="G(15:0)" name="G(15:0)" />
-            <blockpin signalname="H(15:0)" name="H(15:0)" />
+            <blockpin signalname="regV(15:0)" name="H(15:0)" />
             <blockpin signalname="ReadDataCR(15:0)" name="I(15:0)" />
             <blockpin signalname="J(15:0)" name="J(15:0)" />
-            <blockpin signalname="K(15:0)" name="K(15:0)" />
+            <blockpin signalname="regA0(15:0)" name="K(15:0)" />
             <blockpin signalname="L(15:0)" name="L(15:0)" />
             <blockpin signalname="M(15:0)" name="M(15:0)" />
             <blockpin signalname="N(15:0)" name="N(15:0)" />
@@ -311,10 +313,10 @@
             <blockpin signalname="E(15:0)" name="E(15:0)" />
             <blockpin signalname="F(15:0)" name="F(15:0)" />
             <blockpin signalname="G(15:0)" name="G(15:0)" />
-            <blockpin signalname="H(15:0)" name="H(15:0)" />
+            <blockpin signalname="regV(15:0)" name="H(15:0)" />
             <blockpin signalname="ReadDataCR(15:0)" name="I(15:0)" />
             <blockpin signalname="J(15:0)" name="J(15:0)" />
-            <blockpin signalname="K(15:0)" name="K(15:0)" />
+            <blockpin signalname="regA0(15:0)" name="K(15:0)" />
             <blockpin signalname="L(15:0)" name="L(15:0)" />
             <blockpin signalname="M(15:0)" name="M(15:0)" />
             <blockpin signalname="N(15:0)" name="N(15:0)" />
@@ -456,7 +458,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4256" y="560" type="branch" />
             <wire x2="4352" y1="560" y2="560" x1="4256" />
         </branch>
-        <branch name="H(15:0)">
+        <branch name="regV(15:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4256" y="624" type="branch" />
             <wire x2="4352" y1="624" y2="624" x1="4256" />
         </branch>
@@ -472,8 +474,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2448" y="544" type="branch" />
             <wire x2="2544" y1="544" y2="544" x1="2448" />
         </branch>
-        <branch name="H(15:0)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3008" y="320" type="branch" />
+        <branch name="regV(15:0)">
             <wire x2="3008" y1="320" y2="320" x1="2928" />
         </branch>
         <branch name="CLK">
@@ -507,8 +508,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2448" y="1744" type="branch" />
             <wire x2="2544" y1="1744" y2="1744" x1="2448" />
         </branch>
-        <branch name="K(15:0)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3008" y="1520" type="branch" />
+        <branch name="regA0(15:0)">
             <wire x2="3008" y1="1520" y2="1520" x1="2928" />
         </branch>
         <branch name="CLK">
@@ -685,7 +685,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4256" y="752" type="branch" />
             <wire x2="4352" y1="752" y2="752" x1="4256" />
         </branch>
-        <branch name="K(15:0)">
+        <branch name="regA0(15:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4256" y="816" type="branch" />
             <wire x2="4352" y1="816" y2="816" x1="4256" />
         </branch>
@@ -738,7 +738,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4272" y="1920" type="branch" />
             <wire x2="4368" y1="1920" y2="1920" x1="4272" />
         </branch>
-        <branch name="H(15:0)">
+        <branch name="regV(15:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4272" y="1984" type="branch" />
             <wire x2="4368" y1="1984" y2="1984" x1="4272" />
         </branch>
@@ -750,7 +750,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4272" y="2112" type="branch" />
             <wire x2="4368" y1="2112" y2="2112" x1="4272" />
         </branch>
-        <branch name="K(15:0)">
+        <branch name="regA0(15:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4272" y="2176" type="branch" />
             <wire x2="4368" y1="2176" y2="2176" x1="4272" />
         </branch>
@@ -975,5 +975,7 @@
             <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="144" y="1296" type="branch" />
             <wire x2="144" y1="1264" y2="1296" x1="144" />
         </branch>
+        <iomarker fontsize="28" x="3008" y="320" name="regV(15:0)" orien="R0" />
+        <iomarker fontsize="28" x="3008" y="1520" name="regA0(15:0)" orien="R0" />
     </sheet>
 </drawing>

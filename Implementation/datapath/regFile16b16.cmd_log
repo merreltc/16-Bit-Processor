@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3adsp -w -refsym regFile16b16 {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/regFile16b16.sch} {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/regFile16b16.sym} 
