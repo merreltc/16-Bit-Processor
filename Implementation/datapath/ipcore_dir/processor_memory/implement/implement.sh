@@ -22,7 +22,7 @@ cp ../example_design/processor_memory_top.ucf results/
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc3sd1800a-fg676-4 processor_memory_top
+ngdbuild -p xc3s500e-fg320-4 processor_memory_top
 
 echo 'Running map'
 map processor_memory_top -o mapped.ncd -pr i

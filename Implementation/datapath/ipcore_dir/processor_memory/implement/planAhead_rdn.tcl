@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc3sd1800afg676-4
+set device xc3s500efg320-4
 set projName processor_memory
 set design processor_memory
 set projDir [file dirname [info script]]

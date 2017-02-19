@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="spartan3adsp" name="DeviceFamilyName">
+    <attr value="spartan3e" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -114,7 +114,6 @@
             <wire x2="1008" y1="576" y2="608" x1="1008" />
         </branch>
         <iomarker fontsize="28" x="1008" y="480" name="CLK" orien="R180" />
-        <iomarker fontsize="28" x="1568" y="352" name="PC(15:0)" orien="R0" />
         <instance x="320" y="608" name="XLXI_4" orien="R0">
         </instance>
         <branch name="initPC(15:0)">
@@ -153,5 +152,6 @@
             <wire x2="320" y1="640" y2="640" x1="304" />
         </branch>
         <iomarker fontsize="28" x="208" y="640" name="Reset" orien="R180" />
+        <iomarker fontsize="28" x="1568" y="352" name="PC(15:0)" orien="R0" />
     </sheet>
 </drawing>

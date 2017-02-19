@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="spartan3adsp" name="DeviceFamilyName">
+    <attr value="spartan3e" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -62,7 +62,6 @@
         <signal name="syscallW" />
         <signal name="lcd_E" />
         <signal name="lcd_rs" />
-        <signal name="XLXN_180" />
         <signal name="lcd_D(3:0)" />
         <signal name="sf_ce" />
         <signal name="sf_rw" />
@@ -175,7 +174,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="datapath">
-            <timestamp>2017-2-18T0:23:2</timestamp>
+            <timestamp>2017-2-19T21:48:33</timestamp>
             <rect width="64" x="400" y="340" height="24" />
             <line x2="464" y1="352" y2="352" x1="400" />
             <line x2="464" y1="288" y2="288" x1="400" />
@@ -194,23 +193,6 @@
             <rect width="64" x="400" y="-44" height="24" />
             <line x2="464" y1="-32" y2="-32" x1="400" />
             <rect width="336" x="64" y="-512" height="896" />
-        </blockdef>
-        <blockdef name="lcd_driver">
-            <timestamp>2017-2-17T23:44:54</timestamp>
-            <rect width="256" x="64" y="-384" height="384" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="0" y1="-272" y2="-272" x1="64" />
-            <line x2="0" y1="-192" y2="-192" x1="64" />
-            <line x2="0" y1="-112" y2="-112" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <rect width="64" x="320" y="-172" height="24" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="vcc">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -327,10 +309,10 @@
             <blockpin signalname="dataIn(15:0)" name="intDataIn(15:0)" />
             <blockpin signalname="intLvl1" name="intLvl1" />
             <blockpin signalname="intLvl0" name="intLvl0" />
+            <blockpin signalname="lcdWData(15:0)" name="lcdWData(15:0)" />
             <blockpin signalname="XLXN_139" name="intr" />
             <blockpin signalname="dataOut(15:0)" name="intDataOut(15:0)" />
             <blockpin signalname="syscallW" name="syscallW" />
-            <blockpin signalname="lcdWData(15:0)" name="lcdWData(15:0)" />
         </block>
         <block symbolname="buf" name="XLXI_22">
             <blockpin signalname="dataOut(0)" name="I" />
@@ -393,19 +375,6 @@
         </block>
         <block symbolname="vcc" name="XLXI_76">
             <blockpin signalname="V" name="P" />
-        </block>
-        <block symbolname="lcd_driver" name="XLXI_71">
-            <blockpin signalname="CLK" name="CLK" />
-            <blockpin signalname="XLXN_94" name="RESET" />
-            <blockpin signalname="G" name="CLEAR" />
-            <blockpin signalname="syscallW" name="Write" />
-            <blockpin signalname="lcdWData(15:0)" name="D(15:0)" />
-            <blockpin signalname="lcd_E" name="lcd_E" />
-            <blockpin signalname="lcd_rs" name="lcd_rs" />
-            <blockpin signalname="XLXN_180" name="lcdReady" />
-            <blockpin signalname="lcd_D(3:0)" name="lcd_D(3:0)" />
-            <blockpin signalname="sf_ce" name="sf_ce" />
-            <blockpin signalname="sf_rw" name="lcd_rw" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -823,9 +792,6 @@
         <branch name="lcd_rs">
             <wire x2="2656" y1="1088" y2="1088" x1="2608" />
         </branch>
-        <branch name="XLXN_180">
-            <wire x2="2656" y1="1152" y2="1152" x1="2608" />
-        </branch>
         <branch name="lcd_D(3:0)">
             <wire x2="2672" y1="1216" y2="1216" x1="2608" />
         </branch>
@@ -835,8 +801,6 @@
         <branch name="sf_rw">
             <wire x2="2672" y1="1344" y2="1344" x1="2608" />
         </branch>
-        <instance x="2224" y="1376" name="XLXI_71" orien="R0">
-        </instance>
         <branch name="lcdWData(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1344" type="branch" />
             <wire x2="2224" y1="1344" y2="1344" x1="2144" />

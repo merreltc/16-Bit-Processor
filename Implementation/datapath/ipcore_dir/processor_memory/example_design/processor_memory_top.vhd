@@ -81,10 +81,9 @@ USE UNISIM.VCOMPONENTS.ALL;
 ENTITY processor_memory_top IS
   PORT (
       --Inputs - Port A
-    RSTA           : IN STD_LOGIC;  --opt port
   
     WEA            : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    ADDRA          : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    ADDRA          : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
   
     DINA           : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
   
@@ -109,10 +108,9 @@ ARCHITECTURE xilinx OF processor_memory_top IS
   COMPONENT processor_memory IS
   PORT (
       --Port A
-    RSTA       : IN STD_LOGIC;  --opt port
   
     WEA        : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    ADDRA      : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    ADDRA      : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
   
     DINA       : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
   
@@ -142,7 +140,6 @@ BEGIN
   bmg0 : processor_memory
     PORT MAP (
       --Port A
-      RSTA       => RSTA,
   
       WEA        => WEA,
       ADDRA      => ADDRA,

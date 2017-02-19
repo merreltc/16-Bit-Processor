@@ -46,7 +46,6 @@
 wcfg new
 isim set radix hex
 wave add /bmg_tb_top/status
-      wave add  /bmg_tb_top/BMG_TB_INST/BMG_PORT/RSTA
       wave add  /bmg_tb_top/BMG_TB_INST/BMG_PORT/CLKA
       wave add  /bmg_tb_top/BMG_TB_INST/BMG_PORT/ADDRA
       wave add  /bmg_tb_top/BMG_TB_INST/BMG_PORT/DINA

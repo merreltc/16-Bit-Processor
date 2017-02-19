@@ -34,15 +34,15 @@ module m5_1(
 			case(S)
 			
 				0:
-					assign O = I0;
+					O = I0;
 				1:
-					assign O = I1;
+					O = I1;
 				2:
-					assign O = I2;
+					O = I2;
 				3:
-					assign O = I3;
+					O = I3;
 				4:
-					assign O = I4;
+					O = I4;
 				default:
 					$display("ERROR! m5_1 SET VALUE OUT OF RANGE!");
 				

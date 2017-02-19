@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="datapath">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-2-18T0:23:2</timestamp>
+    <timestamp>2017-2-19T21:48:33</timestamp>
     <pin polarity="Input" x="0" y="-480" name="CLK" />
     <pin polarity="Input" x="0" y="-416" name="Reset" />
     <pin polarity="Input" x="0" y="-352" name="intWrite" />
@@ -12,10 +12,10 @@
     <pin polarity="Input" x="0" y="-160" name="intDataIn(15:0)" />
     <pin polarity="Input" x="0" y="-96" name="intLvl1" />
     <pin polarity="Input" x="0" y="-32" name="intLvl0" />
+    <pin polarity="Output" x="464" y="352" name="lcdWData(15:0)" />
     <pin polarity="Output" x="464" y="-480" name="intr" />
     <pin polarity="Output" x="464" y="-32" name="intDataOut(15:0)" />
     <pin polarity="Output" x="464" y="288" name="syscallW" />
-    <pin polarity="Output" x="464" y="352" name="lcdWData(15:0)" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="232" y="-520" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin CLK" />
@@ -28,10 +28,10 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin intDataIn(15:0)" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin intLvl1" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin intLvl0" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="352" type="pin lcdWData(15:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-480" type="pin intr" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-32" type="pin intDataOut(15:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="288" type="pin syscallW" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="352" type="pin lcdWData(15:0)" />
         <rect width="64" x="400" y="340" height="24" />
         <line x2="464" y1="352" y2="352" x1="400" />
         <line x2="464" y1="288" y2="288" x1="400" />

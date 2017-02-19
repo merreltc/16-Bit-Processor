@@ -4,7 +4,6 @@ quietly WaveActivateNextPane {} 0
 
 
       add wave -noupdate /bmg_tb_top/status
-      add wave -noupdate /bmg_tb_top/bmg_tb_inst/bmg_port/RSTA
       add wave -noupdate /bmg_tb_top/bmg_tb_inst/bmg_port/CLKA
       add wave -noupdate /bmg_tb_top/bmg_tb_inst/bmg_port/ADDRA
       add wave -noupdate /bmg_tb_top/bmg_tb_inst/bmg_port/DINA

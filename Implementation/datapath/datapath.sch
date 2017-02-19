@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="spartan3adsp" name="DeviceFamilyName">
+    <attr value="spartan3e" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -47,9 +47,8 @@
         <signal name="SrcB(15:0)" />
         <signal name="newPC(15:0)" />
         <signal name="memoryData(15:0)" />
-        <signal name="XLXN_653(15:0)" />
         <signal name="XLXN_675" />
-        <signal name="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V" />
+        <signal name="G,G,G,G,G,G,V,V,V,V,V,V,V,V,V,V" />
         <signal name="IR(7:0)" />
         <signal name="isBIEQ" />
         <signal name="ALUSrcB(1:0)" />
@@ -58,42 +57,18 @@
         <signal name="MemRead" />
         <signal name="IR(15:12)" />
         <signal name="XLXN_132(15:0)" />
-        <signal name="XLXN_701(15:0)" />
         <signal name="XLXN_133(15:0)" />
         <signal name="XLXN_136(15:0)" />
         <signal name="op(3:0)" />
-        <signal name="XLXN_727(15:0)" />
         <signal name="syscall" />
         <signal name="regV(15:0)" />
         <signal name="lcdWData(15:0)" />
         <signal name="ovflw" />
         <signal name="isNegative" />
         <signal name="XLXN_96(15:0)" />
-        <signal name="XLXN_759(15:0)" />
         <signal name="XLXN_692(15:0)" />
-        <signal name="XLXN_784(15:0)" />
-        <signal name="XLXN_785(15:0)" />
-        <signal name="XLXN_786(15:0)" />
-        <signal name="XLXN_787(15:0)" />
-        <signal name="XLXN_809(15:0)" />
-        <signal name="XLXN_810(15:0)" />
-        <signal name="XLXN_811(15:0)" />
-        <signal name="XLXN_812(15:0)" />
         <signal name="SrcA(15:0)" />
         <signal name="IR(3:0)" />
-        <signal name="XLXN_834(15:0)" />
-        <signal name="XLXN_835(15:0)" />
-        <signal name="XLXN_836(15:0)" />
-        <signal name="XLXN_837(15:0)" />
-        <signal name="XLXN_851(15:0)" />
-        <signal name="XLXN_852(15:0)" />
-        <signal name="XLXN_853(15:0)" />
-        <signal name="XLXN_854(15:0)" />
-        <signal name="XLXN_855(15:0)" />
-        <signal name="XLXN_856" />
-        <signal name="XLXN_870(15:0)" />
-        <signal name="XLXN_871(15:0)" />
-        <signal name="XLXN_872(15:0)" />
         <signal name="IR(11:0)" />
         <signal name="PC(15:12)" />
         <signal name="EPC(15:0)" />
@@ -112,6 +87,7 @@
         <signal name="IR(15:0)" />
         <signal name="syscallW" />
         <signal name="regV(0)" />
+        <signal name="XLXN_693(9:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
         <port polarity="Output" name="lcdWData(15:0)" />
@@ -356,12 +332,11 @@
             <rect width="256" x="64" y="-192" height="256" />
         </blockdef>
         <blockdef name="processor_memory">
-            <timestamp>2017-2-17T22:25:2</timestamp>
+            <timestamp>2017-2-19T21:40:19</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
             <line x2="32" y1="208" y2="208" style="linewidth:W" x1="0" />
-            <line x2="32" y1="240" y2="240" x1="0" />
             <line x2="32" y1="272" y2="272" x1="0" />
             <line x2="544" y1="80" y2="80" style="linewidth:W" x1="576" />
         </blockdef>
@@ -440,6 +415,17 @@
             <rect width="64" x="320" y="-300" height="24" />
             <line x2="384" y1="-288" y2="-288" x1="320" />
         </blockdef>
+        <blockdef name="m10b2_1">
+            <timestamp>2017-2-19T21:46:27</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+        </blockdef>
         <block symbolname="constant4b1001" name="XLXI_52">
             <blockpin signalname="nine(3:0)" name="O(3:0)" />
         </block>
@@ -502,23 +488,16 @@
             <blockpin signalname="WriteAddr(3:0)" name="O(3:0)" />
         </block>
         <block symbolname="processor_memory" name="XLXI_150">
-            <blockpin signalname="XLXN_653(15:0)" name="addra(15:0)" />
+            <blockpin signalname="XLXN_693(9:0)" name="addra(9:0)" />
             <blockpin signalname="A(15:0)" name="dina(15:0)" />
             <blockpin signalname="MemWrite" name="wea(0:0)" />
-            <blockpin signalname="Reset" name="rsta" />
             <blockpin signalname="CLK" name="clka" />
             <blockpin signalname="memoryData(15:0)" name="douta(15:0)" />
-        </block>
-        <block symbolname="m16b2_1" name="XLXI_108">
-            <blockpin signalname="C(15:0)" name="I0(15:0)" />
-            <blockpin signalname="PC(15:0)" name="I1(15:0)" />
-            <blockpin signalname="XLXN_653(15:0)" name="O(15:0)" />
-            <blockpin signalname="IorD" name="S" />
         </block>
         <block symbolname="pcReg16" name="XLXI_154">
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="Reset" name="Reset" />
-            <blockpin signalname="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V" name="initPC(15:0)" />
+            <blockpin signalname="G,G,G,G,G,G,V,V,V,V,V,V,V,V,V,V" name="initPC(15:0)" />
             <blockpin signalname="newPC(15:0)" name="newPC(15:0)" />
             <blockpin signalname="XLXN_675" name="Write" />
             <blockpin signalname="PC(15:0)" name="PC(15:0)" />
@@ -677,6 +656,12 @@
             <blockpin signalname="syscall" name="I1" />
             <blockpin signalname="syscallW" name="O" />
         </block>
+        <block symbolname="m10b2_1" name="XLXI_158">
+            <blockpin signalname="IorD" name="S" />
+            <blockpin signalname="C(15:0)" name="I0(15:0)" />
+            <blockpin signalname="PC(15:0)" name="I1(15:0)" />
+            <blockpin signalname="XLXN_693(9:0)" name="O(9:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
         <instance x="912" y="3456" name="XLXI_52" orien="R0">
@@ -834,10 +819,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="768" y="816" type="branch" />
             <wire x2="832" y1="816" y2="816" x1="768" />
         </branch>
-        <branch name="Reset">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="768" y="944" type="branch" />
-            <wire x2="832" y1="944" y2="944" x1="768" />
-        </branch>
         <branch name="CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="800" y="976" type="branch" />
             <wire x2="832" y1="976" y2="976" x1="800" />
@@ -854,8 +835,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="912" type="branch" />
             <wire x2="832" y1="912" y2="912" x1="736" />
         </branch>
-        <instance x="64" y="1584" name="XLXI_108" orien="R0">
-        </instance>
         <branch name="C(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="48" y="1424" type="branch" />
             <wire x2="64" y1="1424" y2="1424" x1="48" />
@@ -863,12 +842,6 @@
         <branch name="PC(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="48" y="1488" type="branch" />
             <wire x2="64" y1="1488" y2="1488" x1="48" />
-        </branch>
-        <branch name="XLXN_653(15:0)">
-            <wire x2="448" y1="1072" y2="1424" x1="448" />
-            <wire x2="816" y1="1072" y2="1072" x1="448" />
-            <wire x2="832" y1="784" y2="784" x1="816" />
-            <wire x2="816" y1="784" y2="1072" x1="816" />
         </branch>
         <branch name="XLXN_675">
             <wire x2="32" y1="576" y2="1040" x1="32" />
@@ -884,7 +857,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="208" y="880" type="branch" />
             <wire x2="240" y1="880" y2="880" x1="208" />
         </branch>
-        <branch name="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V">
+        <branch name="G,G,G,G,G,G,V,V,V,V,V,V,V,V,V,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="208" y="816" type="branch" />
             <wire x2="240" y1="816" y2="816" x1="208" />
         </branch>
@@ -899,10 +872,6 @@
         <branch name="PC(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1008" type="branch" />
             <wire x2="672" y1="1008" y2="1008" x1="624" />
-        </branch>
-        <branch name="IorD">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="16" y="1616" type="branch" />
-            <wire x2="64" y1="1616" y2="1616" x1="16" />
         </branch>
         <branch name="Reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1696" y="1008" type="branch" />
@@ -1399,5 +1368,16 @@
         <instance x="2480" y="1424" name="XLXI_157" orien="R0" />
         <iomarker fontsize="28" x="2944" y="1328" name="syscallW" orien="R0" />
         <iomarker fontsize="28" x="2288" y="1136" name="lcdWData(15:0)" orien="R0" />
+        <instance x="64" y="1520" name="XLXI_158" orien="R0">
+        </instance>
+        <branch name="IorD">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="16" y="1360" type="branch" />
+            <wire x2="64" y1="1360" y2="1360" x1="16" />
+        </branch>
+        <branch name="XLXN_693(9:0)">
+            <wire x2="688" y1="1360" y2="1360" x1="448" />
+            <wire x2="688" y1="784" y2="1360" x1="688" />
+            <wire x2="832" y1="784" y2="784" x1="688" />
+        </branch>
     </sheet>
 </drawing>
