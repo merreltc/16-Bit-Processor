@@ -32,11 +32,11 @@ module m3_1(
 			case(S)
 			
 				0:
-					assign O = I0;
+					O = I0;
 				1:
-					assign O = I1;
+					O = I1;
 				2:
-					assign O = I2;
+					O = I2;
 				default:
 					$display("ERROR! m3_1 SET VALUE OUT OF RANGE!");
 				

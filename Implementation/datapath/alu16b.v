@@ -33,38 +33,38 @@ always @ (*)
 	begin
 		case (op)
 		0: // And
-			assign R = A & B;
+			R = A & B;
 		1: // Or
-			assign R = A | B;
+			R = A | B;
 		2: // Add
 		begin
-			assign R = A + B;
+			R = A + B;
 			ovfl=(A[15] & B[15] & ~R[15]) || (~A[15] & ~B[15] & R[15]);
 		end
 		3: // Sub
 		begin
-			assign R = A - B;
+			R = A - B;
 			ovfl=(A[15] & ~B[15] & ~R[15]) || (~A[15] & B[15] & R[15]);
 		end
 		4: // XOR
-			assign R = A ^ B;
+			R = A ^ B;
 		5: // Nor
-			assign R = ~(A | B);
+			R = ~(A | B);
 		6: // Nand
-			assign R = ~(A & B);
+			R = ~(A & B);
 		7: // SLT
 		begin
-			assign R = A - B;
+			R = A - B;
 			ovfl=(A[15] & ~B[15] & ~R[15]) || (~A[15] & B[15] & R[15]);
 			
 			if(R[15] == 1)
 			begin
-				assign R = 1;
+				R = 1;
 			end
 			
 			else
 			begin
-				assign R = 0;
+				R = 0;
 			end
 		
 		end
@@ -75,23 +75,23 @@ always @ (*)
 		// Zero and negative detection.
 		if(R == 0)
 		begin
-			assign isZero = 1;
-			assign isNegative = 0;
+			isZero = 1;
+			isNegative = 0;
 		end
 		else if(R[15] == 1)
 		begin
-			assign isZero = 0;
-			assign isNegative = 1;
+			isZero = 0;
+			isNegative = 1;
 		end
 		else
 		begin
-			assign isZero = 0;
-			assign isNegative = 0;
+			isZero = 0;
+			isNegative = 0;
 		end
 		
 		if(!isBIEQ)
 		begin
-			assign isZero = !isZero;
+			isZero = !isZero;
 		end
 		
 	end

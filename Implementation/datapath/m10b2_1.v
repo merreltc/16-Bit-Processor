@@ -18,16 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module m7_1(
+module m10b2_1(
     input [15:0] I0,
     input [15:0] I1,
-    input [15:0] I2,
-    input [15:0] I3,
-	 input [15:0] I4,
-	 input [15:0] I5,
-	 input [15:0] I6,
-    input [2:0] S,
-    output reg [15:0] O
+    input S,
+    output reg [9:0] O
     );
 	
 	always @ (*)
@@ -36,21 +31,11 @@ module m7_1(
 			case(S)
 			
 				0:
-					O = I0;
+					O = I0[9:0];
 				1:
-					O = I1;
-				2:
-					O = I2;
-				3:
-					O = I3;
-				4:
-					O = I4;
-				5:
-					O = I5;
-				6:
-					O = I6;
+					O = I1[9:0];
 				default:
-					$display("ERROR! m7_1 SET VALUE OUT OF RANGE!");
+					$display("ERROR! m10b2_ 1 SET VALUE OUT OF RANGE!");
 				
 			endcase
 			

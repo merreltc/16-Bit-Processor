@@ -1,168 +1,144 @@
-VERSION 6
-BEGIN SCHEMATIC
-    BEGIN ATTR DeviceFamilyName "spartan3e"
-        DELETE all:0
-        EDITNAME all:0
-        EDITTRAIT all:0
-    END ATTR
-    BEGIN NETLIST
-        SIGNAL IA(0)
-        SIGNAL IB(0)
-        SIGNAL IA(1)
-        SIGNAL IB(1)
-        SIGNAL IA(2)
-        SIGNAL IB(2)
-        SIGNAL IA(3)
-        SIGNAL IB(3)
-        SIGNAL Sel
-        SIGNAL O(0)
-        SIGNAL O(1)
-        SIGNAL O(2)
-        SIGNAL O(3)
-        SIGNAL IA(3:0)
-        SIGNAL IB(3:0)
-        SIGNAL O(3:0)
-        PORT Input Sel
-        PORT Input IA(3:0)
-        PORT Input IB(3:0)
-        PORT Output O(3:0)
-        BEGIN BLOCKDEF m2_1
-            TIMESTAMP 2000 1 1 10 10 10
-            LINE N 96 -64 96 -192 
-            LINE N 256 -96 96 -64 
-            LINE N 256 -160 256 -96 
-            LINE N 96 -192 256 -160 
-            LINE N 176 -32 96 -32 
-            LINE N 176 -80 176 -32 
-            LINE N 0 -32 96 -32 
-            LINE N 320 -128 256 -128 
-            LINE N 0 -96 96 -96 
-            LINE N 0 -160 96 -160 
-        END BLOCKDEF
-        BEGIN BLOCK XLXI_1 m2_1
-            PIN D0 IA(0)
-            PIN D1 IB(0)
-            PIN S0 Sel
-            PIN O O(0)
-        END BLOCK
-        BEGIN BLOCK XLXI_2 m2_1
-            PIN D0 IA(1)
-            PIN D1 IB(1)
-            PIN S0 Sel
-            PIN O O(1)
-        END BLOCK
-        BEGIN BLOCK XLXI_3 m2_1
-            PIN D0 IA(2)
-            PIN D1 IB(2)
-            PIN S0 Sel
-            PIN O O(2)
-        END BLOCK
-        BEGIN BLOCK XLXI_4 m2_1
-            PIN D0 IA(3)
-            PIN D1 IB(3)
-            PIN S0 Sel
-            PIN O O(3)
-        END BLOCK
-    END NETLIST
-    BEGIN SHEET 1 3520 2720
-        INSTANCE XLXI_1 1040 320 R0
-        INSTANCE XLXI_2 1040 560 R0
-        INSTANCE XLXI_3 1040 800 R0
-        INSTANCE XLXI_4 1040 1040 R0
-        BEGIN BRANCH IA(0)
-            WIRE 960 160 1040 160
-            BEGIN DISPLAY 960 160 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IB(0)
-            WIRE 960 224 1040 224
-            BEGIN DISPLAY 960 224 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IA(1)
-            WIRE 960 400 1040 400
-            BEGIN DISPLAY 960 400 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IB(1)
-            WIRE 960 464 1040 464
-            BEGIN DISPLAY 960 464 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IA(2)
-            WIRE 960 640 1040 640
-            BEGIN DISPLAY 960 640 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IB(2)
-            WIRE 960 704 1040 704
-            BEGIN DISPLAY 960 704 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IA(3)
-            WIRE 960 880 1040 880
-            BEGIN DISPLAY 960 880 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IB(3)
-            WIRE 960 944 1040 944
-            BEGIN DISPLAY 960 944 ATTR Name
-                ALIGNMENT SOFT-RIGHT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH O(0)
-            WIRE 1360 192 1440 192
-            BEGIN DISPLAY 1440 192 ATTR Name
-                ALIGNMENT SOFT-LEFT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH O(1)
-            WIRE 1360 432 1440 432
-            BEGIN DISPLAY 1440 432 ATTR Name
-                ALIGNMENT SOFT-LEFT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH O(2)
-            WIRE 1360 672 1440 672
-            BEGIN DISPLAY 1440 672 ATTR Name
-                ALIGNMENT SOFT-LEFT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH O(3)
-            WIRE 1360 912 1440 912
-            BEGIN DISPLAY 1440 912 ATTR Name
-                ALIGNMENT SOFT-LEFT
-            END DISPLAY
-        END BRANCH
-        BEGIN BRANCH IA(3:0)
-            WIRE 480 160 640 160
-        END BRANCH
-        BEGIN BRANCH IB(3:0)
-            WIRE 480 320 640 320
-        END BRANCH
-        IOMARKER 480 160 IA(3:0) R180 28
-        IOMARKER 480 320 IB(3:0) R180 28
-        BEGIN BRANCH O(3:0)
-            WIRE 1760 240 1920 240
-        END BRANCH
-        IOMARKER 1920 240 O(3:0) R0 28
-        BEGIN BRANCH Sel
-            WIRE 880 1008 1008 1008
-            WIRE 1008 1008 1040 1008
-            WIRE 1008 288 1040 288
-            WIRE 1008 288 1008 528
-            WIRE 1008 528 1040 528
-            WIRE 1008 528 1008 768
-            WIRE 1008 768 1040 768
-            WIRE 1008 768 1008 1008
-        END BRANCH
-        IOMARKER 880 1008 Sel R180 28
-    END SHEET
-END SCHEMATIC
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="IA(0)" />
+        <signal name="IB(0)" />
+        <signal name="IA(1)" />
+        <signal name="IB(1)" />
+        <signal name="IA(2)" />
+        <signal name="IB(2)" />
+        <signal name="IA(3)" />
+        <signal name="IB(3)" />
+        <signal name="Sel" />
+        <signal name="O(0)" />
+        <signal name="O(1)" />
+        <signal name="O(2)" />
+        <signal name="O(3)" />
+        <signal name="IA(3:0)" />
+        <signal name="IB(3:0)" />
+        <signal name="O(3:0)" />
+        <port polarity="Input" name="Sel" />
+        <port polarity="Input" name="IA(3:0)" />
+        <port polarity="Input" name="IB(3:0)" />
+        <port polarity="Output" name="O(3:0)" />
+        <blockdef name="m2_1">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="96" y1="-64" y2="-192" x1="96" />
+            <line x2="96" y1="-96" y2="-64" x1="256" />
+            <line x2="256" y1="-160" y2="-96" x1="256" />
+            <line x2="256" y1="-192" y2="-160" x1="96" />
+            <line x2="96" y1="-32" y2="-32" x1="176" />
+            <line x2="176" y1="-80" y2="-32" x1="176" />
+            <line x2="96" y1="-32" y2="-32" x1="0" />
+            <line x2="256" y1="-128" y2="-128" x1="320" />
+            <line x2="96" y1="-96" y2="-96" x1="0" />
+            <line x2="96" y1="-160" y2="-160" x1="0" />
+        </blockdef>
+        <block symbolname="m2_1" name="XLXI_1">
+            <blockpin signalname="IA(0)" name="D0" />
+            <blockpin signalname="IB(0)" name="D1" />
+            <blockpin signalname="Sel" name="S0" />
+            <blockpin signalname="O(0)" name="O" />
+        </block>
+        <block symbolname="m2_1" name="XLXI_2">
+            <blockpin signalname="IA(1)" name="D0" />
+            <blockpin signalname="IB(1)" name="D1" />
+            <blockpin signalname="Sel" name="S0" />
+            <blockpin signalname="O(1)" name="O" />
+        </block>
+        <block symbolname="m2_1" name="XLXI_3">
+            <blockpin signalname="IA(2)" name="D0" />
+            <blockpin signalname="IB(2)" name="D1" />
+            <blockpin signalname="Sel" name="S0" />
+            <blockpin signalname="O(2)" name="O" />
+        </block>
+        <block symbolname="m2_1" name="XLXI_4">
+            <blockpin signalname="IA(3)" name="D0" />
+            <blockpin signalname="IB(3)" name="D1" />
+            <blockpin signalname="Sel" name="S0" />
+            <blockpin signalname="O(3)" name="O" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="1040" y="320" name="XLXI_1" orien="R0" />
+        <instance x="1040" y="560" name="XLXI_2" orien="R0" />
+        <instance x="1040" y="800" name="XLXI_3" orien="R0" />
+        <instance x="1040" y="1040" name="XLXI_4" orien="R0" />
+        <branch name="IA(0)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="160" type="branch" />
+            <wire x2="1040" y1="160" y2="160" x1="960" />
+        </branch>
+        <branch name="IB(0)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="224" type="branch" />
+            <wire x2="1040" y1="224" y2="224" x1="960" />
+        </branch>
+        <branch name="IA(1)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="400" type="branch" />
+            <wire x2="1040" y1="400" y2="400" x1="960" />
+        </branch>
+        <branch name="IB(1)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="464" type="branch" />
+            <wire x2="1040" y1="464" y2="464" x1="960" />
+        </branch>
+        <branch name="IA(2)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="640" type="branch" />
+            <wire x2="1040" y1="640" y2="640" x1="960" />
+        </branch>
+        <branch name="IB(2)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="704" type="branch" />
+            <wire x2="1040" y1="704" y2="704" x1="960" />
+        </branch>
+        <branch name="IA(3)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="880" type="branch" />
+            <wire x2="1040" y1="880" y2="880" x1="960" />
+        </branch>
+        <branch name="IB(3)">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="960" y="944" type="branch" />
+            <wire x2="1040" y1="944" y2="944" x1="960" />
+        </branch>
+        <branch name="O(0)">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1440" y="192" type="branch" />
+            <wire x2="1440" y1="192" y2="192" x1="1360" />
+        </branch>
+        <branch name="O(1)">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1440" y="432" type="branch" />
+            <wire x2="1440" y1="432" y2="432" x1="1360" />
+        </branch>
+        <branch name="O(2)">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1440" y="672" type="branch" />
+            <wire x2="1440" y1="672" y2="672" x1="1360" />
+        </branch>
+        <branch name="O(3)">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1440" y="912" type="branch" />
+            <wire x2="1440" y1="912" y2="912" x1="1360" />
+        </branch>
+        <branch name="IA(3:0)">
+            <wire x2="640" y1="160" y2="160" x1="480" />
+        </branch>
+        <branch name="IB(3:0)">
+            <wire x2="640" y1="320" y2="320" x1="480" />
+        </branch>
+        <iomarker fontsize="28" x="480" y="160" name="IA(3:0)" orien="R180" />
+        <iomarker fontsize="28" x="480" y="320" name="IB(3:0)" orien="R180" />
+        <branch name="O(3:0)">
+            <wire x2="1920" y1="240" y2="240" x1="1760" />
+        </branch>
+        <iomarker fontsize="28" x="1920" y="240" name="O(3:0)" orien="R0" />
+        <branch name="Sel">
+            <wire x2="1008" y1="1008" y2="1008" x1="880" />
+            <wire x2="1040" y1="1008" y2="1008" x1="1008" />
+            <wire x2="1040" y1="288" y2="288" x1="1008" />
+            <wire x2="1008" y1="288" y2="528" x1="1008" />
+            <wire x2="1040" y1="528" y2="528" x1="1008" />
+            <wire x2="1008" y1="528" y2="768" x1="1008" />
+            <wire x2="1040" y1="768" y2="768" x1="1008" />
+            <wire x2="1008" y1="768" y2="1008" x1="1008" />
+        </branch>
+        <iomarker fontsize="28" x="880" y="1008" name="Sel" orien="R180" />
+    </sheet>
+</drawing>

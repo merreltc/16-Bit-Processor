@@ -1,1 +1,0 @@
-sch2sym -intstyle ise -family spartan3adsp -w -refsym lcd_driver {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/lcd_driver.sch} {C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/lcd_driver.sym} 
