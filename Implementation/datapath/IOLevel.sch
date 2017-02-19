@@ -60,12 +60,12 @@
         <signal name="sf_oe" />
         <signal name="sf_we" />
         <signal name="syscallW" />
-        <signal name="lcd_E" />
-        <signal name="lcd_rs" />
-        <signal name="lcd_D(3:0)" />
-        <signal name="sf_ce" />
-        <signal name="sf_rw" />
         <signal name="lcdWData(15:0)" />
+        <signal name="lcd_E" />
+        <signal name="lcd_D(3:0)" />
+        <signal name="sf_rw" />
+        <signal name="lcd_rs" />
+        <signal name="sf_ce" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="s_button" />
         <port polarity="Input" name="w_button" />
@@ -92,10 +92,10 @@
         <port polarity="Output" name="sf_oe" />
         <port polarity="Output" name="sf_we" />
         <port polarity="Output" name="lcd_E" />
-        <port polarity="Output" name="lcd_rs" />
         <port polarity="Output" name="lcd_D(3:0)" />
-        <port polarity="Output" name="sf_ce" />
         <port polarity="Output" name="sf_rw" />
+        <port polarity="Output" name="lcd_rs" />
+        <port polarity="Output" name="sf_ce" />
         <blockdef name="debouncer">
             <timestamp>2010-10-1T20:10:55</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
@@ -199,6 +199,23 @@
             <line x2="64" y1="-32" y2="-64" x1="64" />
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
+        <blockdef name="lcd_driver">
+            <timestamp>2017-2-19T22:21:3</timestamp>
+            <rect width="256" x="64" y="-384" height="384" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="debouncer" name="XLXI_5">
             <blockpin signalname="CLK" name="clk" />
@@ -375,6 +392,19 @@
         </block>
         <block symbolname="vcc" name="XLXI_76">
             <blockpin signalname="V" name="P" />
+        </block>
+        <block symbolname="lcd_driver" name="XLXI_80">
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="XLXN_94" name="RESET" />
+            <blockpin signalname="G" name="CLEAR" />
+            <blockpin signalname="syscallW" name="Write" />
+            <blockpin signalname="lcdWData(15:0)" name="D(15:0)" />
+            <blockpin signalname="lcd_E" name="lcd_E" />
+            <blockpin signalname="lcd_rs" name="lcd_rs" />
+            <blockpin name="lcdReady" />
+            <blockpin signalname="lcd_D(3:0)" name="lcd_D(3:0)" />
+            <blockpin signalname="sf_ce" name="sf_ce" />
+            <blockpin signalname="sf_rw" name="lcd_rw" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -738,12 +768,11 @@
         </branch>
         <branch name="XLXN_94">
             <wire x2="1120" y1="1280" y2="1280" x1="800" />
-            <wire x2="1120" y1="160" y2="368" x1="1120" />
+            <wire x2="2000" y1="1280" y2="1280" x1="1120" />
             <wire x2="1120" y1="368" y2="1280" x1="1120" />
             <wire x2="1344" y1="368" y2="368" x1="1120" />
-            <wire x2="1920" y1="160" y2="160" x1="1120" />
-            <wire x2="1920" y1="160" y2="1104" x1="1920" />
-            <wire x2="2224" y1="1104" y2="1104" x1="1920" />
+            <wire x2="2224" y1="1152" y2="1152" x1="2000" />
+            <wire x2="2000" y1="1152" y2="1280" x1="2000" />
         </branch>
         <instance x="2592" y="1504" name="XLXI_73" orien="R0" />
         <branch name="V">
@@ -773,46 +802,48 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="1072" type="branch" />
             <wire x2="1856" y1="1072" y2="1072" x1="1808" />
         </branch>
-        <branch name="CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1024" type="branch" />
-            <wire x2="2224" y1="1024" y2="1024" x1="2144" />
-        </branch>
-        <branch name="G">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1184" type="branch" />
-            <wire x2="2160" y1="1184" y2="1184" x1="2144" />
-            <wire x2="2224" y1="1184" y2="1184" x1="2160" />
-        </branch>
-        <branch name="syscallW">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1264" type="branch" />
-            <wire x2="2224" y1="1264" y2="1264" x1="2144" />
-        </branch>
-        <branch name="lcd_E">
-            <wire x2="2656" y1="1024" y2="1024" x1="2608" />
-        </branch>
-        <branch name="lcd_rs">
-            <wire x2="2656" y1="1088" y2="1088" x1="2608" />
-        </branch>
-        <branch name="lcd_D(3:0)">
-            <wire x2="2672" y1="1216" y2="1216" x1="2608" />
-        </branch>
-        <branch name="sf_ce">
-            <wire x2="2672" y1="1280" y2="1280" x1="2608" />
-        </branch>
-        <branch name="sf_rw">
-            <wire x2="2672" y1="1344" y2="1344" x1="2608" />
-        </branch>
         <branch name="lcdWData(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1344" type="branch" />
             <wire x2="2224" y1="1344" y2="1344" x1="2144" />
         </branch>
-        <iomarker fontsize="28" x="2656" y="1024" name="lcd_E" orien="R0" />
-        <iomarker fontsize="28" x="2656" y="1088" name="lcd_rs" orien="R0" />
-        <iomarker fontsize="28" x="2672" y="1216" name="lcd_D(3:0)" orien="R0" />
-        <iomarker fontsize="28" x="2672" y="1280" name="sf_ce" orien="R0" />
-        <iomarker fontsize="28" x="2672" y="1344" name="sf_rw" orien="R0" />
         <branch name="lcdWData(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="1136" type="branch" />
             <wire x2="1856" y1="1136" y2="1136" x1="1808" />
         </branch>
+        <branch name="syscallW">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1280" type="branch" />
+            <wire x2="2224" y1="1280" y2="1280" x1="2144" />
+        </branch>
+        <branch name="G">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1216" type="branch" />
+            <wire x2="2160" y1="1216" y2="1216" x1="2144" />
+            <wire x2="2224" y1="1216" y2="1216" x1="2160" />
+        </branch>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1088" type="branch" />
+            <wire x2="2224" y1="1088" y2="1088" x1="2144" />
+        </branch>
+        <instance x="2224" y="1440" name="XLXI_80" orien="R0">
+        </instance>
+        <branch name="lcd_E">
+            <wire x2="2656" y1="1280" y2="1280" x1="2608" />
+        </branch>
+        <iomarker fontsize="28" x="2656" y="1280" name="lcd_E" orien="R0" />
+        <branch name="lcd_D(3:0)">
+            <wire x2="2672" y1="1344" y2="1344" x1="2608" />
+        </branch>
+        <iomarker fontsize="28" x="2672" y="1344" name="lcd_D(3:0)" orien="R0" />
+        <branch name="sf_rw">
+            <wire x2="2672" y1="1152" y2="1152" x1="2608" />
+        </branch>
+        <iomarker fontsize="28" x="2672" y="1152" name="sf_rw" orien="R0" />
+        <branch name="lcd_rs">
+            <wire x2="2656" y1="1216" y2="1216" x1="2608" />
+        </branch>
+        <iomarker fontsize="28" x="2656" y="1216" name="lcd_rs" orien="R0" />
+        <branch name="sf_ce">
+            <wire x2="2672" y1="1088" y2="1088" x1="2608" />
+        </branch>
+        <iomarker fontsize="28" x="2672" y="1088" name="sf_ce" orien="R0" />
     </sheet>
 </drawing>

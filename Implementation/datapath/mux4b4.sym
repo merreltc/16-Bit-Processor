@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="mux4b4">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-2-19T21:22:1</timestamp>
+    <timestamp>2010-8-19T23:31:38</timestamp>
     <pin polarity="Input" x="0" y="-288" name="IA(3:0)" />
     <pin polarity="Input" x="0" y="-224" name="IB(3:0)" />
     <pin polarity="Input" x="0" y="-160" name="IC(3:0)" />
