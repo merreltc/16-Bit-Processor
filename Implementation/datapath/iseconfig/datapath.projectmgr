@@ -7,18 +7,19 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_10 - debouncer</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_11 - debouncer</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_12 - debouncer</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_13 - debouncer</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_5 - debouncer</ClosedNode>
-         <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_70 - datapath/XLXI_10 - regFile16b16</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_70 - datapath/XLXI_154 - pcReg16</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_70 - datapath/XLXI_38 - constant16b0001</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_70 - datapath/XLXI_43 - constant16b0000</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_70 - datapath/XLXI_51 - constant4b1000</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_70 - datapath/XLXI_52 - constant4b1001</ClosedNode>
          <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_71 - lcd_driver/XLXI_5 - timing</ClosedNode>
+         <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch/XLXI_80 - lcd_driver</ClosedNode>
          <ClosedNode>/constant16b0000 C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|constant16b0000.sch</ClosedNode>
          <ClosedNode>/constant16b0001 C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|constant16b0001.sch</ClosedNode>
          <ClosedNode>/constant16b1000 C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|constant16b1000.sch</ClosedNode>
@@ -50,6 +51,17 @@
          <ClosedNode>/datapath C:|Users|merreltc|Documents|CSSE232|Processor Project|datapath|datapath.sch/XLXI_43 - constant16b0000</ClosedNode>
          <ClosedNode>/datapath C:|Users|merreltc|Documents|CSSE232|Processor Project|datapath|datapath.sch/XLXI_51 - constant4b1000</ClosedNode>
          <ClosedNode>/datapath C:|Users|merreltc|Documents|CSSE232|Processor Project|datapath|datapath.sch/XLXI_52 - constant4b1001</ClosedNode>
+         <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_1 - datapath</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_1 - datapath/XLXI_154 - pcReg16</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_1 - datapath/XLXI_38 - constant16b0001</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_1 - datapath/XLXI_43 - constant16b0000</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_1 - datapath/XLXI_51 - constant4b1000</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_1 - datapath/XLXI_52 - constant4b1001</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_2 - debouncer</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_4 - lcd_driver</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_8 - debouncer</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch/XLXI_9 - debouncer</ClosedNode>
          <ClosedNode>/intReg16_test C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|intReg16_test.sch/XLXI_10 - debouncer</ClosedNode>
          <ClosedNode>/intReg16_test C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|intReg16_test.sch/XLXI_11 - debouncer</ClosedNode>
          <ClosedNode>/intReg16_test C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|intReg16_test.sch/XLXI_12 - debouncer</ClosedNode>
@@ -63,13 +75,13 @@
          <ClosedNode>/regFile16b16 C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|regFile16b16.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>IOLevel (C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/IOLevel.sch)</SelectedItem>
+         <SelectedItem>datapathtest (C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/datapathtest.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000143000000020000000000000000000000000200000064ffffffff000000810000000300000002000001430000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>IOLevel (C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/IOLevel.sch)</CurrentItem>
+      <CurrentItem>datapathtest (C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/datapathtest.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -81,13 +93,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e20000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000195000000010000000100000000000000000000000064ffffffff000000810000000000000001000001950000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -146,30 +158,33 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000021e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000021e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000195000000010000000100000000000000000000000064ffffffff000000810000000000000001000001950000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/IOLevel C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|IOLevel.sch</ClosedNode>
+         <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath</ClosedNode>
          <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath/XLXI_10 - regFile16b16</ClosedNode>
          <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath/XLXI_154 - pcReg16</ClosedNode>
          <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath/XLXI_38 - constant16b0001</ClosedNode>
          <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath/XLXI_43 - constant16b0000</ClosedNode>
          <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath/XLXI_51 - constant4b1000</ClosedNode>
          <ClosedNode>/datapath_datapath_sch_tb C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|Datapath_tb.v/UUT - datapath/XLXI_52 - constant4b1001</ClosedNode>
+         <ClosedNode>/datapathtest C:|Users|merreltc|Documents|CSSE232|Processor Project|1A-alfayeka-davissm-merreltc-smithlb|Implementation|datapath|datapathtest.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >111</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
@@ -179,26 +194,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000195000000010000000100000000000000000000000064ffffffff000000810000000000000001000001950000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000021e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000021e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000195000000010000000100000000000000000000000064ffffffff000000810000000000000001000001950000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
@@ -218,13 +233,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000021e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000021e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000195000000010000000100000000000000000000000064ffffffff000000810000000000000001000001950000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
 <?xml version="1.0" encoding="utf-8"?>

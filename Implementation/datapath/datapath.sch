@@ -48,7 +48,7 @@
         <signal name="newPC(15:0)" />
         <signal name="memoryData(15:0)" />
         <signal name="XLXN_675" />
-        <signal name="G,G,G,G,G,G,V,V,V,V,V,V,V,V,V,V" />
+        <signal name="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V" />
         <signal name="IR(7:0)" />
         <signal name="isBIEQ" />
         <signal name="ALUSrcB(1:0)" />
@@ -61,7 +61,6 @@
         <signal name="XLXN_136(15:0)" />
         <signal name="op(3:0)" />
         <signal name="syscall" />
-        <signal name="regV(15:0)" />
         <signal name="lcdWData(15:0)" />
         <signal name="ovflw" />
         <signal name="isNegative" />
@@ -86,7 +85,7 @@
         <signal name="Cause(15:0)" />
         <signal name="IR(15:0)" />
         <signal name="syscallW" />
-        <signal name="regV(0)" />
+        <signal name="lcdWData(0)" />
         <signal name="XLXN_693(9:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
@@ -131,7 +130,7 @@
             <line x2="416" y1="-32" y2="-32" x1="352" />
         </blockdef>
         <blockdef name="regFile16b16">
-            <timestamp>2017-2-18T0:11:59</timestamp>
+            <timestamp>2017-2-20T21:41:46</timestamp>
             <rect width="64" x="448" y="84" height="24" />
             <line x2="512" y1="96" y2="96" x1="448" />
             <rect width="64" x="448" y="148" height="24" />
@@ -467,8 +466,8 @@
             <blockpin signalname="XLXN_132(15:0)" name="ReadDataA(15:0)" />
             <blockpin signalname="XLXN_133(15:0)" name="ReadDataB(15:0)" />
             <blockpin signalname="XLXN_136(15:0)" name="ReadDataCR(15:0)" />
-            <blockpin signalname="regV(15:0)" name="regV(15:0)" />
-            <blockpin signalname="lcdWData(15:0)" name="regA0(15:0)" />
+            <blockpin signalname="lcdWData(15:0)" name="regV(15:0)" />
+            <blockpin name="regA0(15:0)" />
         </block>
         <block symbolname="and2" name="XLXI_36">
             <blockpin signalname="isZero" name="I0" />
@@ -497,7 +496,7 @@
         <block symbolname="pcReg16" name="XLXI_154">
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="Reset" name="Reset" />
-            <blockpin signalname="G,G,G,G,G,G,V,V,V,V,V,V,V,V,V,V" name="initPC(15:0)" />
+            <blockpin signalname="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V" name="initPC(15:0)" />
             <blockpin signalname="newPC(15:0)" name="newPC(15:0)" />
             <blockpin signalname="XLXN_675" name="Write" />
             <blockpin signalname="PC(15:0)" name="PC(15:0)" />
@@ -652,7 +651,7 @@
             <blockpin signalname="IR(15:0)" name="O(15:0)" />
         </block>
         <block symbolname="and2" name="XLXI_157">
-            <blockpin signalname="regV(0)" name="I0" />
+            <blockpin signalname="lcdWData(0)" name="I0" />
             <blockpin signalname="syscall" name="I1" />
             <blockpin signalname="syscallW" name="O" />
         </block>
@@ -857,7 +856,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="208" y="880" type="branch" />
             <wire x2="240" y1="880" y2="880" x1="208" />
         </branch>
-        <branch name="G,G,G,G,G,G,V,V,V,V,V,V,V,V,V,V">
+        <branch name="V,V,V,V,V,V,V,V,V,V,V,V,V,V,V,V">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="208" y="816" type="branch" />
             <wire x2="240" y1="816" y2="816" x1="208" />
         </branch>
@@ -1016,13 +1015,8 @@
             <wire x2="2256" y1="944" y2="1024" x1="2256" />
             <wire x2="2656" y1="1024" y2="1024" x1="2256" />
         </branch>
-        <branch name="regV(15:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="1072" type="branch" />
-            <wire x2="2288" y1="1072" y2="1072" x1="2240" />
-        </branch>
         <branch name="lcdWData(15:0)">
-            <wire x2="2256" y1="1136" y2="1136" x1="2240" />
-            <wire x2="2288" y1="1136" y2="1136" x1="2256" />
+            <wire x2="2288" y1="1072" y2="1072" x1="2240" />
         </branch>
         <branch name="syscall">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="656" y="3440" type="branch" />
@@ -1361,13 +1355,12 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="1296" type="branch" />
             <wire x2="2480" y1="1296" y2="1296" x1="2432" />
         </branch>
-        <branch name="regV(0)">
+        <branch name="lcdWData(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2448" y="1360" type="branch" />
             <wire x2="2480" y1="1360" y2="1360" x1="2448" />
         </branch>
         <instance x="2480" y="1424" name="XLXI_157" orien="R0" />
         <iomarker fontsize="28" x="2944" y="1328" name="syscallW" orien="R0" />
-        <iomarker fontsize="28" x="2288" y="1136" name="lcdWData(15:0)" orien="R0" />
         <instance x="64" y="1520" name="XLXI_158" orien="R0">
         </instance>
         <branch name="IorD">
@@ -1379,5 +1372,6 @@
             <wire x2="688" y1="784" y2="1360" x1="688" />
             <wire x2="832" y1="784" y2="784" x1="688" />
         </branch>
+        <iomarker fontsize="28" x="2288" y="1072" name="lcdWData(15:0)" orien="R0" />
     </sheet>
 </drawing>

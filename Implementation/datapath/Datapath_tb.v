@@ -10,6 +10,8 @@ module datapath_datapath_sch_tb();
    reg intWrite;
    reg int0;
    reg int1;
+	reg int2;
+	reg int3;
    reg [15:0] intDataIn;
    reg intLvl1;
    reg intLvl0;
@@ -17,6 +19,8 @@ module datapath_datapath_sch_tb();
 // Output
    wire intr;
    wire [15:0] intDataOut;
+	wire [15:0] lcdWData;
+	wire syscallW;
 
 // Bidirs
 
@@ -27,11 +31,15 @@ module datapath_datapath_sch_tb();
 		.intWrite(intWrite), 
 		.int0(int0), 
 		.int1(int1), 
+		.int2(int2), 
+		.int3(int3), 
 		.intDataIn(intDataIn), 
 		.intLvl1(intLvl1), 
 		.intLvl0(intLvl0), 
 		.intr(intr), 
-		.intDataOut(intDataOut)
+		.intDataOut(intDataOut),
+		.lcdWData(lcdWData),
+		.syscallW(syscallW)
    );
 // Initialize Inputs
 initial begin
@@ -45,6 +53,8 @@ end
 		intWrite = 0;
 		int0 = 0;
 		int1 = 0;
+		int2 = 0;
+		int3 = 0;
 		intDataIn = 0;
 		intLvl1 = 0;
 		intLvl0 = 0;
