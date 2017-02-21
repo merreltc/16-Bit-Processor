@@ -196,7 +196,6 @@ module control_unit (ALUOp,
 			 
 			 LW2:
 			 	begin
-					//IorD = 1;
 					WriteDest = 0;
 					RegWrite = 1;
 					WriteSrc = 2;
