@@ -18,11 +18,12 @@
         <signal name="lcd_rs" />
         <signal name="lcd_E" />
         <signal name="XLXN_13" />
-        <signal name="w_button" />
-        <signal name="s_button" />
-        <signal name="XLXN_22" />
         <signal name="sf_oe" />
         <signal name="sf_we" />
+        <signal name="s_button" />
+        <signal name="w_button" />
+        <signal name="XLXN_40" />
+        <signal name="XLXN_41" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="n_button" />
         <port polarity="Output" name="lcd_rw" />
@@ -31,10 +32,10 @@
         <port polarity="Output" name="led7" />
         <port polarity="Output" name="lcd_rs" />
         <port polarity="Output" name="lcd_E" />
-        <port polarity="Input" name="w_button" />
-        <port polarity="Input" name="s_button" />
         <port polarity="Output" name="sf_oe" />
         <port polarity="Output" name="sf_we" />
+        <port polarity="Input" name="s_button" />
+        <port polarity="Input" name="w_button" />
         <blockdef name="datapath">
             <timestamp>2017-2-20T21:43:53</timestamp>
             <rect width="64" x="400" y="340" height="24" />
@@ -108,7 +109,7 @@
         </blockdef>
         <block symbolname="datapath" name="XLXI_1">
             <blockpin signalname="CLK" name="CLK" />
-            <blockpin signalname="G" name="Reset" />
+            <blockpin signalname="XLXN_13" name="Reset" />
             <blockpin name="intWrite" />
             <blockpin name="int0" />
             <blockpin name="int1" />
@@ -133,8 +134,8 @@
         <block symbolname="lcd_driver" name="XLXI_4">
             <blockpin signalname="CLK" name="CLK" />
             <blockpin signalname="XLXN_13" name="RESET" />
-            <blockpin signalname="G" name="CLEAR" />
-            <blockpin signalname="V" name="Write" />
+            <blockpin signalname="XLXN_41" name="CLEAR" />
+            <blockpin signalname="XLXN_40" name="Write" />
             <blockpin signalname="XLXN_10(15:0)" name="D(15:0)" />
             <blockpin signalname="lcd_E" name="lcd_E" />
             <blockpin signalname="lcd_rs" name="lcd_rs" />
@@ -142,22 +143,6 @@
             <blockpin signalname="lcd_D(3:0)" name="lcd_D(3:0)" />
             <blockpin signalname="sf_ce" name="sf_ce" />
             <blockpin signalname="lcd_rw" name="lcd_rw" />
-        </block>
-        <block symbolname="debouncer" name="XLXI_8">
-            <blockpin signalname="CLK" name="clk" />
-            <blockpin signalname="G" name="reset" />
-            <blockpin signalname="w_button" name="button" />
-            <blockpin name="debutton" />
-            <blockpin name="button_lo" />
-            <blockpin signalname="G" name="button_hi" />
-        </block>
-        <block symbolname="debouncer" name="XLXI_9">
-            <blockpin signalname="CLK" name="clk" />
-            <blockpin signalname="G" name="reset" />
-            <blockpin signalname="s_button" name="button" />
-            <blockpin name="debutton" />
-            <blockpin name="button_lo" />
-            <blockpin signalname="V" name="button_hi" />
         </block>
         <block symbolname="buf" name="XLXI_6">
             <blockpin signalname="V" name="I" />
@@ -172,6 +157,22 @@
         </block>
         <block symbolname="vcc" name="XLXI_5">
             <blockpin signalname="V" name="P" />
+        </block>
+        <block symbolname="debouncer" name="XLXI_9">
+            <blockpin signalname="CLK" name="clk" />
+            <blockpin signalname="G" name="reset" />
+            <blockpin signalname="s_button" name="button" />
+            <blockpin name="debutton" />
+            <blockpin name="button_lo" />
+            <blockpin signalname="XLXN_41" name="button_hi" />
+        </block>
+        <block symbolname="debouncer" name="XLXI_8">
+            <blockpin signalname="CLK" name="clk" />
+            <blockpin signalname="G" name="reset" />
+            <blockpin signalname="w_button" name="button" />
+            <blockpin name="debutton" />
+            <blockpin name="button_lo" />
+            <blockpin signalname="XLXN_40" name="button_hi" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -218,70 +219,27 @@
         <branch name="lcd_E">
             <wire x2="2784" y1="1088" y2="1088" x1="2752" />
         </branch>
-        <branch name="G">
-            <wire x2="2256" y1="480" y2="480" x1="960" />
-            <wire x2="2256" y1="480" y2="1024" x1="2256" />
-            <wire x2="2368" y1="1024" y2="1024" x1="2256" />
-        </branch>
         <branch name="CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2352" y="896" type="branch" />
             <wire x2="2368" y1="896" y2="896" x1="2352" />
         </branch>
         <instance x="2368" y="1248" name="XLXI_4" orien="R0">
         </instance>
-        <branch name="V">
-            <wire x2="1040" y1="1312" y2="1312" x1="960" />
-            <wire x2="1040" y1="1312" y2="1616" x1="1040" />
-            <wire x2="2336" y1="1616" y2="1616" x1="1040" />
-            <wire x2="2352" y1="1088" y2="1088" x1="2336" />
-            <wire x2="2368" y1="1088" y2="1088" x1="2352" />
-            <wire x2="2336" y1="1088" y2="1616" x1="2336" />
-        </branch>
         <iomarker fontsize="28" x="2784" y="896" name="sf_ce" orien="R0" />
         <iomarker fontsize="28" x="2784" y="960" name="lcd_rw" orien="R0" />
         <iomarker fontsize="28" x="2784" y="1024" name="lcd_rs" orien="R0" />
         <iomarker fontsize="28" x="2784" y="1088" name="lcd_E" orien="R0" />
         <iomarker fontsize="28" x="2784" y="1152" name="lcd_D(3:0)" orien="R0" />
         <iomarker fontsize="28" x="2800" y="1216" name="led7" orien="R0" />
-        <branch name="G">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1616" y="736" type="branch" />
-            <wire x2="1632" y1="736" y2="736" x1="1616" />
-        </branch>
         <branch name="XLXN_13">
             <wire x2="1040" y1="928" y2="928" x1="960" />
-            <wire x2="1040" y1="576" y2="928" x1="1040" />
             <wire x2="2160" y1="576" y2="576" x1="1040" />
             <wire x2="2160" y1="576" y2="960" x1="2160" />
             <wire x2="2368" y1="960" y2="960" x1="2160" />
+            <wire x2="1040" y1="576" y2="736" x1="1040" />
+            <wire x2="1040" y1="736" y2="928" x1="1040" />
+            <wire x2="1632" y1="736" y2="736" x1="1040" />
         </branch>
-        <instance x="576" y="512" name="XLXI_8" orien="R0">
-        </instance>
-        <branch name="CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="352" type="branch" />
-            <wire x2="576" y1="352" y2="352" x1="544" />
-        </branch>
-        <branch name="G">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="416" type="branch" />
-            <wire x2="576" y1="416" y2="416" x1="544" />
-        </branch>
-        <branch name="w_button">
-            <wire x2="576" y1="480" y2="480" x1="544" />
-        </branch>
-        <iomarker fontsize="28" x="544" y="480" name="w_button" orien="R180" />
-        <instance x="576" y="1344" name="XLXI_9" orien="R0">
-        </instance>
-        <branch name="CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="1184" type="branch" />
-            <wire x2="576" y1="1184" y2="1184" x1="544" />
-        </branch>
-        <branch name="G">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="1248" type="branch" />
-            <wire x2="576" y1="1248" y2="1248" x1="544" />
-        </branch>
-        <branch name="s_button">
-            <wire x2="576" y1="1312" y2="1312" x1="544" />
-        </branch>
-        <iomarker fontsize="28" x="544" y="1312" name="s_button" orien="R180" />
         <instance x="2560" y="1392" name="XLXI_6" orien="R0" />
         <instance x="2560" y="1504" name="XLXI_7" orien="R0" />
         <branch name="V">
@@ -309,6 +267,48 @@
         <branch name="G">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="336" y="1616" type="branch" />
             <wire x2="336" y1="1616" y2="1648" x1="336" />
+        </branch>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="464" type="branch" />
+            <wire x2="576" y1="464" y2="464" x1="544" />
+        </branch>
+        <branch name="G">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="528" type="branch" />
+            <wire x2="576" y1="528" y2="528" x1="544" />
+        </branch>
+        <branch name="s_button">
+            <wire x2="576" y1="592" y2="592" x1="544" />
+        </branch>
+        <instance x="576" y="624" name="XLXI_9" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="544" y="592" name="s_button" orien="R180" />
+        <instance x="576" y="1232" name="XLXI_8" orien="R0">
+        </instance>
+        <branch name="CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="1072" type="branch" />
+            <wire x2="576" y1="1072" y2="1072" x1="544" />
+        </branch>
+        <branch name="G">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="544" y="1136" type="branch" />
+            <wire x2="576" y1="1136" y2="1136" x1="544" />
+        </branch>
+        <branch name="w_button">
+            <wire x2="576" y1="1200" y2="1200" x1="544" />
+        </branch>
+        <iomarker fontsize="28" x="544" y="1200" name="w_button" orien="R180" />
+        <branch name="XLXN_40">
+            <wire x2="1024" y1="1200" y2="1200" x1="960" />
+            <wire x2="1024" y1="1200" y2="1664" x1="1024" />
+            <wire x2="2144" y1="1664" y2="1664" x1="1024" />
+            <wire x2="2368" y1="1088" y2="1088" x1="2144" />
+            <wire x2="2144" y1="1088" y2="1664" x1="2144" />
+        </branch>
+        <branch name="XLXN_41">
+            <wire x2="1008" y1="592" y2="592" x1="960" />
+            <wire x2="1008" y1="496" y2="592" x1="1008" />
+            <wire x2="2128" y1="496" y2="496" x1="1008" />
+            <wire x2="2128" y1="496" y2="1024" x1="2128" />
+            <wire x2="2368" y1="1024" y2="1024" x1="2128" />
         </branch>
     </sheet>
 </drawing>
