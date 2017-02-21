@@ -5,16 +5,16 @@
 module datapath_datapath_sch_tb();
 
 // Inputs
-   reg CLK;
-   reg Reset;
-   reg intWrite;
-   reg int0;
-   reg int1;
-	reg int2;
-	reg int3;
-   reg [15:0] intDataIn;
-   reg intLvl1;
-   reg intLvl0;
+   reg CLK = 1'b0;
+   reg Reset = 1'b0;
+   reg intWrite = 1'b0;
+   reg int0 = 1'b0;
+   reg int1 = 1'b0;
+	reg int2 = 1'b0;
+	reg int3 = 1'b0;
+   reg [15:0] intDataIn = 16'b0000000000000000;
+   reg intLvl1 = 1'b0;
+   reg intLvl0 = 1'b0;
 
 // Output
    wire intr;
@@ -22,7 +22,20 @@ module datapath_datapath_sch_tb();
 	wire [15:0] lcdWData;
 	wire syscallW;
 
-// Bidirs
+    parameter PERIOD = 20;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 10;
+
+    initial    // Clock process for CLK
+    begin
+        #OFFSET;
+        forever
+        begin
+            CLK = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) CLK = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
 
 // Instantiate the UUT
    datapath UUT (
@@ -41,29 +54,14 @@ module datapath_datapath_sch_tb();
 		.lcdWData(lcdWData),
 		.syscallW(syscallW)
    );
-// Initialize Inputs
-initial begin
-	CLK = 0;
-forever begin
-	#20 CLK = !CLK;
-	end
-end	
+	
+// Initialize Inputs	
  initial begin
-		Reset = 0;
-		intWrite = 0;
-		int0 = 0;
-		int1 = 0;
-		int2 = 0;
-		int3 = 0;
-		intDataIn = 0;
-		intLvl1 = 0;
-		intLvl0 = 0;
 		#179;
 		
 		Reset = 1;
-		#20;
+		#PERIOD;
 		
 		Reset = 0;
-		#20;
 end
 endmodule

@@ -2,11 +2,11 @@
 <report-views version="2.0" >
  <header>
   <ImplementationReportsDirectory>C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath\</ImplementationReportsDirectory>
-  <ModuleName>IOLevel</ModuleName>
+  <ModuleName>datapath</ModuleName>
   <DateInitialized>2017-02-19T16:24:02</DateInitialized>
-  <DateModified>2017-02-19T16:53:16</DateModified>
+  <DateModified>2017-02-20T20:37:51</DateModified>
   <SavedFilePath>C:/Users/merreltc/Documents/CSSE232/Processor Project/1A-alfayeka-davissm-merreltc-smithlb/Implementation/datapath/iseconfig/datapath.xreport</SavedFilePath>
   <EnableMessageFiltering>false</EnableMessageFiltering>
-  <SummaryTimeStamp>2017-02-19T16:50:54</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-02-20T19:55:03</SummaryTimeStamp>
  </header>
 </report-views>
