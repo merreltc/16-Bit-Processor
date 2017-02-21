@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Tue Feb 21 00:43:20 2017
+# Date: Tue Feb 21 20:03:27 2017
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file="C:\Users\merreltc\Documents\CSSE232\Processor Project\1A-alfayeka-davissm-merreltc-smithlb\Implementation\Relprime - 4 test.coe"
+CSET coe_file="C:\Users\merreltc\Documents\CSSE232\Processor Project\1A-alfayeka-davissm-merreltc-smithlb\Implementation\relPrime jal test.coe"
 CSET collision_warnings=ALL
 CSET component_name=processor_memory
 CSET disable_collision_warnings=false
@@ -81,7 +81,7 @@ CSET register_porta_output_of_memory_primitives=false
 CSET register_portb_output_of_memory_core=false
 CSET register_portb_output_of_memory_primitives=false
 CSET register_portb_output_of_softecc=false
-CSET remaining_memory_locations=0
+CSET remaining_memory_locations=0000
 CSET reset_memory_latch_a=false
 CSET reset_memory_latch_b=false
 CSET reset_priority_a=CE
@@ -103,4 +103,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-03-20T18:34:43Z
 # END Extra information
 GENERATE
-# CRC: 57e5051e
+# CRC: e6eed1ec

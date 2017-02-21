@@ -20,6 +20,8 @@ module datapath_datapath_sch_tb();
    wire intr;
    wire [15:0] intDataOut;
 	wire [15:0] lcdWData;
+	wire [15:0] numInstr;
+	wire [15:0] numCycles;
 	wire syscallW;
 
     parameter PERIOD = 20;
@@ -52,6 +54,8 @@ module datapath_datapath_sch_tb();
 		.intr(intr), 
 		.intDataOut(intDataOut),
 		.lcdWData(lcdWData),
+		.numInstr(numInstr),
+		.numCycles(numCycles),
 		.syscallW(syscallW)
    );
 	
