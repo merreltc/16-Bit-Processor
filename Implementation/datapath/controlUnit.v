@@ -331,7 +331,8 @@ module control_unit (ALUOp,
                       $display("The next state is JAL1");
                    end
                  5:
-                   begin next_state = JumpReg;
+                   begin
+							 next_state = JumpReg;
                       $display("The next state is JumpReg");
                    end
                  6:
