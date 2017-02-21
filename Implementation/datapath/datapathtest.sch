@@ -37,7 +37,7 @@
         <port polarity="Input" name="s_button" />
         <port polarity="Input" name="w_button" />
         <blockdef name="datapath">
-            <timestamp>2017-2-20T21:43:53</timestamp>
+            <timestamp>2017-2-21T17:30:57</timestamp>
             <rect width="64" x="400" y="340" height="24" />
             <line x2="464" y1="352" y2="352" x1="400" />
             <line x2="464" y1="288" y2="288" x1="400" />
