@@ -36,6 +36,8 @@ relPrimeLoop:jal	gcd
 
 
 	rtr $a0, $s0
+
+	
 	j	relPrimeLoop
 gcd: sbc	0	      # $cr = 0
 
