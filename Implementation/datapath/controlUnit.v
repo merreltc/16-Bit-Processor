@@ -19,6 +19,8 @@ module control_unit (ALUOp,
 								  CauseWrite,
 								  EPCWrite,
 								  syscall,
+								  addInstr,
+								  addCycle,
                           Opcode,
                           current_state,
                           next_state,
@@ -45,6 +47,8 @@ module control_unit (ALUOp,
 	output       CauseWrite;
 	output       EPCWrite;
 	output		 syscall;
+	output		 addInstr;
+	output		 addCycle;
    output [4:0] current_state;
    output [4:0] next_state;
 
@@ -71,6 +75,8 @@ module control_unit (ALUOp,
 	reg       CauseWrite;
 	reg       EPCWrite;
 	reg		 syscall;
+	reg		 addInstr;
+	reg		 addCycle;
 
    //state flip-flops
    reg [4:0]    current_state;
@@ -125,6 +131,8 @@ module control_unit (ALUOp,
 		  CauseWrite = 0;
 		  EPCWrite = 0;
 		  syscall = 0;
+		  addInstr = 0;
+		  addCycle = 1;
 		  
         case (current_state)
           
@@ -138,6 +146,7 @@ module control_unit (ALUOp,
                ALUOp = 0;
                PCWrite = 1;
                PCSrc = 0;
+					addInstr = 1;
             end 
                          
           Decode:
