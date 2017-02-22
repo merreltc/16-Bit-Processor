@@ -291,7 +291,9 @@ module control_unit (ALUOp,
 				end
         
           default:
-            begin $display ("not implemented"); end
+            begin
+				//	// $display ("not implemented");
+				end
           
         endcase
      end
@@ -300,223 +302,223 @@ module control_unit (ALUOp,
    always @ (current_state, next_state, Opcode)
      begin         
 
-        $display("The current state is %d", current_state);
+//        // $display("The current state is %d", current_state);
         
         case (current_state)
           
           Fetch:
             begin
                next_state = Decode;
-               $display("In Fetch, the next_state is %d", next_state);
+            //   // $display("In Fetch, the next_state is %d", next_state);
             end
           
           Decode: 
             begin       
-               $display("The opcode is %d", Opcode);
+//               // $display("The opcode is %d", Opcode);
                case (Opcode)
                  0:
                    begin
                       next_state = C_Execution;
-                      $display("The next state is C_Execution");
+                  //    // $display("The next state is C_Execution");
                    end
                  1:
                    begin
                       next_state = BranchEQ;
-                      $display("The next state is Branch (if equal)");
+                   //   // $display("The next state is Branch (if equal)");
                    end
                  2:
                    begin
                       next_state = BranchNEQ;
-                      $display("The next state is Branch (if not equal)");
+                  //    // $display("The next state is Branch (if not equal)");
                    end
                  3:
                    begin
                       next_state = Jump;
-                      $display("The next state is Jump");
+                  //    // $display("The next state is Jump");
                    end						 
                  4:
                    begin
                       next_state = JAL1;
-                      $display("The next state is JAL1");
+                   //   // $display("The next state is JAL1");
                    end
                  5:
                    begin
 							 next_state = JumpReg;
-                      $display("The next state is JumpReg");
+                  //    // $display("The next state is JumpReg");
                    end
                  6:
                    begin
                       next_state = LUI;
-                      $display("The next state is LUI");
+                   //   // $display("The next state is LUI");
                    end
                  7:
                    begin
                       next_state = LLI;
-                      $display("The next state is LLI");
+                   //   // $display("The next state is LLI");
                    end
                  8:
                    begin
                       next_state = LTR;
-                      $display("The next state is LTR");
+                   //   // $display("The next state is LTR");
                    end
                  9:
                    begin
                       next_state = CTR;
-                      $display("The next state is CTR");
+                      // $display("The next state is CTR");
                    end
                  10:
                    begin
                       next_state = LW1;
-                      $display("The next state is LW1");
+                      // $display("The next state is LW1");
                    end
                  11:
                    begin
                       next_state = SW;
-                      $display("The next state is SW");
+                      // $display("The next state is SW");
                    end
                  12:
                    begin
                       next_state = SYSCALL;
-                      $display("The next state is SYSCALL");
+                      // $display("The next state is SYSCALL");
                    end
 						13:
 						 begin
 							next_state = EXCEPTION;
-							$display("The next state is EXCEPTION");
+							// $display("The next state is EXCEPTION");
 						 end
                  default:
                    begin 
-                      $display(" Wrong Opcode %d ", Opcode);  
+//                      // $display(" Wrong Opcode %d ", Opcode);  
                       next_state = Fetch;
                    end
                endcase  
                
-               $display("In Decode, the next_state is %d", next_state);
+//               // $display("In Decode, the next_state is %d", next_state);
             end
           
           C_Execution:
             begin
                next_state = C_Write;
-               $display("In C_Exec, the next_state is %d", next_state);
+               // $display("In C_Exec, the next_state is %d", next_state);
             end
           
           C_Write:
             begin
                next_state = Fetch;
-               $display("In C_Write, the next_state is %d", next_state);
+               // $display("In C_Write, the next_state is %d", next_state);
             end
           
           BranchEQ:
             begin
                next_state = STALL;
-               $display("In BranchEQ, the next_state is %d", next_state);
+               // $display("In BranchEQ, the next_state is %d", next_state);
             end
 				
           BranchNEQ:
             begin
                next_state = STALL;
-               $display("In BranchNEQ, the next_state is %d", next_state);
+               // $display("In BranchNEQ, the next_state is %d", next_state);
             end
           
           Jump:
             begin
                next_state = STALL;
-               $display("In Jump, the next_state is %d", next_state);
+               // $display("In Jump, the next_state is %d", next_state);
             end
 				
 			LW1:
 				begin
 					next_state = LWSTALL;
-               $display("In LW1, the next_state is %d", next_state);
+               // $display("In LW1, the next_state is %d", next_state);
 				end
 			 
 			 LW2:
 			 	begin
 					next_state = STALL;
-               $display("In LW2, the next_state is %d", next_state);
+               // $display("In LW2, the next_state is %d", next_state);
 				end
 				
 			 SW:
 			 	begin
 					next_state = STALL;
-               $display("In SW, the next_state is %d", next_state);
+               // $display("In SW, the next_state is %d", next_state);
 				end
 			 
 			 LUI:
 				begin
 					next_state = Fetch;
-               $display("In LUI, the next_state is %d", next_state);
+               // $display("In LUI, the next_state is %d", next_state);
 				end
 				
 			 LLI:
 				begin
 					next_state = Fetch;
-               $display("In LLI, the next_state is %d", next_state);
+               // $display("In LLI, the next_state is %d", next_state);
 				end
 
 			 JAL1:
 				begin
 					next_state = JAL2;
-               $display("In JAL1, the next_state is %d", next_state);
+               // $display("In JAL1, the next_state is %d", next_state);
 				end
 			 
 			 JAL2:
 				begin
 					next_state = STALL;
-               $display("In JAL2, the next_state is %d", next_state);
+               // $display("In JAL2, the next_state is %d", next_state);
 				end
 
 			 JumpReg:
 				begin
 					next_state = STALL;
-               $display("In JumpReg, the next_state is %d", next_state);
+               // $display("In JumpReg, the next_state is %d", next_state);
 				end
 			 
 			 CTR:
 				begin
 					next_state = Fetch;
-               $display("In CTR, the next_state is %d", next_state);
+               // $display("In CTR, the next_state is %d", next_state);
 				end
 	
 			 LTR:
 				begin
 					next_state = Fetch;
-               $display("In LTR, the next_state is %d", next_state);
+               // $display("In LTR, the next_state is %d", next_state);
 				end 
 	
 			 SYSCALL:
 				begin
 					next_state = Fetch;
-               $display("In SYSCALL, the next_state is %d", next_state);
+               // $display("In SYSCALL, the next_state is %d", next_state);
 				end
 				
 			EXCEPTION:
 				begin
 					next_state = Fetch;
-					$display("In EXCEPTION, the next_state is %d", next_state);
+					// $display("In EXCEPTION, the next_state is %d", next_state);
 				end
 				
 			STALL:
 				begin
 					next_state = Fetch;
-					$display("In STALL, the next_state is %d", next_state);
+					// $display("In STALL, the next_state is %d", next_state);
 				end
 				
 			LWSTALL:
 				begin
 					next_state = LW2;
-					$display("In LWSTALL, the next_state is %d", next_state);
+					// $display("In LWSTALL, the next_state is %d", next_state);
 				end
           
           default:
             begin
-               $display(" Not implemented!");
+               // $display(" Not implemented!");
                next_state = Fetch;
             end
           
         endcase
         
-        $display("After the tests, the next_state is %d", next_state);
+        //// $display("After the tests, the next_state is %d", next_state);
                 
      end
 

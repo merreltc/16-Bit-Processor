@@ -60,7 +60,7 @@ module datapath_datapath_sch_tb();
    );
 	
 // Initialize Inputs	
- initial begin
+initial begin
 		#179;
 		
 		Reset = 1;
@@ -68,4 +68,13 @@ module datapath_datapath_sch_tb();
 		
 		Reset = 0;
 end
+
+always @(*)
+begin
+	if(UUT.XLXI_154.PC == 65)
+		begin
+			$finish;
+		end
+end
 endmodule
+

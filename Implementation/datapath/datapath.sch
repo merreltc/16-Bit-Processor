@@ -94,7 +94,6 @@
         <signal name="G,G,G,G,G,G,G,G,V,V,G,G,V,G,G,V" />
         <signal name="PC(15:12)" />
         <signal name="IR(11:0)" />
-        <signal name="XLXN_704(15:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Reset" />
         <port polarity="Output" name="lcdWData(15:0)" />
@@ -341,7 +340,7 @@
             <rect width="256" x="64" y="-192" height="256" />
         </blockdef>
         <blockdef name="processor_memory">
-            <timestamp>2017-2-21T20:5:13</timestamp>
+            <timestamp>2017-2-22T18:40:24</timestamp>
             <rect width="512" x="32" y="32" height="1344" />
             <line x2="32" y1="80" y2="80" style="linewidth:W" x1="0" />
             <line x2="32" y1="112" y2="112" style="linewidth:W" x1="0" />
