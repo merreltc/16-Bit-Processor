@@ -12,43 +12,43 @@ relPrimeSetup:ltr	$i0, 0
 	ltr $i0, 0
 	add $a0, $i0
 	ctr $s0			# $s0 = n
-	ltr	$t1, 2	    # m = 2
-	rtr	$a1, $t1    # $a1 = m
-
-
-	rtr	$s1, $t1    # $s1 = m
-
-
-relPrimeLoop:jal	gcd
-	sbc	1	      	# $cr = 1
-
-
-	bieq	$v, cleanup   # if gcd(n, m) == 1, branch to cleanup
-	addi	$s1, 1	      # m + 1
-
+	ltr	$t1, 2	    # m = 2    
+	ltr $i0, 0
+	add $t1, $i0
+	ctr $a1			# $a1 = m
+	ltr $i0, 0
+	add $t1, $s1
+	ctr $s1			# $s1 = m
+relPrimeLoop:jal	gcd      	
+	ltr	$i0, 0
+	ltr $i1, 1
+	add $i0, $i1		  # $cr = 1
+	bieq	$v, cleanup   # if gcd(n, m) == 1, branch to cleanup    
+	ltr $i0, 1
+	add $s1, $i0	  # m + 1
 	ctr	$s1  	      # m = m + 1
-	rtr	$a1, $s1      # $a1 = m
-
-
-	rtr $a0, $s0
-
-	
+	ltr $i0, 0
+	add $s1, $i0
+	ctr $a1			  # $a1 = m
+	ltr $i0, 0
+	add $s0, $i0
+	ctr $a0			  # $a0 = n
 	j	relPrimeLoop
-gcd: sbc	0	      # $cr = 0
-
-
+gcd: ltr	$i0, 0
+	ltr $i1, 0
+	add $i0, $i1		  # $cr = 0
 	bneq	$a0, gcdLoop  # if a != 0, branch to gcdLoop
-	rtr	$v, $a1	      # $v = b
-
-
+	ltr $i0, 0
+	add $a1, $i0
+	ctr $v			  # $v = b
 	jr	$ra 	      # return to caller
-gcdLoop: sbc 0		      # $cr = 0
-
-
+gcdLoop: ltr	$i0, 0
+	ltr $i1, 0
+	add $i0, $i1		  # $cr = 0
 	bneq $a1, subOne      # if b != 0, branch to subOne
-	rtr $v, $a0	      # $v = a
-
-
+	ltr $i0, 0
+	add $a0, $i0
+	ctr $v			  # $v = a
 	jr $ra		      # return to caller
 subOne: slt	$a1, $a0      # $cr = b < a
 	ltr	$t0, 0       
@@ -59,9 +59,9 @@ subOne: slt	$a1, $a0      # $cr = b < a
 subTwo: sub	$a1, $a0      # $cr = b - a
 	ctr	$a1  	      # b = b - a
 	j	gcdLoop	      # return to gcdLoop
-cleanup: rtr	$v, $s1	# $v = m
-
-
+cleanup:ltr $i0, 0
+	add $s1, $i0
+	ctr $v			  # $v = m
 	ltr $i0, 0
 	add $st, $i0	# $cr = $st
 	lw	$s1			# restore $s1
