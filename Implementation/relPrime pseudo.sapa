@@ -1,0 +1,83 @@
+relPrimeSetup:addi	$st, 0	# $cr = $st
+
+	sw	$ra	      	# store $ra on stack
+	addi	$st, -4	# $cr = $st - 4
+
+	ctr	$st	      	# $st = $st - 4
+	sw	$s0	      	# store $s0 on stack
+	addi	$st, -4	# $cr = $st - 4
+
+	ctr $st 		# $st = $st - 4
+	sw	$s1		  	# store $s1 on stack
+	rtr $s0, $a0	# $s0 = n
+
+
+	ltr	$t1, 2	    # m = 2
+	rtr	$a1, $t1    # $a1 = m
+
+
+	rtr	$s1, $t1    # $s1 = m
+
+
+relPrimeLoop:jal	gcd
+	sbc	1	      	# $cr = 1
+
+
+	bieq	$v, cleanup   # if gcd(n, m) == 1, branch to cleanup
+	addi	$s1, 1	      # m + 1
+
+	ctr	$s1  	      # m = m + 1
+	rtr	$a1, $s1      # $a1 = m
+
+
+	rtr $a0, $s0
+
+	
+	j	relPrimeLoop
+gcd: sbc	0	      # $cr = 0
+
+
+	bneq	$a0, gcdLoop  # if a != 0, branch to gcdLoop
+	rtr	$v, $a1	      # $v = b
+
+
+	jr	$ra 	      # return to caller
+gcdLoop: sbc 0		      # $cr = 0
+
+
+	bneq $a1, subOne      # if b != 0, branch to subOne
+	rtr $v, $a0	      # $v = a
+
+
+	jr $ra		      # return to caller
+subOne: slt	$a1, $a0      # $cr = b < a
+	ltr	$t0, 0       
+	bieq	$t0, subTwo   # if !(a > b) go to subTwo
+	sub	$a0, $a1      # $cr = a - b
+	ctr	$a0  	      # a = a - b
+	j	gcdLoop	      # return to gcdLoop
+subTwo: sub	$a1, $a0      # $cr = b - a
+	ctr	$a1  	      # b = b - a
+	j	gcdLoop	      # return to gcdLoop
+cleanup: rtr	$v, $s1	# $v = m
+
+
+	addi	$st, 0	# $cr = $st
+
+	lw	$s1			# restore $s1
+	addi	$st, 4	# $cr = $st + 4
+
+	ctr	$st 		# $st = $st + 4
+	lw	$s0			# restore $s0
+	addi	$st, 4	# $cr = $st + 4
+
+	ctr	$st 		# $st = $st + 4
+	lw	$ra			# restore $ra
+	jr	$ra
+	add $s0, $s0
+	lui $i0, 0x09
+	lli $i1, 0x06
+	or $i0,$i1
+	ctr	$a0
+	jal relPrimeSetUp
+	add $s0, $s0
